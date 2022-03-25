@@ -18,10 +18,10 @@ TagManager:
   - Boundary
   - Player
   - Ignore Collisions
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - Ladder
+  - Obstacle
+  - Objective
   - 
   - 
   - 

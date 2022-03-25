@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,5 +13,8 @@ public class FeedbacksManager : MonoBehaviour
             Instance = this;
         else
             Destroy(gameObject);
+        
+        DontDestroyOnLoad(gameObject);
     }
+    
 }
