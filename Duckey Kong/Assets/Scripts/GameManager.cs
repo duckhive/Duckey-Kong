@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +12,7 @@ public class GameManager : MonoBehaviour
     public int lives;
     public int score;
     public bool gameActive;
+    public bool paused;
 
     private int _levelIndex;
 
@@ -24,13 +27,22 @@ public class GameManager : MonoBehaviour
         
         DontDestroyOnLoad(gameObject);
         NewGame();
+        
+    }
+
+    private void Update()
+    {
+        if(Input.GetButtonDown("Pause") && !paused)
+            PauseGame();
+        else if(Input.GetButtonDown("Pause") && paused)
+            ResumeGame();
     }
 
     public void NewGame()
     {
         lives = 3;
         score = 0;
-        
+
         LoadLevel(1);
     }
 
@@ -55,29 +67,46 @@ public class GameManager : MonoBehaviour
             LoadLevel(_levelIndex);
     }
 
+    public void PauseGame()
+    {
+        if (!gameActive) return;
+        
+        UiManager.Instance.uiPausedPanel.SetActive(true);
+        paused = true;
+        Time.timeScale = 0;
+    }
+    
+    public void ResumeGame()
+    {
+        UiManager.Instance.uiPausedPanel.SetActive(false);
+        paused = false;
+        Time.timeScale = 1;
+    }
+    
+
     private void LoadLevel(int levelIndex)
     {
         gameActive = false;
         _levelIndex = levelIndex;
-
-
-
+        
+        UiManager.Instance.uiHudPanel.SetActive(false);
+        
         StartCoroutine(LoadScene());
     }
 
     private IEnumerator LoadScene()
     {
-        yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(_levelIndex);
-        var camera = Camera.main;
+        yield return new WaitForSeconds(2f);
 
-        if (camera != null)
-        {
-            camera.cullingMask = 0;
-        }
+        UiManager.Instance.FadeOn();
+        SceneManager.LoadScene(_levelIndex);
+
+        yield return null;
         
-        
+        UiManager.Instance.FadeOff();
+        UiManager.Instance.uiHudPanel.SetActive(true);
+        PlayerManager.Instance.EnablePlayer();
+
         gameActive = true;
     }
-    
 }

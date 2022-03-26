@@ -12,7 +12,7 @@ public class Barrel : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.TryGetComponent<Player>(out Player player))
+        if (other.gameObject.TryGetComponent<PlayerManager>(out PlayerManager player))
         {
             
         }

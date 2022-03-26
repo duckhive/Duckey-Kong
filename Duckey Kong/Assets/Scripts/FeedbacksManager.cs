@@ -17,6 +17,8 @@ public class FeedbacksManager : MonoBehaviour
             Instance = this;
         else
             Destroy(gameObject);
+        
+        DontDestroyOnLoad(gameObject);
     }
     
 }
