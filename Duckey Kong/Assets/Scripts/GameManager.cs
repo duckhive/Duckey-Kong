@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +9,7 @@ public class GameManager : MonoBehaviour
 
     public int lives;
     public int score;
+    public bool gameActive;
 
     private int _levelIndex;
 
@@ -54,8 +57,18 @@ public class GameManager : MonoBehaviour
 
     private void LoadLevel(int levelIndex)
     {
+        gameActive = false;
         _levelIndex = levelIndex;
 
+
+
+        StartCoroutine(LoadScene());
+    }
+
+    private IEnumerator LoadScene()
+    {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(_levelIndex);
         var camera = Camera.main;
 
         if (camera != null)
@@ -63,12 +76,8 @@ public class GameManager : MonoBehaviour
             camera.cullingMask = 0;
         }
         
-        Invoke(nameof(LoadScene), 1f);
-    }
-
-    private void LoadScene()
-    {
-        SceneManager.LoadScene(_levelIndex);
+        
+        gameActive = true;
     }
     
 }

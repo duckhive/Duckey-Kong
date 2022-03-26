@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
         else
             _anim.SetBool("Running", false);
         
-        CheckCollision();
+        GroundCheck();
         Jump();
         Climbing();
         ChangeLayerOnLadder();
@@ -44,14 +44,16 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Obstacle"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("Obstacle") && GameManager.Instance.gameActive)
         {
-            enabled = false;
+            GetComponentInChildren<Renderer>().enabled = false;
+            FeedbacksManager.Instance.hitObstacleFeedbacks.PlayFeedbacks();
             GameManager.Instance.LevelFailed();
+            enabled = false;
         }
         else if (other.gameObject.layer == LayerMask.NameToLayer("Objective"))
         {
-            enabled = false;
+            FeedbacksManager.Instance.reachObjectiveFeedbacks.PlayFeedbacks();
             GameManager.Instance.LevelComplete();
         }
     }
@@ -68,7 +70,7 @@ public class Player : MonoBehaviour
             canClimb = false;
     }
 
-    private void CheckCollision()
+    private void GroundCheck()
     {
         grounded = Physics.Raycast(transform.position + new Vector3(0, 0.1f, 0), -Vector3.up, distToGround);
     }

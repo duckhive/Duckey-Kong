@@ -1,11 +1,15 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using MoreMountains.Feedbacks;
 using UnityEngine;
 
 public class FeedbacksManager : MonoBehaviour
 {
     public static FeedbacksManager Instance;
+
+    public MMFeedbacks hitObstacleFeedbacks;
+    public MMFeedbacks reachObjectiveFeedbacks;
     
     private void Awake()
     {
@@ -13,8 +17,6 @@ public class FeedbacksManager : MonoBehaviour
             Instance = this;
         else
             Destroy(gameObject);
-        
-        DontDestroyOnLoad(gameObject);
     }
     
 }
