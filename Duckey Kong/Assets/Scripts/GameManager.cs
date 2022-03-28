@@ -1,7 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -26,11 +23,6 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         
         DontDestroyOnLoad(gameObject);
-    }
-
-    private void Start()
-    {
-        NewGame(0.5f);
     }
 
     private void Update()
@@ -66,7 +58,7 @@ public class GameManager : MonoBehaviour
         lives--;
 
         if (lives <= 0)
-            NewGame(1.5f);
+            UiManager.Instance.uiGameOverPanel.SetActive(true);
         else
             LoadLevel(_levelIndex, 1);
     }
@@ -91,6 +83,8 @@ public class GameManager : MonoBehaviour
     private void LoadLevel(int levelIndex, float delay)
     {
         BarrelPooler.Instance.ReturnAllObjects();
+        UiManager.Instance.uiStartPanel.SetActive(false);
+        
         gameActive = false;
         _levelIndex = levelIndex;
 
@@ -106,13 +100,13 @@ public class GameManager : MonoBehaviour
         UiManager.Instance.FadeOn();
         SceneManager.LoadScene(_levelIndex);
 
-        yield return null;
+        yield return new WaitForSeconds(0.5f);
         
         UiManager.Instance.FadeOff();
         UiManager.Instance.uiHudPanel.SetActive(true);
         PlayerManager.Instance.EnablePlayer();
         ObjectiveManager.Instance.EnableObjective();
-
+        
         gameActive = true;
     }
 }

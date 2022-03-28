@@ -1,7 +1,4 @@
-using System;
 using System.Collections;
-using MoreMountains.Tools;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
@@ -44,10 +41,14 @@ public class PlayerManager : MonoBehaviour
         {
             _direction.x = -Input.GetAxis("Horizontal") * moveSpeed;
             if (Input.GetAxis("Horizontal") != 0)
+            {
                 _anim.SetBool("Running", true);
+            }
             else
+            {
                 _anim.SetBool("Running", false);
-        
+            }
+            
             GroundCheck();
             Jump();
             Climbing();

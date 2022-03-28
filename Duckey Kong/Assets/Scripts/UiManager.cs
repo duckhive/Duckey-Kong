@@ -1,6 +1,5 @@
 ﻿using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class UiManager : MonoBehaviour
 {
@@ -22,10 +21,9 @@ public class UiManager : MonoBehaviour
             Destroy(gameObject);
         
         DontDestroyOnLoad(gameObject);
-        
-        FadeOn();
-        
+
         uiHudPanel.SetActive(false);
+        uiStartPanel.SetActive(true);
     }
     
     private void Update()
