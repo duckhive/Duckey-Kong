@@ -22,6 +22,7 @@ public class UiManager : MonoBehaviour
             Destroy(gameObject);
         
         DontDestroyOnLoad(gameObject);
+        
         FadeOn();
         
         uiHudPanel.SetActive(false);

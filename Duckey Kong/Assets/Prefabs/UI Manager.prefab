@@ -262,7 +262,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce453b4d930d41c490f7064210425deb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fader: {fileID: 8749105490882995008}
+  uiFader: {fileID: 8749105490882995008}
+  uiHudPanel: {fileID: 4242884550347326944}
+  uiStartPanel: {fileID: 4242884549643112834}
+  uiGameOverPanel: {fileID: 4242884550098876626}
+  uiPausedPanel: {fileID: 4242884549167698054}
+  uiScoreText: {fileID: 4242884549953602878}
+  uiLivesText: {fileID: 4242884550301769038}
 --- !u!1 &4242884549475977619
 GameObject:
   m_ObjectHideFlags: 0
@@ -1914,7 +1920,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: Restart
+        m_MethodName: NewGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

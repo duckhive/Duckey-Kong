@@ -26,8 +26,11 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         
         DontDestroyOnLoad(gameObject);
-        NewGame();
-        
+    }
+
+    private void Start()
+    {
+        NewGame(0.5f);
     }
 
     private void Update()
@@ -38,12 +41,13 @@ public class GameManager : MonoBehaviour
             ResumeGame();
     }
 
-    public void NewGame()
+    public void NewGame(float delay)
     {
         lives = 3;
         score = 0;
 
-        LoadLevel(1);
+        LoadLevel(1, delay);
+        ResumeGame();
     }
 
     public void LevelComplete()
@@ -52,9 +56,9 @@ public class GameManager : MonoBehaviour
         _levelIndex++;
 
         if(_levelIndex < SceneManager.sceneCountInBuildSettings)
-            LoadLevel(_levelIndex);
+            LoadLevel(_levelIndex, 2);
         else
-            LoadLevel(1);
+            LoadLevel(1, 2);
     }
 
     public void LevelFailed()
@@ -62,9 +66,9 @@ public class GameManager : MonoBehaviour
         lives--;
 
         if (lives <= 0)
-            NewGame();
+            NewGame(1.5f);
         else
-            LoadLevel(_levelIndex);
+            LoadLevel(_levelIndex, 1);
     }
 
     public void PauseGame()
@@ -84,19 +88,20 @@ public class GameManager : MonoBehaviour
     }
     
 
-    private void LoadLevel(int levelIndex)
+    private void LoadLevel(int levelIndex, float delay)
     {
+        BarrelPooler.Instance.ReturnAllObjects();
         gameActive = false;
         _levelIndex = levelIndex;
-        
+
         UiManager.Instance.uiHudPanel.SetActive(false);
         
-        StartCoroutine(LoadScene());
+        StartCoroutine(LoadSceneWithDelay(delay));
     }
 
-    private IEnumerator LoadScene()
+    private IEnumerator LoadSceneWithDelay(float delay)
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(delay);
 
         UiManager.Instance.FadeOn();
         SceneManager.LoadScene(_levelIndex);
@@ -106,6 +111,7 @@ public class GameManager : MonoBehaviour
         UiManager.Instance.FadeOff();
         UiManager.Instance.uiHudPanel.SetActive(true);
         PlayerManager.Instance.EnablePlayer();
+        ObjectiveManager.Instance.EnableObjective();
 
         gameActive = true;
     }

@@ -10,6 +10,9 @@ public class FeedbacksManager : MonoBehaviour
 
     public MMFeedbacks hitObstacleFeedbacks;
     public MMFeedbacks reachObjectiveFeedbacks;
+    public MMFeedbacks jumpFeedbacks;
+    public MMFeedbacks footstepFeedbacks;
+
     
     private void Awake()
     {

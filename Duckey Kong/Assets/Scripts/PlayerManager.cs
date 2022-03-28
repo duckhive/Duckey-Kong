@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using MoreMountains.Tools;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
@@ -67,16 +68,17 @@ public class PlayerManager : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Obstacle") && GameManager.Instance.gameActive)
+        if ((other.gameObject.layer == LayerMask.NameToLayer("Obstacle") || other.gameObject.layer == LayerMask.NameToLayer("Enemy")) && GameManager.Instance.gameActive)
         {
             FeedbacksManager.Instance.hitObstacleFeedbacks.PlayFeedbacks();
             GameManager.Instance.LevelFailed();
             DisablePlayer();
         }
-        else if (other.gameObject.layer == LayerMask.NameToLayer("Objective"))
+        else if (other.gameObject.TryGetComponent<ObjectiveManager>(out ObjectiveManager objective))
         {
             FeedbacksManager.Instance.reachObjectiveFeedbacks.PlayFeedbacks();
             GameManager.Instance.LevelComplete();
+            objective.ObjectiveReached();
         }
     }
 
@@ -109,7 +111,7 @@ public class PlayerManager : MonoBehaviour
     
     private void ChangeLayerOnLadder()
     {
-        if (climbing && !grounded)
+        if (climbing && !grounded && Input.GetAxis("Vertical") > 0)
             gameObject.layer = LayerMask.NameToLayer("Ignore Collisions");
         //else if (canClimb && !climbing && Input.GetAxis("Vertical") < 0)
         //    gameObject.layer = LayerMask.NameToLayer("Ignore Collisions");
@@ -156,18 +158,25 @@ public class PlayerManager : MonoBehaviour
     private void Jump()
     {
         if (Input.GetButtonDown("Jump") && grounded)
+        {
             _direction = Vector3.up * jumpStrength;
-        else if(grounded)
+            FeedbacksManager.Instance.jumpFeedbacks.PlayFeedbacks();
+        }
+        else if (grounded)
+        {
             _direction.y = Mathf.Max(_direction.y, -1f);
+        }
         else
+        {
             _direction += Physics.gravity * Time.deltaTime;
+        }
     }
 
     public void EnablePlayer()
     {
         enabled = true;
         renderer.enabled = true;
-        transform.position = FindObjectOfType<StartingPosition>().transform.position;
+        transform.position = FindObjectOfType<PlayerStartingPosition>().transform.position;
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
     }
@@ -176,5 +185,11 @@ public class PlayerManager : MonoBehaviour
     {
         renderer.enabled = false;
         enabled = false;
+    }
+
+    public void Footstep()
+    {
+        if(grounded)
+            FeedbacksManager.Instance.footstepFeedbacks.PlayFeedbacks();
     }
 }

@@ -1,20 +1,26 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class Barrel : MonoBehaviour
 {
-    private Rigidbody _rb;
+    [SerializeField] private float lifetime;
+    
+    [HideInInspector] public Rigidbody rb;
 
     private void Awake()
     {
-        _rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnEnable()
     {
-        if (other.gameObject.TryGetComponent<PlayerManager>(out PlayerManager player))
-        {
-            
-        }
+        StartCoroutine(DespawnAfterDelay(lifetime));
+    }
+
+    private IEnumerator DespawnAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        BarrelPooler.Instance.ReturnObject(gameObject);
     }
 }
