@@ -39,8 +39,8 @@ public class PlayerManager : MonoBehaviour
     {
         if (GameManager.Instance.gameActive)
         {
-            _direction.x = -Input.GetAxis("Horizontal") * moveSpeed;
-            if (Input.GetAxis("Horizontal") != 0)
+            _direction.x = -SimpleInput.GetAxis("Horizontal") * moveSpeed;
+            if (SimpleInput.GetAxis("Horizontal") != 0)
             {
                 _anim.SetBool("Running", true);
             }
@@ -112,7 +112,7 @@ public class PlayerManager : MonoBehaviour
     
     private void ChangeLayerOnLadder()
     {
-        if (climbing && !grounded && Input.GetAxis("Vertical") > 0)
+        if (climbing && !grounded && SimpleInput.GetAxis("Vertical") > 0)
             gameObject.layer = LayerMask.NameToLayer("Ignore Collisions");
         //else if (canClimb && !climbing && Input.GetAxis("Vertical") < 0)
         //    gameObject.layer = LayerMask.NameToLayer("Ignore Collisions");
@@ -132,15 +132,15 @@ public class PlayerManager : MonoBehaviour
 
     private void Climbing()
     {
-        if (canClimb && Input.GetAxis("Vertical") > 0)
+        if (canClimb && SimpleInput.GetAxis("Vertical") > 0)
             climbing = true;
         
-        if (climbing && Input.GetAxis("Vertical") != 0)
+        if (climbing && SimpleInput.GetAxis("Vertical") != 0)
         {
-            _direction.y = Input.GetAxis("Vertical") * climbSpeed;
+            _direction.y = SimpleInput.GetAxis("Vertical") * climbSpeed;
             _anim.SetBool("Running", true);
         }
-        else if (climbing && Input.GetAxis("Vertical") == 0)
+        else if (climbing && SimpleInput.GetAxis("Vertical") == 0)
         {
             _direction.y = 0;
             _anim.SetBool("Running", false);
@@ -158,7 +158,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Jump()
     {
-        if (Input.GetButtonDown("Jump") && grounded)
+        if (SimpleInput.GetButtonDown("Jump") && grounded)
         {
             _direction = Vector3.up * jumpStrength;
             FeedbacksManager.Instance.jumpFeedbacks.PlayFeedbacks();
