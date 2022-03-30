@@ -450,6 +450,7 @@ GameObject:
   - component: {fileID: 1286363899970992961}
   - component: {fileID: 1286363899970992960}
   - component: {fileID: 1286363899970993342}
+  - component: {fileID: 4581986338417749087}
   m_Layer: 17
   m_Name: Spike
   m_TagString: Untagged
@@ -548,6 +549,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.847032, z: 1}
   m_Center: {x: 0, y: 0.43109158, z: 0}
+--- !u!114 &4581986338417749087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286363899970993341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7817841d5b524996b330c5315577215f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1286363899970993343
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,7 +1272,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2445178303449143877}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6, y: 0.25, z: 0}
+  m_LocalPosition: {x: 0.6, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1286363899971477661}
@@ -1289,7 +1302,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2445178304453973725}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.59, y: 0.25, z: 0}
+  m_LocalPosition: {x: -0.59, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1286363899971477661}

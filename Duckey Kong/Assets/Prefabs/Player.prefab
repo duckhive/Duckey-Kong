@@ -1118,7 +1118,7 @@ Transform:
   - {fileID: 479308744899542574}
   m_Father: {fileID: 479308744899542638}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.000022198115, y: 90.00041, z: 267.84845}
 --- !u!1 &479308744899830330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1331,7 +1331,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 479308744899542552}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.000028308894, y: -0.000031441174, z: 234.05528}
 --- !u!1 &479308744899830376
 GameObject:
   m_ObjectHideFlags: 0
@@ -1362,7 +1362,7 @@ Transform:
   - {fileID: 479308744899542650}
   m_Father: {fileID: 479308744899542552}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.000025978246, y: -0.000028715393, z: 234.0553}
 --- !u!1 &479308744899830378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1756,7 +1756,7 @@ Rigidbody:
   m_AngularDrag: 1
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_Constraints: 88
   m_CollisionDetection: 1
 --- !u!81 &1883110129
@@ -1966,7 +1966,7 @@ MonoBehaviour:
   m_Roots: []
   m_UpdateRate: 60
   m_UpdateMode: 1
-  m_Damping: 0
+  m_Damping: 0.1
   m_DampingDistrib:
     serializedVersion: 2
     m_Curve: []
@@ -2163,7 +2163,7 @@ MonoBehaviour:
   m_Roots: []
   m_UpdateRate: 60
   m_UpdateMode: 1
-  m_Damping: 0.2
+  m_Damping: 0.1
   m_DampingDistrib:
     serializedVersion: 2
     m_Curve: []
