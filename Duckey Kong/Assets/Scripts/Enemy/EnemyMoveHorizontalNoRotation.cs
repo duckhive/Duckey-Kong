@@ -36,9 +36,9 @@ public class EnemyMoveHorizontalNoRotation : MonoBehaviour
 
     private void ScanSensorDown(Transform sensor)
     {
-        Debug.DrawRay(sensor.position, Vector3.down * 0.25f, Color.red);
+        Debug.DrawRay(sensor.position, Vector3.down * 0.3f, Color.red);
 
-        var result = Physics.Raycast(sensor.position, Vector3.down, 0.25f, groundLayer);
+        var result = Physics.Raycast(sensor.position, Vector3.down, 0.3f, groundLayer);
         if(result == false)
             TurnAround();
         else

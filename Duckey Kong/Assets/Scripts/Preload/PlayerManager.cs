@@ -12,9 +12,10 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private bool canClimb;
     [SerializeField] private bool climbing;
     [SerializeField] private float distToGround = 0.3f;
+    [SerializeField] public Renderer playerRenderer;
+    [SerializeField] public Renderer crownRenderer;
 
     [HideInInspector] public bool alive;
-    [HideInInspector] public Renderer renderer;
     [HideInInspector] public Rigidbody rb;
     [HideInInspector] public Collider collider;
     
@@ -29,7 +30,6 @@ public class PlayerManager : MonoBehaviour
         else 
             Destroy(gameObject);
 
-        renderer = GetComponentInChildren<Renderer>();
         rb = GetComponent<Rigidbody>();
         collider = GetComponent<Collider>();
         
@@ -43,15 +43,13 @@ public class PlayerManager : MonoBehaviour
         if (GameManager.Instance.gameActive)
         {
             _direction.x = -SimpleInput.GetAxis("Horizontal") * moveSpeed;
-            if (SimpleInput.GetAxis("Horizontal") != 0)
-            {
-                _anim.SetBool("Running", true);
-            }
-            else
-            {
-                _anim.SetBool("Running", false);
-            }
             
+            if (SimpleInput.GetAxis("Horizontal") != 0)
+                _anim.SetBool("Running", true);
+            else
+                _anim.SetBool("Running", false);
+
+            FallCheck();
             GroundCheck();
             Jump();
             Climbing();
@@ -66,8 +64,8 @@ public class PlayerManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(GameManager.Instance.gameActive && !GameManager.Instance.paused)
-            rb.MovePosition(rb.position + _direction * Time.fixedDeltaTime);
+        if (GameManager.Instance.gameActive && !GameManager.Instance.paused)
+            rb.velocity = new Vector3(-SimpleInput.GetAxis("Horizontal") * moveSpeed, rb.velocity.y, 0);
     }
 
     private void OnCollisionEnter(Collision other)
@@ -102,6 +100,16 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
+    private void FallCheck()
+    {
+        if (transform.position.y < -20)
+        {
+            FeedbacksManager.Instance.hitObstacleFeedbacks.PlayFeedbacks();
+            GameManager.Instance.LevelFailed();
+            DisablePlayer();
+        }
+    }
+    
     private void GroundCheck()
     {
         grounded = Physics.Raycast(transform.position + new Vector3(0, 0.1f, 0), -Vector3.up, distToGround);
@@ -122,15 +130,15 @@ public class PlayerManager : MonoBehaviour
         
         if (climbing && SimpleInput.GetAxis("Vertical") != 0)
         {
-            _direction.y = SimpleInput.GetAxis("Vertical") * climbSpeed;
+            rb.velocity = new Vector3(rb.velocity.x, SimpleInput.GetAxis("Vertical") * climbSpeed, rb.velocity.z);
             _anim.SetBool("Running", true);
         }
         else if (climbing && SimpleInput.GetAxis("Vertical") == 0)
         {
-            _direction.y = 0;
+            rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
             _anim.SetBool("Running", false);
         }
-        
+
     }
 
     private void Rotation()
@@ -145,16 +153,8 @@ public class PlayerManager : MonoBehaviour
     {
         if (SimpleInput.GetButtonDown("Jump") && grounded)
         {
-            _direction = Vector3.up * jumpStrength;
+            rb.AddForce(Vector3.up * jumpStrength, ForceMode.Impulse);
             FeedbacksManager.Instance.jumpFeedbacks.PlayFeedbacks();
-        }
-        else if (grounded)
-        {
-            _direction.y = Mathf.Max(_direction.y, -1f);
-        }
-        else
-        {
-            _direction += Physics.gravity * Time.deltaTime;
         }
     }
 
@@ -162,7 +162,8 @@ public class PlayerManager : MonoBehaviour
     {
         alive = true;
         enabled = true;
-        renderer.enabled = true;
+        playerRenderer.enabled = true;
+        crownRenderer.enabled = true;
         transform.position = FindObjectOfType<PlayerStartingPosition>().transform.position;
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
@@ -171,8 +172,11 @@ public class PlayerManager : MonoBehaviour
     public void DisablePlayer()
     {
         alive = false;
-        renderer.enabled = false;
+        playerRenderer.enabled = false;
+        crownRenderer.enabled = false;
         enabled = false;
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
     }
 
     public void Footstep()

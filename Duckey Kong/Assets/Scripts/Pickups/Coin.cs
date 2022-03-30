@@ -20,6 +20,7 @@ public class Coin : MonoBehaviour
     {
         if (other.GetComponent<PlayerManager>())
         {
+            GameManager.Instance.score += 10;
             FeedbacksManager.Instance.coinPickupFeedbacks.PlayFeedbacks();
             CoinManager.Instance.AddCoin();
             vfxPickup.SetActive(true);

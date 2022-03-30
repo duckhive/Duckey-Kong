@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.28337258, g: 0.3648723, b: 0.46405366, a: 1}
+  m_IndirectSpecularColor: {r: 0.20749143, g: 0.21147497, b: 0.14576834, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2801,9 +2801,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e2f5e94d1ee4d5d9ddcdd8b8dbf2db8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolTag: 
-  prefab: {fileID: 1925902536248814187, guid: 7a9ad825954756446b25943ea3c826f7, type: 3}
-  size: 30
 --- !u!1001 &1032483554
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3828,7 +3825,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469726125}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 1bad88af5a2159f428092e108b608c7b, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4

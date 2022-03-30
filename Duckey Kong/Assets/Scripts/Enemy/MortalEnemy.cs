@@ -27,6 +27,7 @@ public class MortalEnemy : MonoBehaviour
             if (normal.y <= -0.5f)
             {
                 PlayerManager.Instance.rb.AddForce(Vector3.up * 10, ForceMode.Impulse);
+                GameManager.Instance.score += 100;
                 StartCoroutine(Die());
             }
             else

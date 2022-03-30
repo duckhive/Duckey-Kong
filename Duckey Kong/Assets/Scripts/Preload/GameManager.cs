@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
         lives = 3;
         score = 0;
 
+        CoinManager.Instance.coinsCollected = 0;
         LoadLevel(1, delay);
         ResumeGame();
     }
