@@ -9,7 +9,10 @@ public class Trampoline : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        if(other.GetComponent<PlayerManager>())
-            PlayerManager.Instance.rb.AddForce(Vector3.up * springForce, ForceMode.Impulse);
+        if (other.GetComponent<PlayerManager>())
+        {
+            PlayerManager.Instance.controller.Motor.ForceUnground();
+            PlayerManager.Instance.controller.SetVelocity(Vector3.up * springForce);
+        }
     }
 }

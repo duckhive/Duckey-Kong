@@ -9,13 +9,17 @@ ScriptsOnlyBuild:
     - CameraManager
     - Coin
     - CoinManager
+    - DuckController
+    - DuckPlayer
     - DynamicBone
     - EnemyMoveHorizontal
     - EnemyMoveHorizontalNoRotation
     - FeedbacksManager
     - FreeModifier
     - GameManager
+    - Ground
     - ImmortalEnemy
+    - KinematicCharacterController.KinematicCharacterMotor
     - MortalEnemy
     - ObjectRotator
     - ObjectiveManager
@@ -98,6 +102,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.Universal.PostProcessData
     - UnityEngine.Rendering.Universal.Tonemapping
     - UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+    - UnityEngine.Rendering.Universal.UniversalAdditionalLightData
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset
     - UnityEngine.Rendering.Universal.Vignette
     - UnityEngine.Rendering.Universal.XRSystemData
@@ -114,8 +119,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -177,21 +184,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 3672}
+      Script: {instanceID: 3674}
     - Class: 114
-      Script: {instanceID: 5766}
+      Script: {instanceID: 5768}
     - Class: 114
-      Script: {instanceID: 5836}
+      Script: {instanceID: 5838}
     - Class: 114
-      Script: {instanceID: 6346}
+      Script: {instanceID: 6348}
     - Class: 114
-      Script: {instanceID: 7220}
+      Script: {instanceID: 7222}
     - Class: 114
-      Script: {instanceID: 7512}
+      Script: {instanceID: 7514}
     - Class: 114
-      Script: {instanceID: 8522}
+      Script: {instanceID: 8524}
     - Class: 114
-      Script: {instanceID: 53306}
+      Script: {instanceID: 130900}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 134
@@ -246,23 +253,29 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 3278}
+      Script: {instanceID: 2020}
     - Class: 114
-      Script: {instanceID: 3672}
+      Script: {instanceID: 3280}
     - Class: 114
-      Script: {instanceID: 5766}
+      Script: {instanceID: 3674}
     - Class: 114
-      Script: {instanceID: 5836}
+      Script: {instanceID: 5768}
     - Class: 114
-      Script: {instanceID: 6346}
+      Script: {instanceID: 5838}
     - Class: 114
-      Script: {instanceID: 7220}
+      Script: {instanceID: 6348}
     - Class: 114
-      Script: {instanceID: 7512}
+      Script: {instanceID: 7222}
     - Class: 114
-      Script: {instanceID: 8240}
+      Script: {instanceID: 7514}
     - Class: 114
-      Script: {instanceID: 8522}
+      Script: {instanceID: 8144}
+    - Class: 114
+      Script: {instanceID: 8242}
+    - Class: 114
+      Script: {instanceID: 8524}
+    - Class: 114
+      Script: {instanceID: 130900}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 134
@@ -319,25 +332,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2020}
     - Class: 114
-      Script: {instanceID: 3278}
+      Script: {instanceID: 3280}
     - Class: 114
-      Script: {instanceID: 3672}
+      Script: {instanceID: 3674}
     - Class: 114
-      Script: {instanceID: 5766}
+      Script: {instanceID: 5768}
     - Class: 114
-      Script: {instanceID: 5836}
+      Script: {instanceID: 5838}
     - Class: 114
-      Script: {instanceID: 6346}
+      Script: {instanceID: 6348}
     - Class: 114
-      Script: {instanceID: 7220}
+      Script: {instanceID: 7222}
     - Class: 114
-      Script: {instanceID: 7512}
+      Script: {instanceID: 7514}
     - Class: 114
-      Script: {instanceID: 8142}
+      Script: {instanceID: 8144}
     - Class: 114
-      Script: {instanceID: 8240}
+      Script: {instanceID: 8242}
     - Class: 114
-      Script: {instanceID: 8522}
+      Script: {instanceID: 8524}
+    - Class: 114
+      Script: {instanceID: 130900}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 134
@@ -392,27 +407,25 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2020}
+      Script: {instanceID: 3280}
     - Class: 114
-      Script: {instanceID: 3278}
+      Script: {instanceID: 3674}
     - Class: 114
-      Script: {instanceID: 3672}
+      Script: {instanceID: 5768}
     - Class: 114
-      Script: {instanceID: 5766}
+      Script: {instanceID: 5838}
     - Class: 114
-      Script: {instanceID: 5836}
+      Script: {instanceID: 6348}
     - Class: 114
-      Script: {instanceID: 6346}
+      Script: {instanceID: 7222}
     - Class: 114
-      Script: {instanceID: 7220}
+      Script: {instanceID: 7514}
     - Class: 114
-      Script: {instanceID: 7512}
+      Script: {instanceID: 8242}
     - Class: 114
-      Script: {instanceID: 8142}
+      Script: {instanceID: 8524}
     - Class: 114
-      Script: {instanceID: 8240}
-    - Class: 114
-      Script: {instanceID: 8522}
+      Script: {instanceID: 130900}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 134
@@ -467,21 +480,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 3672}
+      Script: {instanceID: 3060}
     - Class: 114
-      Script: {instanceID: 5766}
+      Script: {instanceID: 3674}
     - Class: 114
-      Script: {instanceID: 5836}
+      Script: {instanceID: 5768}
     - Class: 114
-      Script: {instanceID: 6346}
+      Script: {instanceID: 5838}
     - Class: 114
-      Script: {instanceID: 7220}
+      Script: {instanceID: 6348}
     - Class: 114
-      Script: {instanceID: 7512}
+      Script: {instanceID: 7222}
     - Class: 114
-      Script: {instanceID: 8522}
+      Script: {instanceID: 7514}
     - Class: 114
-      Script: {instanceID: 35290}
+      Script: {instanceID: 8524}
+    - Class: 114
+      Script: {instanceID: 130900}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 134
@@ -584,153 +599,159 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3050}
     - Class: 114
-      Script: {instanceID: 3134}
+      Script: {instanceID: 3136}
     - Class: 114
-      Script: {instanceID: 3334}
+      Script: {instanceID: 3336}
     - Class: 114
-      Script: {instanceID: 3658}
+      Script: {instanceID: 3660}
     - Class: 114
-      Script: {instanceID: 3742}
+      Script: {instanceID: 3744}
     - Class: 114
-      Script: {instanceID: 3822}
+      Script: {instanceID: 3824}
     - Class: 114
-      Script: {instanceID: 3834}
+      Script: {instanceID: 3836}
     - Class: 114
-      Script: {instanceID: 3850}
+      Script: {instanceID: 3852}
     - Class: 114
-      Script: {instanceID: 3918}
+      Script: {instanceID: 3920}
     - Class: 114
-      Script: {instanceID: 3928}
+      Script: {instanceID: 3930}
     - Class: 114
-      Script: {instanceID: 4072}
+      Script: {instanceID: 4074}
     - Class: 114
-      Script: {instanceID: 4224}
+      Script: {instanceID: 4226}
     - Class: 114
-      Script: {instanceID: 4510}
+      Script: {instanceID: 4512}
     - Class: 114
-      Script: {instanceID: 4620}
+      Script: {instanceID: 4622}
     - Class: 114
-      Script: {instanceID: 4736}
+      Script: {instanceID: 4738}
     - Class: 114
-      Script: {instanceID: 5328}
+      Script: {instanceID: 5330}
     - Class: 114
-      Script: {instanceID: 5458}
+      Script: {instanceID: 5460}
     - Class: 114
-      Script: {instanceID: 5486}
+      Script: {instanceID: 5488}
     - Class: 114
-      Script: {instanceID: 5530}
+      Script: {instanceID: 5532}
     - Class: 114
-      Script: {instanceID: 5558}
+      Script: {instanceID: 5560}
     - Class: 114
-      Script: {instanceID: 5626}
+      Script: {instanceID: 5628}
     - Class: 114
-      Script: {instanceID: 5654}
+      Script: {instanceID: 5656}
     - Class: 114
-      Script: {instanceID: 5758}
+      Script: {instanceID: 5760}
     - Class: 114
-      Script: {instanceID: 5776}
+      Script: {instanceID: 5778}
     - Class: 114
-      Script: {instanceID: 5784}
+      Script: {instanceID: 5786}
     - Class: 114
-      Script: {instanceID: 5958}
+      Script: {instanceID: 5960}
     - Class: 114
-      Script: {instanceID: 6128}
+      Script: {instanceID: 6130}
     - Class: 114
-      Script: {instanceID: 6188}
+      Script: {instanceID: 6190}
     - Class: 114
-      Script: {instanceID: 6208}
+      Script: {instanceID: 6210}
     - Class: 114
-      Script: {instanceID: 6370}
+      Script: {instanceID: 6372}
     - Class: 114
-      Script: {instanceID: 6502}
+      Script: {instanceID: 6504}
     - Class: 114
-      Script: {instanceID: 6548}
+      Script: {instanceID: 6550}
     - Class: 114
-      Script: {instanceID: 6584}
+      Script: {instanceID: 6586}
     - Class: 114
-      Script: {instanceID: 6608}
+      Script: {instanceID: 6610}
     - Class: 114
-      Script: {instanceID: 6670}
+      Script: {instanceID: 6672}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 6708}
-    - Class: 114
-      Script: {instanceID: 6916}
+      Script: {instanceID: 6710}
     - Class: 114
       Script: {instanceID: 6918}
     - Class: 114
-      Script: {instanceID: 6940}
+      Script: {instanceID: 6920}
     - Class: 114
-      Script: {instanceID: 7018}
+      Script: {instanceID: 6942}
     - Class: 114
-      Script: {instanceID: 7158}
+      Script: {instanceID: 7020}
     - Class: 114
-      Script: {instanceID: 7236}
+      Script: {instanceID: 7160}
     - Class: 114
-      Script: {instanceID: 7338}
+      Script: {instanceID: 7238}
     - Class: 114
-      Script: {instanceID: 7362}
+      Script: {instanceID: 7340}
     - Class: 114
-      Script: {instanceID: 7382}
+      Script: {instanceID: 7364}
     - Class: 114
-      Script: {instanceID: 7470}
+      Script: {instanceID: 7384}
     - Class: 114
-      Script: {instanceID: 7556}
+      Script: {instanceID: 7472}
     - Class: 114
-      Script: {instanceID: 7566}
+      Script: {instanceID: 7558}
     - Class: 114
-      Script: {instanceID: 7634}
+      Script: {instanceID: 7568}
     - Class: 114
-      Script: {instanceID: 7642}
+      Script: {instanceID: 7636}
     - Class: 114
-      Script: {instanceID: 7754}
+      Script: {instanceID: 7644}
     - Class: 114
-      Script: {instanceID: 7800}
+      Script: {instanceID: 7756}
     - Class: 114
-      Script: {instanceID: 7848}
+      Script: {instanceID: 7802}
     - Class: 114
-      Script: {instanceID: 7916}
+      Script: {instanceID: 7850}
     - Class: 114
-      Script: {instanceID: 7926}
+      Script: {instanceID: 7918}
     - Class: 114
-      Script: {instanceID: 8062}
+      Script: {instanceID: 7928}
     - Class: 114
-      Script: {instanceID: 8132}
+      Script: {instanceID: 8064}
     - Class: 114
-      Script: {instanceID: 8214}
+      Script: {instanceID: 8134}
     - Class: 114
-      Script: {instanceID: 8226}
+      Script: {instanceID: 8216}
     - Class: 114
-      Script: {instanceID: 8342}
+      Script: {instanceID: 8228}
     - Class: 114
-      Script: {instanceID: 8350}
+      Script: {instanceID: 8344}
     - Class: 114
-      Script: {instanceID: 8356}
+      Script: {instanceID: 8352}
     - Class: 114
-      Script: {instanceID: 8374}
+      Script: {instanceID: 8358}
     - Class: 114
-      Script: {instanceID: 8438}
+      Script: {instanceID: 8376}
     - Class: 114
-      Script: {instanceID: 8660}
+      Script: {instanceID: 8440}
     - Class: 114
-      Script: {instanceID: 8744}
+      Script: {instanceID: 8662}
     - Class: 114
-      Script: {instanceID: 9460}
+      Script: {instanceID: 8746}
     - Class: 114
-      Script: {instanceID: 9546}
+      Script: {instanceID: 9462}
     - Class: 114
-      Script: {instanceID: 9652}
+      Script: {instanceID: 9548}
     - Class: 114
-      Script: {instanceID: 9732}
+      Script: {instanceID: 9654}
     - Class: 114
-      Script: {instanceID: 9752}
+      Script: {instanceID: 9734}
     - Class: 114
-      Script: {instanceID: 9842}
+      Script: {instanceID: 9754}
     - Class: 114
-      Script: {instanceID: 9902}
+      Script: {instanceID: 9844}
     - Class: 114
-      Script: {instanceID: 9964}
+      Script: {instanceID: 9904}
+    - Class: 114
+      Script: {instanceID: 9966}
+    - Class: 114
+      Script: {instanceID: 25072}
+    - Class: 114
+      Script: {instanceID: 31916}
+    - Class: 114
+      Script: {instanceID: 39110}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1514,6 +1535,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: EventSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 2ce97b81c7a13016e6bd1a1ff42fe937
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Trampoline
   - hash:
       serializedVersion: 2
       Hash: 1727e3ebe1c4e965201c17f2796a2790
@@ -2332,7 +2359,7 @@ ScriptsOnlyBuild:
     className: MMBillboard
   - hash:
       serializedVersion: 2
-      Hash: e7ba5a2187055a2d7df7544e8dc86bbc
+      Hash: 023e175dab894e65f96e8229c23041f1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerManager
@@ -2776,7 +2803,7 @@ ScriptsOnlyBuild:
     className: MMFeedbackPause
   - hash:
       serializedVersion: 2
-      Hash: bb4655276275b39f074536ddb72056d8
+      Hash: 659d6ceab26f9e4237abaaf29249f293
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Boss
@@ -4192,7 +4219,7 @@ ScriptsOnlyBuild:
     className: CinemachineFixedSignal
   - hash:
       serializedVersion: 2
-      Hash: 1bf5a7a2f6c4e48987457efb025e57c1
+      Hash: 0875b412b2f96b16599b61402068107a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BarrelSpawner
@@ -4948,16 +4975,352 @@ ScriptsOnlyBuild:
     className: MMFlash
   - hash:
       serializedVersion: 2
-      Hash: 2ce97b81c7a13016e6bd1a1ff42fe937
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.ClimbingLadders
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.WallJumping
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.SwimmingState
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 2f1fdeb23412ef93e6891cc2f6885d98
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.RootMotionExample
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: c03896e24665dcce0c545f12819bc7ec
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController
+    className: PhysicsMover
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.NoClipState
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: c12a2c7e02b445cdaa1a229db39c2506
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.CollisionFiltering
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.OrientingArbitraryDirection
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 00ed59476ea02443c4f9272994166454
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.MovingPlatform
+    className: MyMovingPlatform
+  - hash:
+      serializedVersion: 2
+      Hash: a148d11104cb10ff1d7b22b249224314
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController
+    className: KCCSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.ChargingState
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 9017455f5192d98e4d8c2c79c969c795
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.ClimbingLadders
+    className: MyLadder
+  - hash:
+      serializedVersion: 2
+      Hash: a368ba9921cf088235b427b8a42d54d8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Examples
+    className: PlayableMover
+  - hash:
+      serializedVersion: 2
+      Hash: 0f0d2cf32fcc34ac44205b93b2ca7b63
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.DoubleJumping
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.LandingLeavingGround
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 62c8893ca90f5aa81539866ef0f8b064
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: a9a5d6d7a3e777080b4261c8e1861fe8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.SwimmingState
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: f4658d2347673fa4e10a9977335b54a9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Examples
+    className: ExampleAIController
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.SimpleJumping
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 59636662ec2341328ac1dab92db4c32d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Examples
+    className: Teleporter
+  - hash:
+      serializedVersion: 2
+      Hash: fb00532076e2ccef7e2a358e476f9526
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.AddingImpulses
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: 3ab103a8735b7a8b1529853efc9371a3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Examples
+    className: ExampleCharacterCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.FramePerfectRotation
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.RootMotionExample
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.AddingImpulses
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: cca86f685ccc868f2b699d65bfe304b2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Examples
+    className: PlanetManager
+  - hash:
+      serializedVersion: 2
+      Hash: 32c1bbd75ca1fc31b5f8d7cd7464dc3a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.ChargingState
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.MovingPlatform
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 4e381c38c40a0de2aeb89cb8e79dc50e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Examples
+    className: StressTestManager
+  - hash:
+      serializedVersion: 2
+      Hash: 7116dcfd546bb0b534b03aac108b2d07
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.FramePerfectRotation
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: fb00532076e2ccef7e2a358e476f9526
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.WallJumping
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: 1b011ad2f2c8999989355a3de158cfb5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.MultipleMovementStates
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: a1248508295073618254cebbd0654792
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController
+    className: KinematicCharacterMotor
+  - hash:
+      serializedVersion: 2
+      Hash: da8a8ec21fe7449d380850e2bf032dd9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.NoClipState
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: b504d5f59b7754d5d74dfc0e5a316d9c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.SimpleJumping
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: b784545e13c2cccfe40573a24c132c00
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Examples
+    className: PrefabLauncher
+  - hash:
+      serializedVersion: 2
+      Hash: fb00532076e2ccef7e2a358e476f9526
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.Crouching
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.CollisionFiltering
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.DoubleJumping
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: b91e363fcc13ba55cadf6a00c9b53792
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Trampoline
+    className: BuildManager
+  - hash:
+      serializedVersion: 2
+      Hash: d419b9c022f03355dff0a82bd94b7b6d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.MovingPlatform
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: 082f09b9f09d734ed835b94d992d4437
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Examples
+    className: ExampleMovingPlatform
+  - hash:
+      serializedVersion: 2
+      Hash: 13cfd5c6bdafcd8e2a7470fb042954c6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Examples
+    className: ExamplePlayer
+  - hash:
+      serializedVersion: 2
+      Hash: fb00532076e2ccef7e2a358e476f9526
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.LandingLeavingGround
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.Crouching
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 1605f9ada2466f987c6fb1dbecc411c0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Examples
+    className: ExampleCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: 02a4eded679099694144287ac5dd41dd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.ClimbingLadders
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.MultipleMovementStates
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController
+    className: KinematicCharacterSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.BasicMovement
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: d419b9c022f03355dff0a82bd94b7b6d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.OrientingArbitraryDirection
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: bf1adc19047d1bc426d90d04f4d5c9d7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.BasicMovement
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: 245ae15cf551085056829990b6254fdf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Examples
+    className: FrameratePanel
+  - hash:
+      serializedVersion: 2
+      Hash: f2b719aaa17473bab91c3e024dd93136
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DuckController
+  - hash:
+      serializedVersion: 2
+      Hash: b12a2a4bfff7bebc0a5cdeb4fefdadad
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DuckPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Ground
   platform: 13
   scenePathNames:
   - Assets/Scenes/Preload.unity
   - Assets/Scenes/Level1.unity
   - Assets/Scenes/Level2.unity
   - Assets/Scenes/Level3.unity
-  - Assets/Scenes/Level4.unity
   - Assets/Scenes/Level5.unity
-  playerPath: C:/_git/unity_projects/Duckey Kong/Duckey-Kong/Duckey Kong/Builds/apk/ducky_king_build_5.apk
+  - Assets/Scenes/Level4.unity
+  playerPath: C:/_git/unity_projects/Duckey Kong/Duckey-Kong/Duckey Kong/Builds/apk/ducky_king_build_7.apk

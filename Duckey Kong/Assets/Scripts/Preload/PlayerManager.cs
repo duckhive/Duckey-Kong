@@ -5,23 +5,18 @@ public class PlayerManager : MonoBehaviour
 {
     public static PlayerManager Instance;
     
-    [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float climbSpeed = 3f;
-    [SerializeField] private float jumpStrength = 12f;
     [SerializeField] private bool grounded;
-    [SerializeField] private bool canClimb;
-    [SerializeField] private bool climbing;
-    [SerializeField] private float distToGround = 0.3f;
     [SerializeField] public Renderer playerRenderer;
     [SerializeField] public Renderer crownRenderer;
+    [SerializeField] public GameObject vfxTrailSmoke;
 
     [HideInInspector] public bool alive;
+    [HideInInspector] public Animator anim;
+    [HideInInspector] public DuckController controller;
     [HideInInspector] public Rigidbody rb;
-    [HideInInspector] public Collider collider;
-    
-    private Animator _anim;
-    private Vector3 _direction;
 
+    public bool canClimb;
+    public bool climbing;
 
     private void Awake()
     {
@@ -29,43 +24,26 @@ public class PlayerManager : MonoBehaviour
             Instance = this;
         else 
             Destroy(gameObject);
-
-        rb = GetComponent<Rigidbody>();
-        collider = GetComponent<Collider>();
-        
-        _anim = GetComponent<Animator>();
         
         DontDestroyOnLoad(gameObject);
+        
+        anim = GetComponent<Animator>();
+        controller = GetComponent<DuckController>();
+        rb = GetComponent<Rigidbody>();
     }
 
     private void Update()
     {
         if (GameManager.Instance.gameActive)
         {
-            _direction.x = -SimpleInput.GetAxis("Horizontal") * moveSpeed;
-            
-            if (SimpleInput.GetAxis("Horizontal") != 0)
-                _anim.SetBool("Running", true);
-            else
-                _anim.SetBool("Running", false);
-
-            FallCheck();
-            GroundCheck();
-            Jump();
-            Climbing();
+            FallOutOfWorldCheck();
             ChangeLayerOnLadder();
-            Rotation();
+            Climbing();
         }
         else
         {
-            _anim.SetBool("Running", false);
+            anim.SetBool("Running", false);
         }
-    }
-
-    private void FixedUpdate()
-    {
-        if (GameManager.Instance.gameActive && !GameManager.Instance.paused)
-            rb.velocity = new Vector3(-SimpleInput.GetAxis("Horizontal") * moveSpeed, rb.velocity.y, 0);
     }
 
     private void OnCollisionEnter(Collision other)
@@ -100,61 +78,29 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-    private void FallCheck()
+    private void Climbing()
     {
-        if (transform.position.y < -20)
-        {
-            FeedbacksManager.Instance.hitObstacleFeedbacks.PlayFeedbacks();
-            GameManager.Instance.LevelFailed();
-            DisablePlayer();
-        }
-    }
-    
-    private void GroundCheck()
-    {
-        grounded = Physics.Raycast(transform.position + new Vector3(0, 0.1f, 0), -Vector3.up, distToGround);
+        if (canClimb && (SimpleInput.GetAxis("Vertical") > 0.5f || SimpleInput.GetAxis("Vertical") < -0.5f))
+            climbing = true;
+        else if (canClimb && SimpleInput.GetAxis("Vertical") == 0)
+            climbing = false;
     }
     
     private void ChangeLayerOnLadder()
     {
         if (climbing && !grounded && SimpleInput.GetAxis("Vertical") > 0)
             gameObject.layer = LayerMask.NameToLayer("Ignore Collisions");
-       else
+        else
             gameObject.layer = LayerMask.NameToLayer("Player");
     }
-
-    private void Climbing()
+    
+    private void FallOutOfWorldCheck()
     {
-        if (canClimb && SimpleInput.GetAxis("Vertical") > 0)
-            climbing = true;
-        
-        if (climbing && SimpleInput.GetAxis("Vertical") != 0)
+        if (transform.position.y < -20)
         {
-            rb.velocity = new Vector3(rb.velocity.x, SimpleInput.GetAxis("Vertical") * climbSpeed, rb.velocity.z);
-            _anim.SetBool("Running", true);
-        }
-        else if (climbing && SimpleInput.GetAxis("Vertical") == 0)
-        {
-            rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
-            _anim.SetBool("Running", false);
-        }
-
-    }
-
-    private void Rotation()
-    {
-        if (_direction.x > 0f)
-            transform.eulerAngles = new Vector3(0, 90, 0);
-        else if (_direction.x < 0f)
-            transform.eulerAngles = new Vector3(0, -90, 0);
-    }
-
-    private void Jump()
-    {
-        if (SimpleInput.GetButtonDown("Jump") && grounded)
-        {
-            rb.AddForce(Vector3.up * jumpStrength, ForceMode.Impulse);
-            FeedbacksManager.Instance.jumpFeedbacks.PlayFeedbacks();
+            FeedbacksManager.Instance.hitObstacleFeedbacks.PlayFeedbacks();
+            GameManager.Instance.LevelFailed();
+            DisablePlayer();
         }
     }
 
@@ -164,10 +110,9 @@ public class PlayerManager : MonoBehaviour
         enabled = true;
         playerRenderer.enabled = true;
         crownRenderer.enabled = true;
-        transform.position = FindObjectOfType<PlayerStartingPosition>().transform.position;
-        rb.velocity = Vector3.zero;
-        rb.angularVelocity = Vector3.zero;
-        _anim.enabled = true;
+        controller.Motor.SetPosition(FindObjectOfType<PlayerStartingPosition>().transform.position);
+        anim.enabled = true;
+        vfxTrailSmoke.SetActive(true);
     }
     
     public void DisablePlayer()
@@ -176,14 +121,7 @@ public class PlayerManager : MonoBehaviour
         playerRenderer.enabled = false;
         crownRenderer.enabled = false;
         enabled = false;
-        rb.velocity = Vector3.zero;
-        rb.angularVelocity = Vector3.zero;
-        _anim.enabled = false;
-    }
-
-    public void Footstep()
-    {
-        if(grounded)
-            FeedbacksManager.Instance.footstepFeedbacks.PlayFeedbacks();
+        anim.enabled = false;
+        vfxTrailSmoke.SetActive(false);
     }
 }

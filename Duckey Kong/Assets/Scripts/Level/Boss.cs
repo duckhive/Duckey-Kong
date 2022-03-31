@@ -3,24 +3,19 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour
 {
-    [SerializeField] private Direction direction;
-    
     [HideInInspector] public Animator anim;
 
-    public enum Direction
-    {
-        right,
-        left
-    }
-
+    private BarrelSpawner _barrelSpawner;
+    
     private void Awake()
     {
         anim = GetComponent<Animator>();
+        _barrelSpawner = GetComponentInParent<BarrelSpawner>();
     }
 
     public void RollBarrel()
     {
-        if(direction == Direction.right)
+        if(_barrelSpawner.direction == Direction.right)
             transform.eulerAngles = new Vector3(0, -90, 0);
         else
             transform.eulerAngles = new Vector3(0, 90, 0);

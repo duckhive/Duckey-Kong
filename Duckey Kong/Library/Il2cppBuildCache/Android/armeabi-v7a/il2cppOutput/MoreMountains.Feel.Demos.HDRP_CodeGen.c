@@ -41,14 +41,14 @@ static Il2CppMethodPointer s_methodPointers[8] =
 };
 static const int32_t s_InvokerIndices[8] = 
 {
-	3251,
-	2708,
-	3251,
-	3251,
-	3251,
-	3251,
-	3251,
-	3251,
+	3301,
+	2754,
+	3301,
+	3301,
+	3301,
+	3301,
+	3301,
+	3301,
 };
 extern const CustomAttributesCacheGenerator g_MoreMountains_Feel_Demos_HDRP_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_MoreMountains_Feel_Demos_HDRP_CodeGenModule;

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1552852399}
   - component: {fileID: 1552852398}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Barrel Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1552852397}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.42, y: 0.3946998, z: 1.4707265}
+  m_LocalPosition: {x: -0.42, y: 0.54, z: 1.4707265}
   m_LocalScale: {x: 0.46988064, y: 0.46988064, z: 0.46988064}
   m_Children: []
   m_Father: {fileID: 9108759841654128895}
@@ -43,8 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8d844ca83968a94c8683a20887db644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  barrelPool: {fileID: 873982499723631336, guid: b0d62ac25c07b3f48a6b6f0d028f405b, type: 3}
-  barrelPrefab: {fileID: 1925902536248814187, guid: 7a9ad825954756446b25943ea3c826f7, type: 3}
   minTime: 2
   maxTime: 4
 --- !u!1 &91080215273148167
@@ -56,7 +54,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2912731292920399276}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Finger31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3051153871145812959}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Calf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +115,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5765553398334978735}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Finger2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +146,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5518653454571662368}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +176,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5498518051234014236}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Finger11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,7 +206,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6480304858497172009}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Finger3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,7 +237,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3373755158288305722}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill Jaw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,7 +272,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8403399638590989205}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Upper Eyelid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -304,7 +302,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1800758458921616636}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill Pelvis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,7 +336,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1393065423064088143}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -369,7 +367,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3778655337550833668}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Finger3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -400,7 +398,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3947967295862045538}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Thigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -431,7 +429,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 380488944352254463}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Lower Eyelid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -461,7 +459,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6560669705700892869}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Finger0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,7 +490,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 497243961680115181}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -522,7 +520,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3048597653509142142}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Finger0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -553,7 +551,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3264750620196163402}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Upper Eyelid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -583,7 +581,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6366901955081008316}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill Nose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -613,7 +611,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1336420465421088514}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -643,7 +641,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2806002292683201088}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Ear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -673,7 +671,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5796275972175020053}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -719,7 +717,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8008403750875285701}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Lower Mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -749,7 +747,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6013588322899886764}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Lower Eyelid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -779,7 +777,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8547942009179343121}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill Spine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -810,7 +808,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 214031275493069267}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -841,7 +839,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 889075096042712647}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Finger11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -871,7 +869,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5651315129302363253}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Toe0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -901,7 +899,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2039335598689597907}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -932,7 +930,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1179994885253027793}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill Hair Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -962,7 +960,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2648778842995234610}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -993,7 +991,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6261944305405190345}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Upper Mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1023,7 +1021,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6120444906022401930}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Toe0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1053,7 +1051,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2755321203352976036}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Finger1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1084,7 +1082,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1448572186491895625}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill Tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1114,7 +1112,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8368266992873549775}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L UpperArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1145,7 +1143,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2191806786874416913}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1179,7 +1177,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7886617047412979603}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Finger21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1209,7 +1207,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8077123101688665874}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1240,7 +1238,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8917394204430803956}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Finger01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1270,7 +1268,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5897746655784893564}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1301,7 +1299,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8236338549929019904}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1331,7 +1329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5893426316169016661}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Finger31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1361,7 +1359,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4711446851551981362}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill Tongue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1392,7 +1390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2675332501449883377}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1423,7 +1421,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1320797839476132815}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1454,7 +1452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6747318248686868027}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Thigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1485,7 +1483,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2930871606297690983}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Finger1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1516,7 +1514,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6291374658290070694}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Lower Mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1546,7 +1544,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 824778555804602933}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Calf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1577,7 +1575,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2384656048629705555}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1611,7 +1609,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5910147228757300232}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R UpperArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1642,7 +1640,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2441389555980079756}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Ear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1672,7 +1670,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1088535924614843797}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Finger2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1703,7 +1701,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3637848338771934182}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill L Eyebrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1733,7 +1731,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3589735811201109069}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill Spine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1766,7 +1764,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1239336937312396431}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Finger21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1796,7 +1794,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8373860762414303813}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill Tongue02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1827,7 +1825,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7271181955675306655}
   - component: {fileID: 5763718171761852927}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1847,7 +1845,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 9108759841654128895}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 270, y: 0, z: 0}
 --- !u!137 &5763718171761852927
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -1974,7 +1972,7 @@ GameObject:
   - component: {fileID: 2862792003327479544}
   - component: {fileID: 4599526013310416500}
   - component: {fileID: 3654015272445124772}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2030,6 +2028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
+  direction: 0
 --- !u!65 &4599526013310416500
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2068,7 +2067,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 723905547980955522}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2099,7 +2098,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7319069168384515179}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill Hair Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2129,7 +2128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6132463957099452639}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Finger01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2159,7 +2158,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9161868610847573439}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Upper Mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2189,7 +2188,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5812427037511937049}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Mandrill R Eyebrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}

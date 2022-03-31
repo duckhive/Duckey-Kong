@@ -17,9 +17,11 @@ public class Barrel : MonoBehaviour
         StartCoroutine(DespawnAfterDelay(lifetime));
     }
 
-    private IEnumerator DespawnAfterDelay(float delay)
+    public IEnumerator DespawnAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
         BarrelPooler.Instance.ReturnObject(gameObject);
     }
 }

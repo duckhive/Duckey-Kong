@@ -57,7 +57,8 @@ public class GameManager : MonoBehaviour
     public void LevelFailed()
     {
         lives--;
-
+        gameActive = false;
+        
         if (lives <= 0)
         {
             UiManager.Instance.uiGameOverPanel.SetActive(true);
@@ -119,6 +120,7 @@ public class GameManager : MonoBehaviour
         UiManager.Instance.uiHudPanel.SetActive(true);
         PlayerManager.Instance.EnablePlayer();
         ObjectiveManager.Instance.EnableObjective();
+        PlayerManager.Instance.controller.FindGroundColliderAndAddToIgnoreList();
         
         gameActive = true;
     }
