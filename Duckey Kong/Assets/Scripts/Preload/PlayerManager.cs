@@ -167,6 +167,7 @@ public class PlayerManager : MonoBehaviour
         transform.position = FindObjectOfType<PlayerStartingPosition>().transform.position;
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
+        _anim.enabled = true;
     }
     
     public void DisablePlayer()
@@ -177,6 +178,7 @@ public class PlayerManager : MonoBehaviour
         enabled = false;
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
+        _anim.enabled = false;
     }
 
     public void Footstep()
