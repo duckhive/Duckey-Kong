@@ -82,10 +82,21 @@ public class DuckController : MonoBehaviour, ICharacterController
 
         if (GameManager.Instance.gameActive)
         {
-            if (PlayerManager.Instance.climbing)
+            if (PlayerManager.Instance.climbingUp)
             {
                 Motor.ForceUnground();
-                currentVelocity = Vector3.up * SimpleInput.GetAxisRaw("Vertical") * ClimbSpeed;
+                currentVelocity = Vector3.up * ClimbSpeed;
+            }
+
+            if (PlayerManager.Instance.climbingDown)
+            {
+                Motor.ForceUnground();
+                currentVelocity = Vector3.down * ClimbSpeed;
+            }
+
+            if (PlayerManager.Instance.stayOnLadder)
+            {
+                currentVelocity = Vector3.zero;
             }
 
             if (Motor.GroundingStatus.IsStableOnGround)
@@ -229,7 +240,7 @@ public class DuckController : MonoBehaviour, ICharacterController
 
     public bool IsColliderValidForCollisions(Collider coll)
     {
-        if (PlayerManager.Instance.climbing && IgnoredCollider == coll)
+        if (PlayerManager.Instance.climbingUp && IgnoredCollider == coll)
         {
             return false;
         }

@@ -6,6 +6,9 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_Core();
 	RegisterModule_Core();
 
+	void RegisterModule_AndroidJNI();
+	RegisterModule_AndroidJNI();
+
 	void RegisterModule_Animation();
 	RegisterModule_Animation();
 
@@ -66,8 +69,14 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_UI();
 	RegisterModule_UI();
 
+	void RegisterModule_UnityConnect();
+	RegisterModule_UnityConnect();
+
 	void RegisterModule_UnityWebRequest();
 	RegisterModule_UnityWebRequest();
+
+	void RegisterModule_UnityAnalytics();
+	RegisterModule_UnityAnalytics();
 
 	void RegisterModule_Video();
 	RegisterModule_Video();
@@ -236,7 +245,7 @@ class Motion; template <> void RegisterUnityClass<Motion>(const char*);
 class AnimationClip; template <> void RegisterUnityClass<AnimationClip>(const char*);
 class NavMeshData; 
 class OcclusionCullingData; 
-class PhysicMaterial; 
+class PhysicMaterial; template <> void RegisterUnityClass<PhysicMaterial>(const char*);
 class PhysicsMaterial2D; 
 class PreloadData; template <> void RegisterUnityClass<PreloadData>(const char*);
 class RayTracingShader; 
@@ -291,7 +300,7 @@ class ScriptMapper; template <> void RegisterUnityClass<ScriptMapper>(const char
 class StreamingManager; 
 class TagManager; template <> void RegisterUnityClass<TagManager>(const char*);
 class TimeManager; template <> void RegisterUnityClass<TimeManager>(const char*);
-class UnityConnectSettings; 
+class UnityConnectSettings; template <> void RegisterUnityClass<UnityConnectSettings>(const char*);
 class VFXManager; 
 class LevelGameManager; template <> void RegisterUnityClass<LevelGameManager>(const char*);
 class LightmapSettings; template <> void RegisterUnityClass<LightmapSettings>(const char*);
@@ -303,7 +312,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 107 non stripped classes
+	//Total: 109 non stripped classes
 	//0. Animation
 	RegisterUnityClass<Animation>("Animation");
 	//1. AnimationClip
@@ -482,41 +491,45 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<Collider>("Physics");
 	//88. MeshCollider
 	RegisterUnityClass<MeshCollider>("Physics");
-	//89. PhysicsManager
+	//89. PhysicMaterial
+	RegisterUnityClass<PhysicMaterial>("Physics");
+	//90. PhysicsManager
 	RegisterUnityClass<PhysicsManager>("Physics");
-	//90. Rigidbody
+	//91. Rigidbody
 	RegisterUnityClass<Rigidbody>("Physics");
-	//91. SphereCollider
+	//92. SphereCollider
 	RegisterUnityClass<SphereCollider>("Physics");
-	//92. BoxCollider2D
+	//93. BoxCollider2D
 	RegisterUnityClass<BoxCollider2D>("Physics2D");
-	//93. CircleCollider2D
+	//94. CircleCollider2D
 	RegisterUnityClass<CircleCollider2D>("Physics2D");
-	//94. Collider2D
+	//95. Collider2D
 	RegisterUnityClass<Collider2D>("Physics2D");
-	//95. CompositeCollider2D
+	//96. CompositeCollider2D
 	RegisterUnityClass<CompositeCollider2D>("Physics2D");
-	//96. Physics2DSettings
+	//97. Physics2DSettings
 	RegisterUnityClass<Physics2DSettings>("Physics2D");
-	//97. PolygonCollider2D
+	//98. PolygonCollider2D
 	RegisterUnityClass<PolygonCollider2D>("Physics2D");
-	//98. Rigidbody2D
+	//99. Rigidbody2D
 	RegisterUnityClass<Rigidbody2D>("Physics2D");
-	//99. TextRendering::Font
+	//100. TextRendering::Font
 	RegisterUnityClass<TextRendering::Font>("TextRendering");
-	//100. TextRenderingPrivate::TextMesh
+	//101. TextRenderingPrivate::TextMesh
 	RegisterUnityClass<TextRenderingPrivate::TextMesh>("TextRendering");
-	//101. Tilemap
+	//102. Tilemap
 	RegisterUnityClass<Tilemap>("Tilemap");
-	//102. TilemapRenderer
+	//103. TilemapRenderer
 	RegisterUnityClass<TilemapRenderer>("Tilemap");
-	//103. UI::Canvas
+	//104. UI::Canvas
 	RegisterUnityClass<UI::Canvas>("UI");
-	//104. UI::CanvasGroup
+	//105. UI::CanvasGroup
 	RegisterUnityClass<UI::CanvasGroup>("UI");
-	//105. UI::CanvasRenderer
+	//106. UI::CanvasRenderer
 	RegisterUnityClass<UI::CanvasRenderer>("UI");
-	//106. VideoPlayer
+	//107. UnityConnectSettings
+	RegisterUnityClass<UnityConnectSettings>("UnityConnect");
+	//108. VideoPlayer
 	RegisterUnityClass<VideoPlayer>("Video");
 
 }

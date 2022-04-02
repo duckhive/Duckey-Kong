@@ -1,22 +1,39 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AdsManager
     - Barrel
     - BarrelPooler
     - BarrelSpawner
+    - Bomb
     - Boss
     - CameraManager
+    - Coin
+    - CoinManager
+    - DuckController
+    - DuckPlayer
     - DynamicBone
-    - Enemy
+    - EnemyMoveHorizontal
+    - EnemyMoveHorizontalNoRotation
     - FeedbacksManager
     - FreeModifier
     - GameManager
+    - Ground
+    - ImmortalEnemy
+    - Key
+    - KeyDoor
+    - KeyHolder
+    - KinematicCharacterController.KinematicCharacterMotor
+    - MortalEnemy
+    - ObjectRotator
     - ObjectiveManager
     - ObjectiveStartingPosition
     - PlayerManager
     - PlayerStartingPosition
     - PlaylistManager
-    - Pool
+    - RewardedAdsButton
+    - Teleport
+    - Trampoline
     - UiManager
     - UnityEngine.UI.ProceduralImage.ProceduralImage
     Cinemachine.dll:
@@ -34,6 +51,7 @@ ScriptsOnlyBuild:
     - MoreMountains.FeedbacksForThirdParty.MMFeedbackChromaticAberration_URP
     - MoreMountains.FeedbacksForThirdParty.MMFeedbackDepthOfField_URP
     - MoreMountains.FeedbacksForThirdParty.MMFeedbackLensDistortion_URP
+    - MoreMountains.FeedbacksForThirdParty.MMFeedbackMotionBlur_URP
     - MoreMountains.FeedbacksForThirdParty.MMLensDistortionShaker_URP
     MoreMountains.Feedbacks.dll:
     - MoreMountains.Feedbacks.MMFeedbackParticles
@@ -82,26 +100,15 @@ ScriptsOnlyBuild:
     - UnityEditor.Rendering.Universal.UniversalProjectSettings
     Unity.RenderPipelines.Universal.Runtime.dll:
     - UnityEngine.Rendering.Universal.Bloom
-    - UnityEngine.Rendering.Universal.ChannelMixer
     - UnityEngine.Rendering.Universal.ChromaticAberration
-    - UnityEngine.Rendering.Universal.ColorAdjustments
-    - UnityEngine.Rendering.Universal.ColorCurves
-    - UnityEngine.Rendering.Universal.ColorLookup
     - UnityEngine.Rendering.Universal.DepthOfField
-    - UnityEngine.Rendering.Universal.FilmGrain
     - UnityEngine.Rendering.Universal.ForwardRendererData
     - UnityEngine.Rendering.Universal.LensDistortion
-    - UnityEngine.Rendering.Universal.LiftGammaGain
-    - UnityEngine.Rendering.Universal.MotionBlur
-    - UnityEngine.Rendering.Universal.PaniniProjection
     - UnityEngine.Rendering.Universal.PostProcessData
-    - UnityEngine.Rendering.Universal.ShadowsMidtonesHighlights
-    - UnityEngine.Rendering.Universal.SplitToning
     - UnityEngine.Rendering.Universal.Tonemapping
     - UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset
     - UnityEngine.Rendering.Universal.Vignette
-    - UnityEngine.Rendering.Universal.WhiteBalance
     - UnityEngine.Rendering.Universal.XRSystemData
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.RiderScriptEditorData
@@ -123,6 +130,9 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.Advertisements.dll:
+    - UnityEngine.Advertisements.Placeholder
+    - UnityEngine.Advertisements.Platform.Editor.BannerPlaceholder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -165,9 +175,74 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
-    - Class: 82
+    - Class: 89
       Script: {instanceID: 0}
-    - Class: 83
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 3694}
+    - Class: 114
+      Script: {instanceID: 5810}
+    - Class: 114
+      Script: {instanceID: 5880}
+    - Class: 114
+      Script: {instanceID: 6404}
+    - Class: 114
+      Script: {instanceID: 7292}
+    - Class: 114
+      Script: {instanceID: 7584}
+    - Class: 114
+      Script: {instanceID: 8632}
+    - Class: 114
+      Script: {instanceID: 9840}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 134
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    - Class: 850595691
+      Script: {instanceID: 0}
+    Assets/Scenes/Level2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -180,22 +255,32 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 5598}
+      Script: {instanceID: 2022}
     - Class: 114
-      Script: {instanceID: 5674}
+      Script: {instanceID: 3292}
     - Class: 114
-      Script: {instanceID: 6528}
+      Script: {instanceID: 3694}
     - Class: 114
-      Script: {instanceID: 6852}
+      Script: {instanceID: 5810}
     - Class: 114
-      Script: {instanceID: 7022}
+      Script: {instanceID: 5880}
     - Class: 114
-      Script: {instanceID: 7302}
+      Script: {instanceID: 6404}
     - Class: 114
-      Script: {instanceID: 8266}
+      Script: {instanceID: 7292}
+    - Class: 114
+      Script: {instanceID: 7584}
+    - Class: 114
+      Script: {instanceID: 8242}
+    - Class: 114
+      Script: {instanceID: 8340}
+    - Class: 114
+      Script: {instanceID: 8632}
+    - Class: 114
+      Script: {instanceID: 9840}
     - Class: 115
       Script: {instanceID: 0}
-    - Class: 136
+    - Class: 134
       Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
@@ -203,11 +288,236 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
     - Class: 850595691
       Script: {instanceID: 0}
-    Assets/Scenes/Level2.unity:
+    Assets/Scenes/Level3.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 2022}
+    - Class: 114
+      Script: {instanceID: 3292}
+    - Class: 114
+      Script: {instanceID: 3694}
+    - Class: 114
+      Script: {instanceID: 5810}
+    - Class: 114
+      Script: {instanceID: 5880}
+    - Class: 114
+      Script: {instanceID: 6404}
+    - Class: 114
+      Script: {instanceID: 7292}
+    - Class: 114
+      Script: {instanceID: 7584}
+    - Class: 114
+      Script: {instanceID: 8242}
+    - Class: 114
+      Script: {instanceID: 8340}
+    - Class: 114
+      Script: {instanceID: 8632}
+    - Class: 114
+      Script: {instanceID: 9840}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 134
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    - Class: 850595691
+      Script: {instanceID: 0}
+    Assets/Scenes/Level4.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 3292}
+    - Class: 114
+      Script: {instanceID: 3694}
+    - Class: 114
+      Script: {instanceID: 5810}
+    - Class: 114
+      Script: {instanceID: 5880}
+    - Class: 114
+      Script: {instanceID: 6404}
+    - Class: 114
+      Script: {instanceID: 7292}
+    - Class: 114
+      Script: {instanceID: 7584}
+    - Class: 114
+      Script: {instanceID: 8340}
+    - Class: 114
+      Script: {instanceID: 8632}
+    - Class: 114
+      Script: {instanceID: 9840}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 134
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    - Class: 850595691
+      Script: {instanceID: 0}
+    Assets/Scenes/Level5.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 3072}
+    - Class: 114
+      Script: {instanceID: 3694}
+    - Class: 114
+      Script: {instanceID: 5810}
+    - Class: 114
+      Script: {instanceID: 5880}
+    - Class: 114
+      Script: {instanceID: 6404}
+    - Class: 114
+      Script: {instanceID: 7292}
+    - Class: 114
+      Script: {instanceID: 7584}
+    - Class: 114
+      Script: {instanceID: 8632}
+    - Class: 114
+      Script: {instanceID: 9840}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 134
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    - Class: 850595691
+      Script: {instanceID: 0}
+    Assets/Scenes/Level6.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -247,28 +557,54 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 5598}
+      Script: {instanceID: 2022}
     - Class: 114
-      Script: {instanceID: 5674}
+      Script: {instanceID: 3072}
     - Class: 114
-      Script: {instanceID: 6528}
+      Script: {instanceID: 3292}
     - Class: 114
-      Script: {instanceID: 7022}
+      Script: {instanceID: 3694}
     - Class: 114
-      Script: {instanceID: 7302}
+      Script: {instanceID: 5426}
     - Class: 114
-      Script: {instanceID: 7996}
+      Script: {instanceID: 5810}
     - Class: 114
-      Script: {instanceID: 8266}
+      Script: {instanceID: 5880}
+    - Class: 114
+      Script: {instanceID: 6404}
+    - Class: 114
+      Script: {instanceID: 6740}
+    - Class: 114
+      Script: {instanceID: 7292}
+    - Class: 114
+      Script: {instanceID: 7584}
+    - Class: 114
+      Script: {instanceID: 7706}
+    - Class: 114
+      Script: {instanceID: 8242}
+    - Class: 114
+      Script: {instanceID: 8340}
+    - Class: 114
+      Script: {instanceID: 8572}
+    - Class: 114
+      Script: {instanceID: 8632}
+    - Class: 114
+      Script: {instanceID: 9840}
     - Class: 115
       Script: {instanceID: 0}
-    - Class: 136
+    - Class: 134
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
@@ -320,188 +656,206 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1684}
+      Script: {instanceID: 1716}
     - Class: 114
-      Script: {instanceID: 1686}
+      Script: {instanceID: 1718}
     - Class: 114
-      Script: {instanceID: 1688}
+      Script: {instanceID: 1720}
     - Class: 114
-      Script: {instanceID: 1690}
+      Script: {instanceID: 1722}
     - Class: 114
-      Script: {instanceID: 1692}
+      Script: {instanceID: 1724}
     - Class: 114
-      Script: {instanceID: 1694}
+      Script: {instanceID: 1726}
     - Class: 114
-      Script: {instanceID: 1702}
+      Script: {instanceID: 1734}
     - Class: 114
-      Script: {instanceID: 1876}
+      Script: {instanceID: 1912}
     - Class: 114
-      Script: {instanceID: 1944}
+      Script: {instanceID: 1988}
     - Class: 114
-      Script: {instanceID: 2034}
+      Script: {instanceID: 2082}
     - Class: 114
-      Script: {instanceID: 2256}
+      Script: {instanceID: 2316}
     - Class: 114
-      Script: {instanceID: 2302}
+      Script: {instanceID: 2364}
     - Class: 114
-      Script: {instanceID: 2422}
+      Script: {instanceID: 2484}
     - Class: 114
-      Script: {instanceID: 2592}
+      Script: {instanceID: 2520}
     - Class: 114
-      Script: {instanceID: 2706}
+      Script: {instanceID: 2668}
     - Class: 114
-      Script: {instanceID: 2878}
+      Script: {instanceID: 2792}
     - Class: 114
-      Script: {instanceID: 2892}
+      Script: {instanceID: 2970}
     - Class: 114
-      Script: {instanceID: 2968}
+      Script: {instanceID: 2984}
     - Class: 114
-      Script: {instanceID: 3048}
+      Script: {instanceID: 3062}
     - Class: 114
-      Script: {instanceID: 3240}
+      Script: {instanceID: 3148}
     - Class: 114
-      Script: {instanceID: 3552}
+      Script: {instanceID: 3348}
     - Class: 114
-      Script: {instanceID: 3632}
+      Script: {instanceID: 3622}
     - Class: 114
-      Script: {instanceID: 3708}
+      Script: {instanceID: 3680}
     - Class: 114
-      Script: {instanceID: 3720}
+      Script: {instanceID: 3766}
     - Class: 114
-      Script: {instanceID: 3736}
+      Script: {instanceID: 3850}
     - Class: 114
-      Script: {instanceID: 3796}
+      Script: {instanceID: 3862}
     - Class: 114
-      Script: {instanceID: 3806}
+      Script: {instanceID: 3878}
     - Class: 114
       Script: {instanceID: 3946}
     - Class: 114
-      Script: {instanceID: 4090}
+      Script: {instanceID: 3956}
     - Class: 114
-      Script: {instanceID: 4364}
+      Script: {instanceID: 3982}
     - Class: 114
-      Script: {instanceID: 4474}
+      Script: {instanceID: 4102}
     - Class: 114
-      Script: {instanceID: 4586}
+      Script: {instanceID: 4256}
     - Class: 114
-      Script: {instanceID: 5178}
+      Script: {instanceID: 4544}
     - Class: 114
-      Script: {instanceID: 5306}
+      Script: {instanceID: 4656}
     - Class: 114
-      Script: {instanceID: 5334}
+      Script: {instanceID: 4776}
     - Class: 114
-      Script: {instanceID: 5376}
+      Script: {instanceID: 5368}
     - Class: 114
-      Script: {instanceID: 5404}
+      Script: {instanceID: 5500}
     - Class: 114
-      Script: {instanceID: 5468}
+      Script: {instanceID: 5528}
     - Class: 114
-      Script: {instanceID: 5496}
+      Script: {instanceID: 5572}
     - Class: 114
-      Script: {instanceID: 5614}
+      Script: {instanceID: 5600}
     - Class: 114
-      Script: {instanceID: 5622}
+      Script: {instanceID: 5670}
     - Class: 114
-      Script: {instanceID: 5796}
+      Script: {instanceID: 5698}
     - Class: 114
-      Script: {instanceID: 5962}
+      Script: {instanceID: 5802}
     - Class: 114
-      Script: {instanceID: 6022}
+      Script: {instanceID: 5820}
     - Class: 114
-      Script: {instanceID: 6042}
+      Script: {instanceID: 5828}
     - Class: 114
-      Script: {instanceID: 6200}
+      Script: {instanceID: 5934}
     - Class: 114
-      Script: {instanceID: 6332}
+      Script: {instanceID: 6006}
     - Class: 114
-      Script: {instanceID: 6378}
+      Script: {instanceID: 6180}
     - Class: 114
-      Script: {instanceID: 6414}
+      Script: {instanceID: 6242}
     - Class: 114
-      Script: {instanceID: 6436}
+      Script: {instanceID: 6262}
     - Class: 114
-      Script: {instanceID: 6496}
+      Script: {instanceID: 6428}
     - Class: 114
-      Script: {instanceID: 6504}
+      Script: {instanceID: 6562}
     - Class: 114
-      Script: {instanceID: 6528}
+      Script: {instanceID: 6610}
     - Class: 114
-      Script: {instanceID: 6726}
+      Script: {instanceID: 6646}
     - Class: 114
-      Script: {instanceID: 6728}
+      Script: {instanceID: 6670}
     - Class: 114
-      Script: {instanceID: 6748}
+      Script: {instanceID: 6734}
     - Class: 114
-      Script: {instanceID: 6824}
+      Script: {instanceID: 6746}
     - Class: 114
-      Script: {instanceID: 6960}
+      Script: {instanceID: 6774}
     - Class: 114
-      Script: {instanceID: 7038}
+      Script: {instanceID: 6984}
     - Class: 114
-      Script: {instanceID: 7136}
+      Script: {instanceID: 6986}
     - Class: 114
-      Script: {instanceID: 7158}
+      Script: {instanceID: 7008}
     - Class: 114
-      Script: {instanceID: 7178}
+      Script: {instanceID: 7086}
     - Class: 114
-      Script: {instanceID: 7262}
+      Script: {instanceID: 7230}
     - Class: 114
-      Script: {instanceID: 7344}
+      Script: {instanceID: 7308}
     - Class: 114
-      Script: {instanceID: 7354}
+      Script: {instanceID: 7410}
     - Class: 114
-      Script: {instanceID: 7420}
+      Script: {instanceID: 7434}
     - Class: 114
-      Script: {instanceID: 7428}
+      Script: {instanceID: 7454}
     - Class: 114
-      Script: {instanceID: 7532}
+      Script: {instanceID: 7542}
     - Class: 114
-      Script: {instanceID: 7574}
+      Script: {instanceID: 7632}
     - Class: 114
-      Script: {instanceID: 7620}
+      Script: {instanceID: 7642}
     - Class: 114
-      Script: {instanceID: 7684}
+      Script: {instanceID: 7712}
     - Class: 114
-      Script: {instanceID: 7694}
+      Script: {instanceID: 7724}
     - Class: 114
-      Script: {instanceID: 7826}
+      Script: {instanceID: 7838}
     - Class: 114
-      Script: {instanceID: 7890}
+      Script: {instanceID: 7886}
     - Class: 114
-      Script: {instanceID: 7968}
+      Script: {instanceID: 7934}
     - Class: 114
-      Script: {instanceID: 7980}
+      Script: {instanceID: 7974}
     - Class: 114
-      Script: {instanceID: 8106}
+      Script: {instanceID: 8006}
     - Class: 114
-      Script: {instanceID: 8112}
+      Script: {instanceID: 8016}
     - Class: 114
-      Script: {instanceID: 8128}
+      Script: {instanceID: 8160}
     - Class: 114
-      Script: {instanceID: 8186}
+      Script: {instanceID: 8230}
     - Class: 114
-      Script: {instanceID: 8470}
+      Script: {instanceID: 8314}
     - Class: 114
-      Script: {instanceID: 9238}
+      Script: {instanceID: 8326}
     - Class: 114
-      Script: {instanceID: 9342}
+      Script: {instanceID: 8446}
     - Class: 114
-      Script: {instanceID: 9420}
+      Script: {instanceID: 8454}
     - Class: 114
-      Script: {instanceID: 9440}
+      Script: {instanceID: 8460}
     - Class: 114
-      Script: {instanceID: 9528}
+      Script: {instanceID: 8478}
     - Class: 114
-      Script: {instanceID: 9588}
+      Script: {instanceID: 8542}
     - Class: 114
-      Script: {instanceID: 9650}
+      Script: {instanceID: 8628}
     - Class: 114
-      Script: {instanceID: 38622}
+      Script: {instanceID: 8770}
     - Class: 114
-      Script: {instanceID: 38646}
+      Script: {instanceID: 8854}
+    - Class: 114
+      Script: {instanceID: 9584}
+    - Class: 114
+      Script: {instanceID: 9670}
+    - Class: 114
+      Script: {instanceID: 9776}
+    - Class: 114
+      Script: {instanceID: 9858}
+    - Class: 114
+      Script: {instanceID: 9878}
+    - Class: 114
+      Script: {instanceID: 9976}
+    - Class: 114
+      Script: {instanceID: 10038}
+    - Class: 114
+      Script: {instanceID: 10100}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 134
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -538,6 +892,12 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
       Hash: bcaee4c2a83047257b5f47d6ed264b75
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -548,12 +908,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
-  - hash:
-      serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
   - hash:
       serializedVersion: 2
       Hash: 040dd48e3a027d5424519a5fa2009df4
@@ -676,6 +1030,12 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 02a4eded679099694144287ac5dd41dd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.ClimbingLadders
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
       Hash: ae20da6493a48ec6a8af7899dcb31507
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -742,16 +1102,22 @@ ScriptsOnlyBuild:
     className: MMPeriodicExecution
   - hash:
       serializedVersion: 2
-      Hash: 703c5b2a0640a1146a13dd3d483d3544
-    assemblyName: MoreMountains.Tools.dll
-    namespaceName: MoreMountains.Tools
-    className: AIBrain
+      Hash: f7f73fbf1ea37ea82a5916f3cb58fe32
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyMoveHorizontal
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: 703c5b2a0640a1146a13dd3d483d3544
+    assemblyName: MoreMountains.Tools.dll
+    namespaceName: MoreMountains.Tools
+    className: AIBrain
   - hash:
       serializedVersion: 2
       Hash: d57a7011b7554e5a0a4c21f61db16eb7
@@ -880,7 +1246,13 @@ ScriptsOnlyBuild:
     className: DemoBall
   - hash:
       serializedVersion: 2
-      Hash: 1b6fc1aa7cf84a720e6a52907d5166a3
+      Hash: 4a2dad2a2a403ace8a155c9e0ac378de
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: UnityInputProvider
+  - hash:
+      serializedVersion: 2
+      Hash: 50e587c3f21a2c238fb7493f48e2e6fa
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UiManager
@@ -982,6 +1354,12 @@ ScriptsOnlyBuild:
     className: MMSpriteReplace
   - hash:
       serializedVersion: 2
+      Hash: d1483ef525675b88a7cb387f1acb152f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CoinManager
+  - hash:
+      serializedVersion: 2
       Hash: 9ccb6cdf632b6b64e80c49c15ceba063
     assemblyName: MoreMountains.Tools.dll
     namespaceName: MoreMountains.Tools
@@ -1036,10 +1414,28 @@ ScriptsOnlyBuild:
     className: MMFeedbackRectTransformAnchor
   - hash:
       serializedVersion: 2
+      Hash: 62c8893ca90f5aa81539866ef0f8b064
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: a9a5d6d7a3e777080b4261c8e1861fe8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.SwimmingState
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
       Hash: 5e1eefcd5106de6c2e85908a3b2d3f04
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerToggle
+  - hash:
+      serializedVersion: 2
+      Hash: f4658d2347673fa4e10a9977335b54a9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Examples
+    className: ExampleAIController
   - hash:
       serializedVersion: 2
       Hash: 33bb328291296d31ac331c84021c82bb
@@ -1052,6 +1448,18 @@ ScriptsOnlyBuild:
     assemblyName: MoreMountains.Feedbacks.URP.dll
     namespaceName: MoreMountains.FeedbacksForThirdParty
     className: MMFeedbackColorAdjustments_URP
+  - hash:
+      serializedVersion: 2
+      Hash: cae006dd5cb6a56b42197311973f8c6b
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: KeyInputUI
+  - hash:
+      serializedVersion: 2
+      Hash: 9b1b3dbec969dc2f5c4232ac831d6850
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: AxisInputSwipeGesture
   - hash:
       serializedVersion: 2
       Hash: aa0cc248d70b69d46c48cbe3be30a0f8
@@ -1094,6 +1502,12 @@ ScriptsOnlyBuild:
     assemblyName: MoreMountains.Feedbacks.dll
     namespaceName: MoreMountains.Feedbacks
     className: MMFeedbackCanvasGroupBlocksRaycasts
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.Crouching
+    className: MyPlayer
   - hash:
       serializedVersion: 2
       Hash: cbe648eef2ad9f1e34f6a9eabe32ac63
@@ -1162,6 +1576,12 @@ ScriptsOnlyBuild:
     className: MMActivationOnStart
   - hash:
       serializedVersion: 2
+      Hash: 59636662ec2341328ac1dab92db4c32d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Examples
+    className: Teleporter
+  - hash:
+      serializedVersion: 2
       Hash: 9e6133e43dfd919c93498842fef2ea60
     assemblyName: MoreMountains.Feel.Demos.HDRP.dll
     namespaceName: MoreMountains.Feel
@@ -1210,6 +1630,12 @@ ScriptsOnlyBuild:
     className: MMFeedbackFog
   - hash:
       serializedVersion: 2
+      Hash: 65935e16a2460fcf993a982110668ee4
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: ButtonInputSwipeGesture
+  - hash:
+      serializedVersion: 2
       Hash: 27e5341178f188b89bdc6495710b590c
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1244,6 +1670,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: EventSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 2ce97b81c7a13016e6bd1a1ff42fe937
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Trampoline
   - hash:
       serializedVersion: 2
       Hash: 1727e3ebe1c4e965201c17f2796a2790
@@ -1360,6 +1792,12 @@ ScriptsOnlyBuild:
     className: RegularPresetsDemoManager
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements
+    className: Placeholder
+  - hash:
+      serializedVersion: 2
       Hash: 7682ec8849b6c90541a9d5f733b2ce55
     assemblyName: Lofelt.NiceVibrations.Demo.dll
     namespaceName: Lofelt.NiceVibrations
@@ -1370,6 +1808,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestRunner.Utils
     className: TestRunCallbackListener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ImmortalEnemy
   - hash:
       serializedVersion: 2
       Hash: 6d4c4520f676cbccbf6886a5e085f10f
@@ -1468,10 +1912,22 @@ ScriptsOnlyBuild:
     className: CinemachineInputProvider
   - hash:
       serializedVersion: 2
+      Hash: 9017455f5192d98e4d8c2c79c969c795
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.ClimbingLadders
+    className: MyLadder
+  - hash:
+      serializedVersion: 2
       Hash: cbc40d0c5b7b46f21e6bb29dbeabaedf
     assemblyName: MoreMountains.Feedbacks.TextMeshPro.dll
     namespaceName: MoreMountains.Feedbacks
     className: MMFeedbackTMPCharacterSpacing
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.SimpleJumping
+    className: MyPlayer
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -1492,10 +1948,22 @@ ScriptsOnlyBuild:
     className: Cinemachine3rdPersonFollow
   - hash:
       serializedVersion: 2
+      Hash: 32c1bbd75ca1fc31b5f8d7cd7464dc3a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.ChargingState
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
       Hash: 2377f0e71a5311723d6d02b10ba6c0f7
     assemblyName: MoreMountains.Feedbacks.Cinemachine.dll
     namespaceName: MoreMountains.FeedbacksForThirdParty
     className: MMCinemachineOrthographicSizeShaker
+  - hash:
+      serializedVersion: 2
+      Hash: fb00532076e2ccef7e2a358e476f9526
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.Crouching
+    className: MyCharacterController
   - hash:
       serializedVersion: 2
       Hash: 9e71a6701545edf41435c7a998025788
@@ -1606,6 +2074,12 @@ ScriptsOnlyBuild:
     className: Benchmark04
   - hash:
       serializedVersion: 2
+      Hash: 5bddb32bcb848f51c6efb9a0b86ba855
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ObjectRotator
+  - hash:
+      serializedVersion: 2
       Hash: 3e39dac84b5b6c2211ed934feaa3e6b1
     assemblyName: MoreMountains.Tools.dll
     namespaceName: MoreMountains.Tools
@@ -1616,6 +2090,12 @@ ScriptsOnlyBuild:
     assemblyName: MoreMountains.Feedbacks.dll
     namespaceName: MoreMountains.Feedbacks
     className: MMFeedbackUnloadScene
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.FramePerfectRotation
+    className: MyPlayer
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1658,6 +2138,12 @@ ScriptsOnlyBuild:
     assemblyName: Lofelt.NiceVibrations.Demo.dll
     namespaceName: Lofelt.NiceVibrations
     className: CarDemoManager
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.SwimmingState
+    className: MyPlayer
   - hash:
       serializedVersion: 2
       Hash: 8d35f16c5022311c6f4d9432be73bfcf
@@ -1708,6 +2194,12 @@ ScriptsOnlyBuild:
     className: SnakeFood
   - hash:
       serializedVersion: 2
+      Hash: 53ae9f80f9a4f8a64e6418c1008dc1fd
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: MouseButtonInputSwipeGesture
+  - hash:
+      serializedVersion: 2
       Hash: b7c0350b54892d65d8c418a7637df6d2
     assemblyName: Lofelt.NiceVibrations.dll
     namespaceName: Lofelt.NiceVibrations
@@ -1736,6 +2228,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachinePixelPerfect
+  - hash:
+      serializedVersion: 2
+      Hash: f2b719aaa17473bab91c3e024dd93136
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DuckController
   - hash:
       serializedVersion: 2
       Hash: b30c8e70521200a4f10523b6e944060a
@@ -1780,6 +2278,12 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: 88e2c6f501bf5dead831a3e44c30de40
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements.Platform.Editor
+    className: BannerPlaceholder
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: MoreMountains.Feedbacks.dll
     namespaceName: MoreMountains.Feedbacks
@@ -1792,10 +2296,22 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerVBox
   - hash:
       serializedVersion: 2
+      Hash: ed8a4df450e3fe1ccf2c05d20a8ba1b9
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: AxisInputRotateGesture
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: MoreMountains.Tools.dll
     namespaceName: MoreMountains.Tools
     className: MMRigidbodyInterface
+  - hash:
+      serializedVersion: 2
+      Hash: 41a3041db1ef9730156c70c76ec61049
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: 
+    className: ExamplePlayerController
   - hash:
       serializedVersion: 2
       Hash: 7536c3aaa3b668b80f1580147a12d30d
@@ -1814,6 +2330,12 @@ ScriptsOnlyBuild:
     assemblyName: MoreMountains.Tools.dll
     namespaceName: MoreMountains.Tools
     className: MMScreenshot
+  - hash:
+      serializedVersion: 2
+      Hash: 3fd88a06891cc3d0886cedfd0311ce38
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: KeyInputSwipeGesture
   - hash:
       serializedVersion: 2
       Hash: 611bc970ee9dc090779a3fac6a18fac6
@@ -1856,6 +2378,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 1b011ad2f2c8999989355a3de158cfb5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.MultipleMovementStates
+    className: MyCharacterController
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1984,6 +2512,12 @@ ScriptsOnlyBuild:
     className: WobbleDemoManager
   - hash:
       serializedVersion: 2
+      Hash: f8809a8b93dcfdb58ac14ae0dfad21e4
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: ButtonInputKeyboard
+  - hash:
+      serializedVersion: 2
       Hash: 6cce8f4e8d4830619b662a7caf6407da
     assemblyName: MoreMountains.Feedbacks.dll
     namespaceName: MoreMountains.Feedbacks
@@ -2008,7 +2542,13 @@ ScriptsOnlyBuild:
     className: MMBillboard
   - hash:
       serializedVersion: 2
-      Hash: 0789f7c4c853c7a3691407d18f1e785e
+      Hash: fb00532076e2ccef7e2a358e476f9526
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.LandingLeavingGround
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: 9f325dbfc4975e521699429a0f3f7745
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerManager
@@ -2080,6 +2620,12 @@ ScriptsOnlyBuild:
     className: LightController
   - hash:
       serializedVersion: 2
+      Hash: a368ba9921cf088235b427b8a42d54d8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Examples
+    className: PlayableMover
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: MoreMountains.Tools.dll
     namespaceName: MoreMountains.Tools
@@ -2102,6 +2648,12 @@ ScriptsOnlyBuild:
     assemblyName: MoreMountains.Feedbacks.MMTools.dll
     namespaceName: MoreMountains.Feedbacks
     className: MMFeedbackShaderController
+  - hash:
+      serializedVersion: 2
+      Hash: 082f09b9f09d734ed835b94d992d4437
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Examples
+    className: ExampleMovingPlatform
   - hash:
       serializedVersion: 2
       Hash: 9ac327467393cb6c8045a2fd90ff67e2
@@ -2168,6 +2720,12 @@ ScriptsOnlyBuild:
     assemblyName: MoreMountains.Feedbacks.dll
     namespaceName: MoreMountains.Feedbacks
     className: MMFeedbackTimescaleModifier
+  - hash:
+      serializedVersion: 2
+      Hash: 748e3a6075136053c7fe44687d857db0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bomb
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -2296,6 +2854,12 @@ ScriptsOnlyBuild:
     className: Blob
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController
+    className: KinematicCharacterSystem
+  - hash:
+      serializedVersion: 2
       Hash: eff8203ff77ebab5d73ac8baa40b45b9
     assemblyName: MoreMountains.Feedbacks.Cinemachine.dll
     namespaceName: MoreMountains.FeedbacksForThirdParty
@@ -2386,6 +2950,12 @@ ScriptsOnlyBuild:
     className: MMCameraZoom
   - hash:
       serializedVersion: 2
+      Hash: 010514030806ec99240909fd48f67fcd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AdsManager
+  - hash:
+      serializedVersion: 2
       Hash: 6da3293be32dc57d5160c80c35ad873d
     assemblyName: UModelerCommon.dll
     namespaceName: tripolygon.UModeler
@@ -2464,6 +3034,12 @@ ScriptsOnlyBuild:
     className: MMFeedbackWhiteBalance_URP
   - hash:
       serializedVersion: 2
+      Hash: 2f1fdeb23412ef93e6891cc2f6885d98
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.RootMotionExample
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
       Hash: e244702e0dc05782229aa524e4d757f5
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -2474,6 +3050,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineCollisionImpulseSource
+  - hash:
+      serializedVersion: 2
+      Hash: b12a2a4bfff7bebc0a5cdeb4fefdadad
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DuckPlayer
   - hash:
       serializedVersion: 2
       Hash: cd24145545fade986e10c10091334714
@@ -2542,10 +3124,22 @@ ScriptsOnlyBuild:
     className: UniversalRenderPipelineEditorResources
   - hash:
       serializedVersion: 2
+      Hash: 4e381c38c40a0de2aeb89cb8e79dc50e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Examples
+    className: StressTestManager
+  - hash:
+      serializedVersion: 2
       Hash: cf46c6aa2b3bb180fbc714ff18269a3a
     assemblyName: MoreMountains.Tools.TextMeshPro.dll
     namespaceName: MoreMountains.Tools
     className: MMFloatingTextMeshPro
+  - hash:
+      serializedVersion: 2
+      Hash: 1605f9ada2466f987c6fb1dbecc411c0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Examples
+    className: ExampleCharacterController
   - hash:
       serializedVersion: 2
       Hash: eff5896e6fa0e261e51a31eba4f22bd6
@@ -2570,6 +3164,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
+  - hash:
+      serializedVersion: 2
+      Hash: c03896e24665dcce0c545f12819bc7ec
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController
+    className: PhysicsMover
   - hash:
       serializedVersion: 2
       Hash: 47e234b298dc45e0f3c5c13d2ce07603
@@ -2638,6 +3238,12 @@ ScriptsOnlyBuild:
     className: MMMiniObjectPooler
   - hash:
       serializedVersion: 2
+      Hash: 7116dcfd546bb0b534b03aac108b2d07
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.FramePerfectRotation
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
       Hash: dd7520b7d4e690e8c593273e7b9fbe80
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -2684,6 +3290,12 @@ ScriptsOnlyBuild:
     assemblyName: MoreMountains.Feedbacks.MMTools.dll
     namespaceName: MoreMountains.Feedbacks
     className: MMFeedbackTextFontSize
+  - hash:
+      serializedVersion: 2
+      Hash: 568b25c241f0f0556bd902a40876ed55
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Coin
   - hash:
       serializedVersion: 2
       Hash: b37297e69994bf3ff0a66989ea5461a1
@@ -2752,6 +3364,12 @@ ScriptsOnlyBuild:
     className: ShaderPropAnimator
   - hash:
       serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.MovingPlatform
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
       Hash: 63645aa0c2f83752bc7d9f7ad87132c4
     assemblyName: MoreMountains.Feedbacks.TextMeshPro.dll
     namespaceName: MoreMountains.Feedbacks
@@ -2780,6 +3398,12 @@ ScriptsOnlyBuild:
     assemblyName: MoreMountains.Feedbacks.dll
     namespaceName: MoreMountains.Feedbacks
     className: MMTimeManager
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.DoubleJumping
+    className: MyPlayer
   - hash:
       serializedVersion: 2
       Hash: 098b08e77f16fc740b87d79978b382b6
@@ -2836,6 +3460,12 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerVector3
   - hash:
       serializedVersion: 2
+      Hash: e4138598a30e2d8011d80915f62f3081
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: AxisInputUI
+  - hash:
+      serializedVersion: 2
       Hash: 6af0d850efaf914914c0876235c225d6
     assemblyName: MoreMountains.Tools.dll
     namespaceName: MoreMountains.Tools
@@ -2846,6 +3476,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: WarpTextExample
+  - hash:
+      serializedVersion: 2
+      Hash: a148d11104cb10ff1d7b22b249224314
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController
+    className: KCCSettings
   - hash:
       serializedVersion: 2
       Hash: 300fd99066f8c288e85f5e81ce65fe34
@@ -2860,10 +3496,28 @@ ScriptsOnlyBuild:
     className: MMAnimationModifier
   - hash:
       serializedVersion: 2
+      Hash: ccb2741781660712944ccc39194c8b7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Teleport
+  - hash:
+      serializedVersion: 2
+      Hash: 84221737756c8fcadd040a525248193e
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: AxisInputPinchGesture
+  - hash:
+      serializedVersion: 2
       Hash: 5e1eefcd5106de6c2e85908a3b2d3f04
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerIndirectToggle
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: SimpleInputDragListener
   - hash:
       serializedVersion: 2
       Hash: cc539783d7306495b171a3db442394ad
@@ -2872,7 +3526,7 @@ ScriptsOnlyBuild:
     className: HapticReceiver
   - hash:
       serializedVersion: 2
-      Hash: fb787ca13074c8972dbefb2fcb15d154
+      Hash: c7faad5ded3055716c4bdef4ad735515
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Barrel
@@ -2888,6 +3542,12 @@ ScriptsOnlyBuild:
     assemblyName: MoreMountains.Tools.dll
     namespaceName: MoreMountains.Tools
     className: MMFaderDirectional
+  - hash:
+      serializedVersion: 2
+      Hash: fb00532076e2ccef7e2a358e476f9526
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.WallJumping
+    className: MyCharacterController
   - hash:
       serializedVersion: 2
       Hash: 415cf73d57d5d8254e7b53f649b858d3
@@ -3034,16 +3694,16 @@ ScriptsOnlyBuild:
     className: MMFeedbackDepthOfField_URP
   - hash:
       serializedVersion: 2
-      Hash: e7c1cbd374f73a529251877ed0117aed
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Pool
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: MoreMountains.Feel.Demos.URP.dll
     namespaceName: MoreMountains.Feel
     className: StrikeBall
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.ClimbingLadders
+    className: MyPlayer
   - hash:
       serializedVersion: 2
       Hash: ea420a9b0dfa5a1a85fedc893975a5d3
@@ -3062,6 +3722,12 @@ ScriptsOnlyBuild:
     assemblyName: MoreMountains.Tools.dll
     namespaceName: MoreMountains.Tools
     className: MMPoolableObject
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.ChargingState
+    className: MyPlayer
   - hash:
       serializedVersion: 2
       Hash: 63bdc2cf3273aa9bf650350f19d2af61
@@ -3130,6 +3796,12 @@ ScriptsOnlyBuild:
     className: UIFoldout
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: 
+    className: SimpleInput
+  - hash:
+      serializedVersion: 2
       Hash: 7bfbe2f4d330332f8ff83055453c84f0
     assemblyName: MoreMountains.Feedbacks.dll
     namespaceName: MoreMountains.Feedbacks
@@ -3182,6 +3854,12 @@ ScriptsOnlyBuild:
     assemblyName: MoreMountains.Tools.dll
     namespaceName: MoreMountains.Tools
     className: MMDebugMenuItemTitle
+  - hash:
+      serializedVersion: 2
+      Hash: a325152ad9563ed900af221c132fea36
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements.Utilities
+    className: CoroutineExecutor
   - hash:
       serializedVersion: 2
       Hash: 717bb7046d792aaad1c6c4c617e208a8
@@ -3256,6 +3934,12 @@ ScriptsOnlyBuild:
     className: MMPath
   - hash:
       serializedVersion: 2
+      Hash: 5ebeeb552550ad4adabbf0d294783dea
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: Dpad
+  - hash:
+      serializedVersion: 2
       Hash: 28771195be3198a5063be4c29b45381a
     assemblyName: MoreMountains.Feedbacks.URP.dll
     namespaceName: MoreMountains.FeedbacksForThirdParty
@@ -3298,10 +3982,22 @@ ScriptsOnlyBuild:
     className: MMCursorVisible
   - hash:
       serializedVersion: 2
+      Hash: bf1adc19047d1bc426d90d04f4d5c9d7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.BasicMovement
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
       Hash: 92032fd7873beb6d0716d16c15af4702
     assemblyName: MoreMountains.Feedbacks.TextMeshPro.dll
     namespaceName: MoreMountains.Feedbacks
     className: MMFeedbackTMPDilate
+  - hash:
+      serializedVersion: 2
+      Hash: 245ae15cf551085056829990b6254fdf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Examples
+    className: FrameratePanel
   - hash:
       serializedVersion: 2
       Hash: 58e68364412c67eae2bdb4954be2dcc2
@@ -3328,10 +4024,28 @@ ScriptsOnlyBuild:
     className: Snake
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: KeyDoor
+  - hash:
+      serializedVersion: 2
       Hash: 1f0602e7bad1e0a9cba31ce292eee8bb
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerHBox
+  - hash:
+      serializedVersion: 2
+      Hash: 3ab103a8735b7a8b1529853efc9371a3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Examples
+    className: ExampleCharacterCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.RootMotionExample
+    className: MyPlayer
   - hash:
       serializedVersion: 2
       Hash: 8d35f16c5022311c6f4d9432be73bfcf
@@ -3344,6 +4058,12 @@ ScriptsOnlyBuild:
     assemblyName: Lofelt.NiceVibrations.Demo.dll
     namespaceName: Lofelt.NiceVibrations
     className: BallDemoManager
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.AddingImpulses
+    className: MyPlayer
   - hash:
       serializedVersion: 2
       Hash: 6b1467292842a13c742da2372cd6a15f
@@ -3376,6 +4096,12 @@ ScriptsOnlyBuild:
     className: MMChannelMixerShaker_URP
   - hash:
       serializedVersion: 2
+      Hash: 02d2287ff4e17d22567c9888314af90e
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: KeyInputKeyboard
+  - hash:
+      serializedVersion: 2
       Hash: 46759c521805eca90c81fc91a26d5a14
     assemblyName: MoreMountains.Feedbacks.dll
     namespaceName: MoreMountains.Feedbacks
@@ -3386,6 +4112,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerVector4
+  - hash:
+      serializedVersion: 2
+      Hash: 95ab34eaee0edbfbaf594fadfc753be4
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: NonDrawingGraphic
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.NoClipState
+    className: MyPlayer
   - hash:
       serializedVersion: 2
       Hash: abac25ec58e4f43d997d88d6f0cae84a
@@ -3406,6 +4144,12 @@ ScriptsOnlyBuild:
     className: Benchmark03
   - hash:
       serializedVersion: 2
+      Hash: ba14dbf16bb3d62fab2e3d4c484d41cd
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: SteeringWheel
+  - hash:
+      serializedVersion: 2
       Hash: 381a7d90fb0736148e8764daffdee34a
     assemblyName: MoreMountains.Tools.Cinemachine.dll
     namespaceName: MoreMountains.Tools
@@ -3422,6 +4166,30 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerBitField
+  - hash:
+      serializedVersion: 2
+      Hash: a1248508295073618254cebbd0654792
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController
+    className: KinematicCharacterMotor
+  - hash:
+      serializedVersion: 2
+      Hash: b91e363fcc13ba55cadf6a00c9b53792
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BuildManager
+  - hash:
+      serializedVersion: 2
+      Hash: 83bbd78a6d951d22961915fc4e120b0e
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: AxisInputMoveGesture
+  - hash:
+      serializedVersion: 2
+      Hash: b1fc55aad9b58d5d2f266422b7ef405d
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: Touchpad
   - hash:
       serializedVersion: 2
       Hash: 760a9905c8d60ad15cf930546058f41e
@@ -3448,10 +4216,28 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
+      Hash: d419b9c022f03355dff0a82bd94b7b6d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.OrientingArbitraryDirection
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.MultipleMovementStates
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
       Hash: 5dea360fb0b147724ac344e6f399c2f3
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMesh
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.WallJumping
+    className: MyPlayer
   - hash:
       serializedVersion: 2
       Hash: 478c12c729450e31a2db0050d25072ae
@@ -3556,6 +4342,18 @@ ScriptsOnlyBuild:
     className: MMGetFocusOnEnable
   - hash:
       serializedVersion: 2
+      Hash: b504d5f59b7754d5d74dfc0e5a316d9c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.SimpleJumping
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: c303419e4b4444e2c870a8b0f3d860ea
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MortalEnemy
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -3586,12 +4384,6 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerColor
   - hash:
       serializedVersion: 2
-      Hash: bc8f1d234c2c22d9509f228146ddd374
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PoolingManager
-  - hash:
-      serializedVersion: 2
       Hash: eef8b85ba1ea3a7a48d45e7a6f90fc00
     assemblyName: MoreMountains.Tools.dll
     namespaceName: MoreMountains.Tools
@@ -3601,7 +4393,7 @@ ScriptsOnlyBuild:
       Hash: a9f03cdb1cb792522d239e1747272324
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Enemy
+    className: EnemyMoveHorizontalNoRotation
   - hash:
       serializedVersion: 2
       Hash: 2f41c2e24ecb237c3256a30079699be5
@@ -3640,6 +4432,12 @@ ScriptsOnlyBuild:
     className: FilmGrain
   - hash:
       serializedVersion: 2
+      Hash: c12a2c7e02b445cdaa1a229db39c2506
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.CollisionFiltering
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
       Hash: 4db2169a6fe7dcb4e2114f6f367fbcec
     assemblyName: MoreMountains.Feedbacks.dll
     namespaceName: MoreMountains.Feedbacks
@@ -3652,10 +4450,22 @@ ScriptsOnlyBuild:
     className: MMTilemapBoolean
   - hash:
       serializedVersion: 2
+      Hash: fb00532076e2ccef7e2a358e476f9526
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.AddingImpulses
+    className: MyCharacterController
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: 3ae569d30ba6b3ec636c42cbdfe2150d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RewardedAdsButton
   - hash:
       serializedVersion: 2
       Hash: 9649de6d92e0f0b832e66ef453c6904d
@@ -3692,6 +4502,12 @@ ScriptsOnlyBuild:
     assemblyName: MoreMountains.Tools.dll
     namespaceName: MoreMountains.Tools
     className: MMDebugMenuSpriteReplace
+  - hash:
+      serializedVersion: 2
+      Hash: c89a1384954d290f5a73fc9263adcfdc
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: AxisInputKeyboard
   - hash:
       serializedVersion: 2
       Hash: ae60790acb5328c5ed592fce19754996
@@ -3760,6 +4576,24 @@ ScriptsOnlyBuild:
     className: MMDebugMenuItemCheckbox
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements.Utilities
+    className: ApplicationQuit
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Key
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.PlayerCameraCharacterSetup
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
       Hash: f11f4da9a4ed797d96f956ef269d8e83
     assemblyName: MoreMountains.Tools.dll
     namespaceName: MoreMountains.Tools
@@ -3778,7 +4612,13 @@ ScriptsOnlyBuild:
     className: CinemachineFixedSignal
   - hash:
       serializedVersion: 2
-      Hash: d97508a019f2bdc4c5ddd9578eefb2aa
+      Hash: 906a13af66de077aae04c01741077490
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: KeyHolder
+  - hash:
+      serializedVersion: 2
+      Hash: 5e74e4a08a867c69ebccd5b126ec4070
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BarrelSpawner
@@ -3838,6 +4678,12 @@ ScriptsOnlyBuild:
     className: OnlyOneEdgeModifier
   - hash:
       serializedVersion: 2
+      Hash: 5dbf5f0589849f3aa47ed114304567af
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: MouseButtonInputKeyboard
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -3854,6 +4700,12 @@ ScriptsOnlyBuild:
     assemblyName: MoreMountains.Feedbacks.dll
     namespaceName: MoreMountains.Feedbacks
     className: MMFeedbackAudioSourceStereoPan
+  - hash:
+      serializedVersion: 2
+      Hash: dd8bd395dde7ba733b8eee4d1e1d272b
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: ButtonInputUI
   - hash:
       serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
@@ -3928,10 +4780,28 @@ ScriptsOnlyBuild:
     className: V2DemoManager
   - hash:
       serializedVersion: 2
+      Hash: 07340dc3493dccaa83b645db5e5d5513
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: MouseButtonInputUI
+  - hash:
+      serializedVersion: 2
       Hash: a81d4c2c1cf3ad164d277d927a193679
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: cca86f685ccc868f2b699d65bfe304b2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Examples
+    className: PlanetManager
+  - hash:
+      serializedVersion: 2
+      Hash: da8a8ec21fe7449d380850e2bf032dd9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.NoClipState
+    className: MyCharacterController
   - hash:
       serializedVersion: 2
       Hash: 791adfd8009bae8e2e004d53a359f1b1
@@ -3974,6 +4844,12 @@ ScriptsOnlyBuild:
     assemblyName: MoreMountains.Tools.dll
     namespaceName: MoreMountains.Tools
     className: MMRadialProgressBar
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.BasicMovement
+    className: MyPlayer
   - hash:
       serializedVersion: 2
       Hash: 204ea02909ea3f738dafe3ff633d2a93
@@ -4036,6 +4912,12 @@ ScriptsOnlyBuild:
     className: UniversalAdditionalLightData
   - hash:
       serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.CollisionFiltering
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
       Hash: bbd8635ab96b071a3fc66943a872a3a4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -4046,6 +4928,12 @@ ScriptsOnlyBuild:
     assemblyName: MoreMountains.Tools.dll
     namespaceName: MoreMountains.Tools
     className: MMPlaylistRemote
+  - hash:
+      serializedVersion: 2
+      Hash: d419b9c022f03355dff0a82bd94b7b6d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.MovingPlatform
+    className: MyCharacterController
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -4150,6 +5038,12 @@ ScriptsOnlyBuild:
     className: PaniniProjection
   - hash:
       serializedVersion: 2
+      Hash: 13cfd5c6bdafcd8e2a7470fb042954c6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Examples
+    className: ExamplePlayer
+  - hash:
+      serializedVersion: 2
       Hash: bae2cd4c3fad1ed271d7cfc9f746d33c
     assemblyName: MoreMountains.Feedbacks.Cinemachine.dll
     namespaceName: MoreMountains.FeedbacksForThirdParty
@@ -4192,6 +5086,18 @@ ScriptsOnlyBuild:
     className: MMDebugMenuItemButton
   - hash:
       serializedVersion: 2
+      Hash: 557f899c770dd67dae2d3d29bf75d0d2
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: Joystick
+  - hash:
+      serializedVersion: 2
+      Hash: 3a707e4f3ade082c59aa667959282c9c
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: AxisInputMouse
+  - hash:
+      serializedVersion: 2
       Hash: a92edfc8a09bf6b82d148b494a2d0b75
     assemblyName: MoreMountains.Tools.dll
     namespaceName: MoreMountains.Tools
@@ -4208,6 +5114,12 @@ ScriptsOnlyBuild:
     assemblyName: MoreMountains.Tools.dll
     namespaceName: MoreMountains.Tools
     className: MMToggleActive
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: SimpleInputMultiDragListener
   - hash:
       serializedVersion: 2
       Hash: b49a3ac89689905445f40a15c9017261
@@ -4282,7 +5194,7 @@ ScriptsOnlyBuild:
     className: MMTouchAxis
   - hash:
       serializedVersion: 2
-      Hash: 79755fec6af1660652ad0b8c93eb0a96
+      Hash: 9bb00ebed2cfb6785a009d758f464409
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FeedbacksManager
@@ -4320,6 +5232,12 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Ground
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TeleType
   - hash:
@@ -4336,10 +5254,28 @@ ScriptsOnlyBuild:
     className: ObjectiveManager
   - hash:
       serializedVersion: 2
+      Hash: 00ed59476ea02443c4f9272994166454
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.MovingPlatform
+    className: MyMovingPlatform
+  - hash:
+      serializedVersion: 2
       Hash: 66a76d307baa3e8eb65d877c961f1b43
     assemblyName: Cinemachine.dll
     namespaceName: 
     className: CinemachineRecomposer
+  - hash:
+      serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.LandingLeavingGround
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 0f0d2cf32fcc34ac44205b93b2ca7b63
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.DoubleJumping
+    className: MyCharacterController
   - hash:
       serializedVersion: 2
       Hash: 4a872bb09d98b220ac9aeb937ba93331
@@ -4376,6 +5312,12 @@ ScriptsOnlyBuild:
     assemblyName: MoreMountains.Tools.dll
     namespaceName: MoreMountains.Tools
     className: MMTilemapGenerator
+  - hash:
+      serializedVersion: 2
+      Hash: b784545e13c2cccfe40573a24c132c00
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Examples
+    className: PrefabLauncher
   - hash:
       serializedVersion: 2
       Hash: 0f9627882b9e561dc9fe6199f82bb02a
@@ -4438,6 +5380,12 @@ ScriptsOnlyBuild:
     className: ObjectPoolerManager
   - hash:
       serializedVersion: 2
+      Hash: 8875cf0834db24da3623ed456320f8f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KinematicCharacterController.Walkthrough.OrientingArbitraryDirection
+    className: MyPlayer
+  - hash:
+      serializedVersion: 2
       Hash: 7598acf3fa97e670c33f8f20a2e6479d
     assemblyName: MoreMountains.Feedbacks.URP.dll
     namespaceName: MoreMountains.FeedbacksForThirdParty
@@ -4480,6 +5428,12 @@ ScriptsOnlyBuild:
     className: Benchmark01
   - hash:
       serializedVersion: 2
+      Hash: 5ebeeb552550ad4adabbf0d294783dea
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: AxisInputUIArrows
+  - hash:
+      serializedVersion: 2
       Hash: 95d664f8b3b3e85092cab60910ec0207
     assemblyName: MoreMountains.Feedbacks.TextMeshPro.dll
     namespaceName: MoreMountains.Feedbacks
@@ -4490,171 +5444,13 @@ ScriptsOnlyBuild:
     assemblyName: MoreMountains.Feedbacks.dll
     namespaceName: MoreMountains.Feedbacks
     className: MMFlash
-  - hash:
-      serializedVersion: 2
-      Hash: 02d2287ff4e17d22567c9888314af90e
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: KeyInputKeyboard
-  - hash:
-      serializedVersion: 2
-      Hash: 07340dc3493dccaa83b645db5e5d5513
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: MouseButtonInputUI
-  - hash:
-      serializedVersion: 2
-      Hash: cae006dd5cb6a56b42197311973f8c6b
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: KeyInputUI
-  - hash:
-      serializedVersion: 2
-      Hash: 9b1b3dbec969dc2f5c4232ac831d6850
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: AxisInputSwipeGesture
-  - hash:
-      serializedVersion: 2
-      Hash: 95ab34eaee0edbfbaf594fadfc753be4
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: NonDrawingGraphic
-  - hash:
-      serializedVersion: 2
-      Hash: 5ebeeb552550ad4adabbf0d294783dea
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: Dpad
-  - hash:
-      serializedVersion: 2
-      Hash: 5dbf5f0589849f3aa47ed114304567af
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: MouseButtonInputKeyboard
-  - hash:
-      serializedVersion: 2
-      Hash: 557f899c770dd67dae2d3d29bf75d0d2
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: Joystick
-  - hash:
-      serializedVersion: 2
-      Hash: 5ebeeb552550ad4adabbf0d294783dea
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: AxisInputUIArrows
-  - hash:
-      serializedVersion: 2
-      Hash: e4138598a30e2d8011d80915f62f3081
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: AxisInputUI
-  - hash:
-      serializedVersion: 2
-      Hash: f8809a8b93dcfdb58ac14ae0dfad21e4
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: ButtonInputKeyboard
-  - hash:
-      serializedVersion: 2
-      Hash: c89a1384954d290f5a73fc9263adcfdc
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: AxisInputKeyboard
-  - hash:
-      serializedVersion: 2
-      Hash: 3a707e4f3ade082c59aa667959282c9c
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: AxisInputMouse
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: SimpleInputMultiDragListener
-  - hash:
-      serializedVersion: 2
-      Hash: 4a2dad2a2a403ace8a155c9e0ac378de
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: UnityInputProvider
-  - hash:
-      serializedVersion: 2
-      Hash: dd8bd395dde7ba733b8eee4d1e1d272b
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: ButtonInputUI
-  - hash:
-      serializedVersion: 2
-      Hash: 65935e16a2460fcf993a982110668ee4
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: ButtonInputSwipeGesture
-  - hash:
-      serializedVersion: 2
-      Hash: 53ae9f80f9a4f8a64e6418c1008dc1fd
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: MouseButtonInputSwipeGesture
-  - hash:
-      serializedVersion: 2
-      Hash: 83bbd78a6d951d22961915fc4e120b0e
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: AxisInputMoveGesture
-  - hash:
-      serializedVersion: 2
-      Hash: b1fc55aad9b58d5d2f266422b7ef405d
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: Touchpad
-  - hash:
-      serializedVersion: 2
-      Hash: ba14dbf16bb3d62fab2e3d4c484d41cd
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: SteeringWheel
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: 
-    className: SimpleInput
-  - hash:
-      serializedVersion: 2
-      Hash: ed8a4df450e3fe1ccf2c05d20a8ba1b9
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: AxisInputRotateGesture
-  - hash:
-      serializedVersion: 2
-      Hash: 41a3041db1ef9730156c70c76ec61049
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: 
-    className: ExamplePlayerController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: SimpleInputDragListener
-  - hash:
-      serializedVersion: 2
-      Hash: 3fd88a06891cc3d0886cedfd0311ce38
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: KeyInputSwipeGesture
-  - hash:
-      serializedVersion: 2
-      Hash: 84221737756c8fcadd040a525248193e
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: AxisInputPinchGesture
   platform: 20
   scenePathNames:
   - Assets/Scenes/Preload.unity
   - Assets/Scenes/Level1.unity
   - Assets/Scenes/Level2.unity
-  playerPath: C:/_git/unity_projects/Duckey Kong/Duckey-Kong/Duckey Kong/Builds/WebGL
+  - Assets/Scenes/Level3.unity
+  - Assets/Scenes/Level5.unity
+  - Assets/Scenes/Level6.unity
+  - Assets/Scenes/Level4.unity
+  playerPath: C:/_git/unity_projects/Duckey Kong/Duckey-Kong/Duckey Kong/Builds/WebGL/Build_2

@@ -11,6 +11,7 @@ public class Trampoline : MonoBehaviour
     {
         if (other.GetComponent<PlayerManager>())
         {
+            FeedbacksManager.Instance.trampolineBounceFeedbacks.PlayFeedbacks();
             PlayerManager.Instance.controller.Motor.ForceUnground();
             PlayerManager.Instance.controller.SetVelocity(Vector3.up * springForce);
         }

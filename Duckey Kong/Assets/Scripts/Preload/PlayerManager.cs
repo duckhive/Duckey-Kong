@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -17,6 +18,9 @@ public class PlayerManager : MonoBehaviour
 
     public bool canClimb;
     public bool climbing;
+    public bool climbingUp;
+    public bool climbingDown;
+    public bool stayOnLadder;
 
     private void Awake()
     {
@@ -75,15 +79,34 @@ public class PlayerManager : MonoBehaviour
         {
             canClimb = false;
             climbing = false;
+            climbingUp = false;
+            climbingDown = false;
+            stayOnLadder = false;
         }
     }
 
     private void Climbing()
     {
-        if (canClimb && (SimpleInput.GetAxis("Vertical") > 0.5f || SimpleInput.GetAxis("Vertical") < -0.5f))
+        if (canClimb && SimpleInput.GetAxis("Vertical") > 0.5f)
+        {
             climbing = true;
-        else if (canClimb && SimpleInput.GetAxis("Vertical") == 0)
-            climbing = false;
+            climbingUp = true;
+            climbingDown = false;
+            stayOnLadder = false;
+        }
+        else if (canClimb && SimpleInput.GetAxis("Vertical") < -0.5f)
+        {
+            climbing = true;
+            climbingDown = true;
+            climbingUp = false;
+            stayOnLadder = false;
+        }
+        else if (climbing && SimpleInput.GetAxis("Vertical") == 0)
+        {
+            stayOnLadder = true;
+            climbingUp = false;
+            climbingDown = false;
+        }
     }
     
     private void ChangeLayerOnLadder()
@@ -96,7 +119,7 @@ public class PlayerManager : MonoBehaviour
     
     private void FallOutOfWorldCheck()
     {
-        if (transform.position.y < -20)
+        if (transform.position.y < -30)
         {
             FeedbacksManager.Instance.hitObstacleFeedbacks.PlayFeedbacks();
             GameManager.Instance.LevelFailed();

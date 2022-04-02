@@ -13,7 +13,9 @@ public class FeedbacksManager : MonoBehaviour
     public MMFeedbacks gainLifeFeedbacks;
     public MMFeedbacks killEnemyFeedbacks;
     public MMFeedbacks gameOverFeedbacks;
-
+    public MMFeedbacks teleportFeedbacks;
+    public MMFeedbacks pickupKeyFeedbacks;
+    public MMFeedbacks trampolineBounceFeedbacks;
     
     private void Awake()
     {

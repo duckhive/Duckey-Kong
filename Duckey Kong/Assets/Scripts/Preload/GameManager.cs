@@ -63,6 +63,18 @@ public class GameManager : MonoBehaviour
         {
             UiManager.Instance.uiGameOverPanel.SetActive(true);
             FeedbacksManager.Instance.gameOverFeedbacks.PlayFeedbacks();
+
+            if (score > PlayerPrefs.GetInt("high score") || PlayerPrefs.GetInt("high score") == null)
+            {
+                PlayerPrefs.SetInt("high score", score);
+                UiManager.Instance.SetNewTextToActive();
+            }
+            else
+            {
+                UiManager.Instance.SetNewTextToNotActive();
+            }
+            
+            UiManager.Instance.SetHighScoreText();
         }
         else
         {

@@ -250,6 +250,8 @@ struct KeyCollection_t86B01C389A7E138F73E1139911990CC2C9058D00;
 struct KeyCollection_t027B715C9AD0483721C3608C5C9EB17ECEECEA06;
 // System.Collections.Generic.SortedDictionary`2/KeyCollection<tripolygon.UModeler.Triangulator/PointPair,tripolygon.UModeler.Triangulator/PointPair>
 struct KeyCollection_t454EA02C9021B30862B1AB1A44FA5A3A6B102DE2;
+// System.Collections.Generic.SortedList`2/KeyList<System.Collections.Generic.KeyValuePair`2<System.Single,System.Int32>,System.Single>
+struct KeyList_t71176F3655A7AA4D264FDD992E49D9361295B059;
 // System.Collections.Generic.List`1<System.Collections.Generic.List`1<tripolygon.UModeler.Triangulator/Point>>
 struct List_1_t197141EC5CDC2DB49593AC745481CCD0E28471A3;
 // System.Collections.Generic.List`1<tripolygon.UModeler.Edge>
@@ -3948,6 +3950,8 @@ public:
 	int32_t ___version_3;
 	// System.Collections.Generic.IComparer`1<TKey> System.Collections.Generic.SortedList`2::comparer
 	RuntimeObject* ___comparer_4;
+	// System.Collections.Generic.SortedList`2/KeyList<TKey,TValue> System.Collections.Generic.SortedList`2::keyList
+	KeyList_t71176F3655A7AA4D264FDD992E49D9361295B059 * ___keyList_5;
 
 public:
 	inline static int32_t get_offset_of_keys_0() { return static_cast<int32_t>(offsetof(SortedList_2_tB5DEE5C57F054EDF54FC1D692CDCD3B37FE5EC16, ___keys_0)); }
@@ -3991,6 +3995,15 @@ public:
 	{
 		___comparer_4 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___comparer_4), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_keyList_5() { return static_cast<int32_t>(offsetof(SortedList_2_tB5DEE5C57F054EDF54FC1D692CDCD3B37FE5EC16, ___keyList_5)); }
+	inline KeyList_t71176F3655A7AA4D264FDD992E49D9361295B059 * get_keyList_5() const { return ___keyList_5; }
+	inline KeyList_t71176F3655A7AA4D264FDD992E49D9361295B059 ** get_address_of_keyList_5() { return &___keyList_5; }
+	inline void set_keyList_5(KeyList_t71176F3655A7AA4D264FDD992E49D9361295B059 * value)
+	{
+		___keyList_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___keyList_5), (void*)value);
 	}
 };
 

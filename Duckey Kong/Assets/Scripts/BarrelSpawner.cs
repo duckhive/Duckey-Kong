@@ -10,6 +10,8 @@ public enum Direction
 
 public class BarrelSpawner : MonoBehaviour
 {
+    [SerializeField] private float barrelLifetime = 20f;
+    
     public float minTime = 2f;
     public float maxTime = 4f;
 
@@ -29,15 +31,21 @@ public class BarrelSpawner : MonoBehaviour
         _boss.RollBarrel();
         yield return new WaitForSeconds(0.5f);
 
-        var barrel = BarrelPooler.Instance.SpawnObject(transform.position + new Vector3(0,0,-1), Quaternion.Euler(90, 0, 0));
+        var barrelGO = BarrelPooler.Instance.SpawnObject(transform.position + new Vector3(0,1,-1), Quaternion.Euler(90, 0, 0));
+        var barrel = barrelGO.GetComponent<Barrel>();
+
+        StartCoroutine(barrel.DespawnAfterDelay(barrelLifetime));
+        
+        barrel.rb.velocity = Vector3.zero;
+        barrel.rb.angularVelocity = Vector3.zero;
         
         if (direction == Direction.right)
         {
-            barrel.GetComponent<Rigidbody>().AddForce(Vector3.left * 12f, ForceMode.Impulse);
+            barrel.rb.AddForce(Vector3.left * 12f, ForceMode.Impulse);
         }
         else
         {
-            barrel.GetComponent<Rigidbody>().AddForce(Vector3.right * 12f, ForceMode.Impulse);
+            barrel.rb.AddForce(Vector3.right * 12f, ForceMode.Impulse);
         }
 
         yield return new WaitForSeconds(Random.Range(minTime, maxTime));
