@@ -16,6 +16,7 @@ public class FeedbacksManager : MonoBehaviour
     public MMFeedbacks teleportFeedbacks;
     public MMFeedbacks pickupKeyFeedbacks;
     public MMFeedbacks trampolineBounceFeedbacks;
+    public MMFeedbacks quackFeedbacks;
     
     private void Awake()
     {

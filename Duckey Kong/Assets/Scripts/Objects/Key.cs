@@ -10,9 +10,19 @@ public class Key : MonoBehaviour
     {
         if (other.TryGetComponent<KeyHolder>(out KeyHolder keyHolder))
         {
-            transform.SetParent(keyHolder.keyPosition);
-            transform.position = keyHolder.keyPosition.position;
-            FeedbacksManager.Instance.pickupKeyFeedbacks.PlayFeedbacks();
+            PickupKey(keyHolder);
         }
+    }
+
+    public void PickupKey(KeyHolder keyHolder)
+    {
+        transform.SetParent(keyHolder.keyPosition);
+        transform.position = keyHolder.keyPosition.position;
+        FeedbacksManager.Instance.pickupKeyFeedbacks.PlayFeedbacks();
+    }
+
+    public void DestroyKey()
+    {
+        Destroy(gameObject);
     }
 }

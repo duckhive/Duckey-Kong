@@ -66,6 +66,7 @@ ScriptsOnlyBuild:
     - SimpleInputNamespace.ButtonInputUI
     - SimpleInputNamespace.Joystick
     UModelerCommon.dll:
+    - tripolygon.UModeler.ElementSet
     - tripolygon.UModeler.UModeler
     Unity.RenderPipelines.Core.Runtime.dll:
     - UnityEngine.Rendering.UI.DebugUIHandlerBitField
@@ -107,6 +108,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.Universal.PostProcessData
     - UnityEngine.Rendering.Universal.Tonemapping
     - UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+    - UnityEngine.Rendering.Universal.UniversalAdditionalLightData
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset
     - UnityEngine.Rendering.Universal.Vignette
     - UnityEngine.Rendering.Universal.XRSystemData
@@ -123,8 +125,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -150,75 +154,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/Level1.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 54
-      Script: {instanceID: 0}
-    - Class: 64
-      Script: {instanceID: 0}
-    - Class: 65
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 90
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 3694}
-    - Class: 114
-      Script: {instanceID: 5810}
-    - Class: 114
-      Script: {instanceID: 5880}
-    - Class: 114
-      Script: {instanceID: 6404}
-    - Class: 114
-      Script: {instanceID: 7292}
-    - Class: 114
-      Script: {instanceID: 7584}
-    - Class: 114
-      Script: {instanceID: 8632}
-    - Class: 114
-      Script: {instanceID: 9840}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 134
-      Script: {instanceID: 0}
-    - Class: 137
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 198
-      Script: {instanceID: 0}
-    - Class: 199
-      Script: {instanceID: 0}
-    - Class: 258
-      Script: {instanceID: 0}
-    - Class: 850595691
-      Script: {instanceID: 0}
     Assets/Scenes/Level2.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -3160,7 +3095,7 @@ ScriptsOnlyBuild:
     className: TMP_TextInfoDebugTool
   - hash:
       serializedVersion: 2
-      Hash: 8e71767182c72cef8a27ec29aeccd0b7
+      Hash: 7a215d6d7426b519633c04ba80fe3837
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -5447,10 +5382,9 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - Assets/Scenes/Preload.unity
-  - Assets/Scenes/Level1.unity
-  - Assets/Scenes/Level2.unity
-  - Assets/Scenes/Level3.unity
-  - Assets/Scenes/Level5.unity
   - Assets/Scenes/Level6.unity
+  - Assets/Scenes/Level5.unity
+  - Assets/Scenes/Level3.unity
+  - Assets/Scenes/Level2.unity
   - Assets/Scenes/Level4.unity
-  playerPath: C:/_git/unity_projects/Duckey Kong/Duckey-Kong/Duckey Kong/Builds/WebGL/Build_2
+  playerPath: C:/_git/unity_projects/Duckey Kong/Duckey-Kong/Duckey Kong/Builds/WebGL/Build_4

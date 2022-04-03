@@ -24,6 +24,8 @@ struct VirtActionInvoker0
 
 // System.Collections.Generic.List`1<UnityEngine.Collider>
 struct List_1_tA906B1694E65A6E14892A3A8A80F1A939222B15B;
+// System.Collections.Generic.List`1<System.Int32>
+struct List_1_t260B41F956D673396C33A4CF94E8D6C4389EACB7;
 // System.Collections.Generic.List`1<KinematicCharacterController.KinematicCharacterMotor>
 struct List_1_t165B43C0389B786AB4441071CF2442AC92B43D40;
 // System.Collections.Generic.List`1<MoreMountains.Feedbacks.MMFeedback>
@@ -3569,8 +3571,10 @@ public:
 	bool ___gameActive_7;
 	// System.Boolean GameManager::paused
 	bool ___paused_8;
-	// System.Int32 GameManager::_levelIndex
-	int32_t ____levelIndex_9;
+	// System.Int32 GameManager::_currentLevelIndex
+	int32_t ____currentLevelIndex_9;
+	// System.Collections.Generic.List`1<System.Int32> GameManager::_levelsYetToPlay
+	List_1_t260B41F956D673396C33A4CF94E8D6C4389EACB7 * ____levelsYetToPlay_10;
 
 public:
 	inline static int32_t get_offset_of_lives_5() { return static_cast<int32_t>(offsetof(GameManager_t9013B33302D2B40A51D0E8059DEE0DC180218AA1, ___lives_5)); }
@@ -3605,12 +3609,21 @@ public:
 		___paused_8 = value;
 	}
 
-	inline static int32_t get_offset_of__levelIndex_9() { return static_cast<int32_t>(offsetof(GameManager_t9013B33302D2B40A51D0E8059DEE0DC180218AA1, ____levelIndex_9)); }
-	inline int32_t get__levelIndex_9() const { return ____levelIndex_9; }
-	inline int32_t* get_address_of__levelIndex_9() { return &____levelIndex_9; }
-	inline void set__levelIndex_9(int32_t value)
+	inline static int32_t get_offset_of__currentLevelIndex_9() { return static_cast<int32_t>(offsetof(GameManager_t9013B33302D2B40A51D0E8059DEE0DC180218AA1, ____currentLevelIndex_9)); }
+	inline int32_t get__currentLevelIndex_9() const { return ____currentLevelIndex_9; }
+	inline int32_t* get_address_of__currentLevelIndex_9() { return &____currentLevelIndex_9; }
+	inline void set__currentLevelIndex_9(int32_t value)
 	{
-		____levelIndex_9 = value;
+		____currentLevelIndex_9 = value;
+	}
+
+	inline static int32_t get_offset_of__levelsYetToPlay_10() { return static_cast<int32_t>(offsetof(GameManager_t9013B33302D2B40A51D0E8059DEE0DC180218AA1, ____levelsYetToPlay_10)); }
+	inline List_1_t260B41F956D673396C33A4CF94E8D6C4389EACB7 * get__levelsYetToPlay_10() const { return ____levelsYetToPlay_10; }
+	inline List_1_t260B41F956D673396C33A4CF94E8D6C4389EACB7 ** get_address_of__levelsYetToPlay_10() { return &____levelsYetToPlay_10; }
+	inline void set__levelsYetToPlay_10(List_1_t260B41F956D673396C33A4CF94E8D6C4389EACB7 * value)
+	{
+		____levelsYetToPlay_10 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____levelsYetToPlay_10), (void*)value);
 	}
 };
 

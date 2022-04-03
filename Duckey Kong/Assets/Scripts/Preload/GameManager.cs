@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,7 +14,8 @@ public class GameManager : MonoBehaviour
     public bool gameActive;
     public bool paused;
 
-    private int _levelIndex;
+    private int _currentLevelIndex;
+    [SerializeField] private List<int> _levelsYetToPlay = new List<int>();
 
     private void Awake()
     {
@@ -23,6 +27,8 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         
         DontDestroyOnLoad(gameObject);
+
+        AddAllScenesToLevelList();
     }
 
     private void Update()
@@ -33,25 +39,64 @@ public class GameManager : MonoBehaviour
             ResumeGame();
     }
 
-    public void NewGame(float delay)
+    #region Random Level Methods
+    
+        private void AddAllScenesToLevelList()
+        {
+            for (int i = 1; i < SceneManager.sceneCountInBuildSettings; i++)
+            {
+                _levelsYetToPlay.Add(i);
+            }
+        }
+
+        private void RemoveAllScenesFromLevelList()
+        {
+            _levelsYetToPlay.Clear();
+        }
+
+        private int GetRandomLevel()
+        {
+            var random = Random.Range(0, _levelsYetToPlay.Count);
+
+            _currentLevelIndex = _levelsYetToPlay[random];
+            return _currentLevelIndex;
+        }
+
+        private void RemoveCurrentSceneFromList(int scene)
+        {
+            _levelsYetToPlay.Remove(scene);
+        }
+    
+    #endregion
+
+    public void NewGame()
     {
         lives = 3;
         score = 0;
-
         CoinManager.Instance.coinsCollected = 0;
-        LoadLevel(1, delay);
+
+        RemoveAllScenesFromLevelList();
+        AddAllScenesToLevelList();
+        
+        LoadLevel(GetRandomLevel(), 0);
         ResumeGame();
     }
 
     public void LevelComplete()
     {
         score += 1000;
-        _levelIndex++;
+        
+        RemoveCurrentSceneFromList(_currentLevelIndex);
 
-        if(_levelIndex < SceneManager.sceneCountInBuildSettings)
-            LoadLevel(_levelIndex, 2);
+        if (_levelsYetToPlay.Count == 0)
+        {
+            AddAllScenesToLevelList();
+            LoadLevel(GetRandomLevel(), 2);
+        }
         else
-            LoadLevel(1, 2);
+        {
+            LoadLevel(GetRandomLevel(), 2);
+        }
     }
 
     public void LevelFailed()
@@ -78,7 +123,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            LoadLevel(_levelIndex, 1);
+            LoadLevel(_currentLevelIndex, 1);
         }
     }
 
@@ -102,7 +147,7 @@ public class GameManager : MonoBehaviour
     {
         lives = 1;
         UiManager.Instance.uiGameOverPanel.SetActive(false);
-        LoadLevel(_levelIndex, 1);
+        LoadLevel(_currentLevelIndex, 1);
     }
     
 
@@ -112,7 +157,7 @@ public class GameManager : MonoBehaviour
         UiManager.Instance.uiStartPanel.SetActive(false);
         
         gameActive = false;
-        _levelIndex = levelIndex;
+        _currentLevelIndex = levelIndex;
 
         UiManager.Instance.uiHudPanel.SetActive(false);
         
@@ -124,7 +169,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(delay);
 
         UiManager.Instance.FadeOn();
-        SceneManager.LoadScene(_levelIndex);
+        SceneManager.LoadScene(_currentLevelIndex);
 
         yield return new WaitForSeconds(0.5f);
         

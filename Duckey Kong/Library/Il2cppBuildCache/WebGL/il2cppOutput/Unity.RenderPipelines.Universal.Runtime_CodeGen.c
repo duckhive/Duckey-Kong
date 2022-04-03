@@ -5603,7 +5603,7 @@ static const Il2CppTokenRangePair s_rgctxIndices[8] =
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[52] = 
 {
-	{ (Il2CppRGCTXDataType)3, 24528 },
+	{ (Il2CppRGCTXDataType)3, 24529 },
 	{ (Il2CppRGCTXDataType)3, 15043 },
 	{ (Il2CppRGCTXDataType)2, 3104 },
 	{ (Il2CppRGCTXDataType)3, 15041 },
@@ -5611,7 +5611,7 @@ static const Il2CppRGCTXDefinition s_rgctxValues[52] =
 	{ (Il2CppRGCTXDataType)3, 15042 },
 	{ (Il2CppRGCTXDataType)3, 15040 },
 	{ (Il2CppRGCTXDataType)3, 15039 },
-	{ (Il2CppRGCTXDataType)3, 24529 },
+	{ (Il2CppRGCTXDataType)3, 24530 },
 	{ (Il2CppRGCTXDataType)2, 3147 },
 	{ (Il2CppRGCTXDataType)3, 15460 },
 	{ (Il2CppRGCTXDataType)3, 2276 },

@@ -43,6 +43,7 @@ public class PlayerManager : MonoBehaviour
             FallOutOfWorldCheck();
             ChangeLayerOnLadder();
             Climbing();
+            Quack();
         }
         else
         {
@@ -127,6 +128,12 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
+    private void Quack()
+    {
+        if(Input.GetButtonDown("Quack"))
+            FeedbacksManager.Instance.quackFeedbacks.PlayFeedbacks();
+    }
+
     public void EnablePlayer()
     {
         alive = true;
@@ -146,5 +153,7 @@ public class PlayerManager : MonoBehaviour
         enabled = false;
         anim.enabled = false;
         vfxTrailSmoke.SetActive(false);
+        if(GetComponentInChildren<Key>() != null)
+            GetComponentInChildren<Key>().DestroyKey();
     }
 }

@@ -2565,6 +2565,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2551637517609316841, guid: 177a46a0d70d1324aa52ca791c38ec62, type: 3}
+      propertyPath: barrelLifetime
+      value: 26
+      objectReference: {fileID: 0}
     - target: {fileID: 2551637517609316842, guid: 177a46a0d70d1324aa52ca791c38ec62, type: 3}
       propertyPath: m_Name
       value: Barrel Spawner
