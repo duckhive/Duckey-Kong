@@ -14,7 +14,7 @@ namespace FIMSpace
         public static void LerpFloatValue(this Animator animator, string name = "RunWalk", float value = 0f, float deltaSpeed = 8f)
         {
             float newValue = animator.GetFloat(name);
-            newValue.Lerp(value, Time.deltaTime * deltaSpeed);
+            newValue = Mathf.Lerp(newValue, value, Time.deltaTime * deltaSpeed);
             animator.SetFloat(name, newValue);
         }
 

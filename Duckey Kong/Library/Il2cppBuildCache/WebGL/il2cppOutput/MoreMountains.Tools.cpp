@@ -4151,8 +4151,17 @@ public:
 struct PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
 {
 public:
+	// System.Int32 UnityEngine.PropertyAttribute::<order>k__BackingField
+	int32_t ___U3CorderU3Ek__BackingField_0;
 
 public:
+	inline static int32_t get_offset_of_U3CorderU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052, ___U3CorderU3Ek__BackingField_0)); }
+	inline int32_t get_U3CorderU3Ek__BackingField_0() const { return ___U3CorderU3Ek__BackingField_0; }
+	inline int32_t* get_address_of_U3CorderU3Ek__BackingField_0() { return &___U3CorderU3Ek__BackingField_0; }
+	inline void set_U3CorderU3Ek__BackingField_0(int32_t value)
+	{
+		___U3CorderU3Ek__BackingField_0 = value;
+	}
 };
 
 
@@ -5086,15 +5095,15 @@ struct MMColorAttribute_t36DE7BDA14333E117C95D4D1558FE9DD79D80C82  : public Prop
 {
 public:
 	// UnityEngine.Color MoreMountains.Tools.MMColorAttribute::color
-	Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659  ___color_0;
+	Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659  ___color_1;
 
 public:
-	inline static int32_t get_offset_of_color_0() { return static_cast<int32_t>(offsetof(MMColorAttribute_t36DE7BDA14333E117C95D4D1558FE9DD79D80C82, ___color_0)); }
-	inline Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659  get_color_0() const { return ___color_0; }
-	inline Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659 * get_address_of_color_0() { return &___color_0; }
-	inline void set_color_0(Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659  value)
+	inline static int32_t get_offset_of_color_1() { return static_cast<int32_t>(offsetof(MMColorAttribute_t36DE7BDA14333E117C95D4D1558FE9DD79D80C82, ___color_1)); }
+	inline Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659  get_color_1() const { return ___color_1; }
+	inline Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659 * get_address_of_color_1() { return &___color_1; }
+	inline void set_color_1(Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659  value)
 	{
-		___color_0 = value;
+		___color_1 = value;
 	}
 };
 
@@ -6539,26 +6548,26 @@ struct MMConditionAttribute_tA83601343AE95A59F9820EC86A4C7B73ED893E16  : public 
 {
 public:
 	// System.String MoreMountains.Tools.MMConditionAttribute::ConditionBoolean
-	String_t* ___ConditionBoolean_0;
+	String_t* ___ConditionBoolean_1;
 	// System.Boolean MoreMountains.Tools.MMConditionAttribute::Hidden
-	bool ___Hidden_1;
+	bool ___Hidden_2;
 
 public:
-	inline static int32_t get_offset_of_ConditionBoolean_0() { return static_cast<int32_t>(offsetof(MMConditionAttribute_tA83601343AE95A59F9820EC86A4C7B73ED893E16, ___ConditionBoolean_0)); }
-	inline String_t* get_ConditionBoolean_0() const { return ___ConditionBoolean_0; }
-	inline String_t** get_address_of_ConditionBoolean_0() { return &___ConditionBoolean_0; }
-	inline void set_ConditionBoolean_0(String_t* value)
+	inline static int32_t get_offset_of_ConditionBoolean_1() { return static_cast<int32_t>(offsetof(MMConditionAttribute_tA83601343AE95A59F9820EC86A4C7B73ED893E16, ___ConditionBoolean_1)); }
+	inline String_t* get_ConditionBoolean_1() const { return ___ConditionBoolean_1; }
+	inline String_t** get_address_of_ConditionBoolean_1() { return &___ConditionBoolean_1; }
+	inline void set_ConditionBoolean_1(String_t* value)
 	{
-		___ConditionBoolean_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___ConditionBoolean_0), (void*)value);
+		___ConditionBoolean_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___ConditionBoolean_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_Hidden_1() { return static_cast<int32_t>(offsetof(MMConditionAttribute_tA83601343AE95A59F9820EC86A4C7B73ED893E16, ___Hidden_1)); }
-	inline bool get_Hidden_1() const { return ___Hidden_1; }
-	inline bool* get_address_of_Hidden_1() { return &___Hidden_1; }
-	inline void set_Hidden_1(bool value)
+	inline static int32_t get_offset_of_Hidden_2() { return static_cast<int32_t>(offsetof(MMConditionAttribute_tA83601343AE95A59F9820EC86A4C7B73ED893E16, ___Hidden_2)); }
+	inline bool get_Hidden_2() const { return ___Hidden_2; }
+	inline bool* get_address_of_Hidden_2() { return &___Hidden_2; }
+	inline void set_Hidden_2(bool value)
 	{
-		___Hidden_1 = value;
+		___Hidden_2 = value;
 	}
 };
 
@@ -8423,15 +8432,15 @@ struct MMBackgroundColorAttribute_t2C1754F3AF120E48DDEEA70B0A900B12090FF051  : p
 {
 public:
 	// MoreMountains.Tools.MMBackgroundAttributeColor MoreMountains.Tools.MMBackgroundColorAttribute::Color
-	int32_t ___Color_0;
+	int32_t ___Color_1;
 
 public:
-	inline static int32_t get_offset_of_Color_0() { return static_cast<int32_t>(offsetof(MMBackgroundColorAttribute_t2C1754F3AF120E48DDEEA70B0A900B12090FF051, ___Color_0)); }
-	inline int32_t get_Color_0() const { return ___Color_0; }
-	inline int32_t* get_address_of_Color_0() { return &___Color_0; }
-	inline void set_Color_0(int32_t value)
+	inline static int32_t get_offset_of_Color_1() { return static_cast<int32_t>(offsetof(MMBackgroundColorAttribute_t2C1754F3AF120E48DDEEA70B0A900B12090FF051, ___Color_1)); }
+	inline int32_t get_Color_1() const { return ___Color_1; }
+	inline int32_t* get_address_of_Color_1() { return &___Color_1; }
+	inline void set_Color_1(int32_t value)
 	{
-		___Color_0 = value;
+		___Color_1 = value;
 	}
 };
 
@@ -26638,7 +26647,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MMBackgroundColorAttribute__ctor_mC6E1EE
 		PropertyAttribute__ctor_mA13181D93341AEAE429F0615989CB4647F2EB8A7(__this, /*hidden argument*/NULL);
 		// this.Color = color;
 		int32_t L_0 = ___color0;
-		__this->set_Color_0(L_0);
+		__this->set_Color_1(L_0);
 		// }
 		return;
 	}
@@ -28032,7 +28041,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MMColorAttribute__ctor_m7F942CDD4151547F
 		Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659  L_3;
 		memset((&L_3), 0, sizeof(L_3));
 		Color__ctor_m679019E6084BF7A6F82590F66F5F695F6A50ECC5((&L_3), L_0, L_1, L_2, (1.0f), /*hidden argument*/NULL);
-		__this->set_color_0(L_3);
+		__this->set_color_1(L_3);
 		// }
 		return;
 	}
@@ -31023,14 +31032,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MMConditionAttribute__ctor_mEA0145EF324D
 	}
 	{
 		// public string ConditionBoolean = "";
-		__this->set_ConditionBoolean_0(_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		__this->set_ConditionBoolean_1(_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
 		// public MMConditionAttribute(string conditionBoolean)
 		PropertyAttribute__ctor_mA13181D93341AEAE429F0615989CB4647F2EB8A7(__this, /*hidden argument*/NULL);
 		// this.ConditionBoolean = conditionBoolean;
 		String_t* L_0 = ___conditionBoolean0;
-		__this->set_ConditionBoolean_0(L_0);
+		__this->set_ConditionBoolean_1(L_0);
 		// this.Hidden = false;
-		__this->set_Hidden_1((bool)0);
+		__this->set_Hidden_2((bool)0);
 		// }
 		return;
 	}
@@ -31046,15 +31055,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MMConditionAttribute__ctor_mFACFF7B2226C
 	}
 	{
 		// public string ConditionBoolean = "";
-		__this->set_ConditionBoolean_0(_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		__this->set_ConditionBoolean_1(_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
 		// public MMConditionAttribute(string conditionBoolean, bool hideInInspector)
 		PropertyAttribute__ctor_mA13181D93341AEAE429F0615989CB4647F2EB8A7(__this, /*hidden argument*/NULL);
 		// this.ConditionBoolean = conditionBoolean;
 		String_t* L_0 = ___conditionBoolean0;
-		__this->set_ConditionBoolean_0(L_0);
+		__this->set_ConditionBoolean_1(L_0);
 		// this.Hidden = hideInInspector;
 		bool L_1 = ___hideInInspector1;
-		__this->set_Hidden_1(L_1);
+		__this->set_Hidden_2(L_1);
 		// }
 		return;
 	}

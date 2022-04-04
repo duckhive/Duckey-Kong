@@ -3663,6 +3663,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2630247663704783128}
   - component: {fileID: 5101802225237251996}
+  - component: {fileID: 3193422378914572030}
   m_Layer: 0
   m_Name: Quack Feedbacks
   m_TagString: Untagged
@@ -3696,7 +3697,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841b72de2996c5c40bfb394f3d0e0a98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Feedbacks: []
+  Feedbacks:
+  - {fileID: 3193422378914572030}
   InitializationMode: 2
   SafeMode: 3
   Direction: 0
@@ -3729,6 +3731,68 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   DebugActive: 0
+--- !u!114 &3193422378914572030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5183769274098972621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2ce51367856bd49b72678cc4263225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Active: 1
+  Label: Sound
+  Chance: 100
+  Timing:
+    TimescaleMode: 0
+    ExcludeFromHoldingPauses: 0
+    ContributeToTotalDuration: 1
+    InitialDelay: 0
+    CooldownDuration: 0
+    InterruptsOnStop: 1
+    NumberOfRepeats: 0
+    RepeatForever: 0
+    DelayBetweenRepeats: 1
+    MMFeedbacksDirectionCondition: 0
+    PlayDirection: 0
+    ConstantIntensity: 0
+    UseIntensityInterval: 0
+    IntensityIntervalMin: 0
+    IntensityIntervalMax: 0
+    Sequence: {fileID: 0}
+    TrackID: 0
+    Quantized: 0
+    TargetBPM: 120
+  DebugActive: 0
+  Sfx: {fileID: 0}
+  RandomSfx:
+  - {fileID: 8300000, guid: 30845e861709db14dac6c8e6d695c70e, type: 3}
+  - {fileID: 8300000, guid: 2f73e80f2fae19541bf30b83995a9ad8, type: 3}
+  - {fileID: 8300000, guid: eb4c6c501c327f748a0e1494fcba1028, type: 3}
+  - {fileID: 8300000, guid: ee84d8ac203e7f342945685f3749f4fb, type: 3}
+  - {fileID: 8300000, guid: 5b2deeb26b5345e45b1eddbed5dfdac2, type: 3}
+  - {fileID: 8300000, guid: 39fee67b14711214b8e7f10c54b8012a, type: 3}
+  - {fileID: 8300000, guid: e1d27d30d63d3b147b9aa98adb7f41a4, type: 3}
+  - {fileID: 8300000, guid: eb5893cacdee193438db11cb782a02c7, type: 3}
+  - {fileID: 8300000, guid: 1768c8d8b6842824190ac1b6df1b3c9d, type: 3}
+  - {fileID: 8300000, guid: 0dbf29ab88bbe35428a277ff4ff1920b, type: 3}
+  - {fileID: 8300000, guid: b8b4f6c6df85bca419586ce76d0949bf, type: 3}
+  - {fileID: 8300000, guid: 3a9854f460ef6f34887a21e72856d930, type: 3}
+  - {fileID: 8300000, guid: 0b99150ae95f2734f8e8521405ce930c, type: 3}
+  - {fileID: 8300000, guid: 88f8f94bf00d84d418e7a0011dc0e26c, type: 3}
+  - {fileID: 8300000, guid: c46d127e79ece9241b19092079e9189a, type: 3}
+  TestButton: 0
+  TestStopButton: 0
+  PlayMethod: 0
+  PoolSize: 10
+  MinVolume: 1
+  MaxVolume: 1
+  MinPitch: 1
+  MaxPitch: 1
+  SfxAudioMixerGroup: {fileID: 0}
 --- !u!1 &6922822678173065200
 GameObject:
   m_ObjectHideFlags: 0

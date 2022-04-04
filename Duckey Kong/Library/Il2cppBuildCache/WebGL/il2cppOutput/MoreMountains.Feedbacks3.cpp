@@ -3782,8 +3782,17 @@ public:
 struct PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
 {
 public:
+	// System.Int32 UnityEngine.PropertyAttribute::<order>k__BackingField
+	int32_t ___U3CorderU3Ek__BackingField_0;
 
 public:
+	inline static int32_t get_offset_of_U3CorderU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052, ___U3CorderU3Ek__BackingField_0)); }
+	inline int32_t get_U3CorderU3Ek__BackingField_0() const { return ___U3CorderU3Ek__BackingField_0; }
+	inline int32_t* get_address_of_U3CorderU3Ek__BackingField_0() { return &___U3CorderU3Ek__BackingField_0; }
+	inline void set_U3CorderU3Ek__BackingField_0(int32_t value)
+	{
+		___U3CorderU3Ek__BackingField_0 = value;
+	}
 };
 
 
@@ -5459,16 +5468,16 @@ struct TmpAttribute_t07FD7F8DAE61EC941519797B0C604BFC4D82DF56  : public Property
 {
 public:
 	// System.String MoreMountains.Feedbacks.TmpAttribute::header
-	String_t* ___header_0;
+	String_t* ___header_1;
 
 public:
-	inline static int32_t get_offset_of_header_0() { return static_cast<int32_t>(offsetof(TmpAttribute_t07FD7F8DAE61EC941519797B0C604BFC4D82DF56, ___header_0)); }
-	inline String_t* get_header_0() const { return ___header_0; }
-	inline String_t** get_address_of_header_0() { return &___header_0; }
-	inline void set_header_0(String_t* value)
+	inline static int32_t get_offset_of_header_1() { return static_cast<int32_t>(offsetof(TmpAttribute_t07FD7F8DAE61EC941519797B0C604BFC4D82DF56, ___header_1)); }
+	inline String_t* get_header_1() const { return ___header_1; }
+	inline String_t** get_address_of_header_1() { return &___header_1; }
+	inline void set_header_1(String_t* value)
 	{
-		___header_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___header_0), (void*)value);
+		___header_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___header_1), (void*)value);
 	}
 };
 
@@ -21623,7 +21632,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TmpAttribute__ctor_mC9565751EB6F6CC92EAB
 		PropertyAttribute__ctor_mA13181D93341AEAE429F0615989CB4647F2EB8A7(__this, /*hidden argument*/NULL);
 		// public TmpAttribute(string header) => this.header = header;
 		String_t* L_0 = ___header0;
-		__this->set_header_0(L_0);
+		__this->set_header_1(L_0);
 		return;
 	}
 }

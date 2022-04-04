@@ -450,8 +450,17 @@ public:
 struct PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
 {
 public:
+	// System.Int32 UnityEngine.PropertyAttribute::<order>k__BackingField
+	int32_t ___U3CorderU3Ek__BackingField_0;
 
 public:
+	inline static int32_t get_offset_of_U3CorderU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052, ___U3CorderU3Ek__BackingField_0)); }
+	inline int32_t get_U3CorderU3Ek__BackingField_0() const { return ___U3CorderU3Ek__BackingField_0; }
+	inline int32_t* get_address_of_U3CorderU3Ek__BackingField_0() { return &___U3CorderU3Ek__BackingField_0; }
+	inline void set_U3CorderU3Ek__BackingField_0(int32_t value)
+	{
+		___U3CorderU3Ek__BackingField_0 = value;
+	}
 };
 
 
@@ -558,16 +567,16 @@ struct HeaderAttribute_t9B431E6BA0524D46406D9C413D6A71CB5F2DD1AB  : public Prope
 {
 public:
 	// System.String UnityEngine.HeaderAttribute::header
-	String_t* ___header_0;
+	String_t* ___header_1;
 
 public:
-	inline static int32_t get_offset_of_header_0() { return static_cast<int32_t>(offsetof(HeaderAttribute_t9B431E6BA0524D46406D9C413D6A71CB5F2DD1AB, ___header_0)); }
-	inline String_t* get_header_0() const { return ___header_0; }
-	inline String_t** get_address_of_header_0() { return &___header_0; }
-	inline void set_header_0(String_t* value)
+	inline static int32_t get_offset_of_header_1() { return static_cast<int32_t>(offsetof(HeaderAttribute_t9B431E6BA0524D46406D9C413D6A71CB5F2DD1AB, ___header_1)); }
+	inline String_t* get_header_1() const { return ___header_1; }
+	inline String_t** get_address_of_header_1() { return &___header_1; }
+	inline void set_header_1(String_t* value)
 	{
-		___header_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___header_0), (void*)value);
+		___header_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___header_1), (void*)value);
 	}
 };
 
@@ -586,26 +595,26 @@ struct MMConditionAttribute_tA83601343AE95A59F9820EC86A4C7B73ED893E16  : public 
 {
 public:
 	// System.String MoreMountains.Tools.MMConditionAttribute::ConditionBoolean
-	String_t* ___ConditionBoolean_0;
+	String_t* ___ConditionBoolean_1;
 	// System.Boolean MoreMountains.Tools.MMConditionAttribute::Hidden
-	bool ___Hidden_1;
+	bool ___Hidden_2;
 
 public:
-	inline static int32_t get_offset_of_ConditionBoolean_0() { return static_cast<int32_t>(offsetof(MMConditionAttribute_tA83601343AE95A59F9820EC86A4C7B73ED893E16, ___ConditionBoolean_0)); }
-	inline String_t* get_ConditionBoolean_0() const { return ___ConditionBoolean_0; }
-	inline String_t** get_address_of_ConditionBoolean_0() { return &___ConditionBoolean_0; }
-	inline void set_ConditionBoolean_0(String_t* value)
+	inline static int32_t get_offset_of_ConditionBoolean_1() { return static_cast<int32_t>(offsetof(MMConditionAttribute_tA83601343AE95A59F9820EC86A4C7B73ED893E16, ___ConditionBoolean_1)); }
+	inline String_t* get_ConditionBoolean_1() const { return ___ConditionBoolean_1; }
+	inline String_t** get_address_of_ConditionBoolean_1() { return &___ConditionBoolean_1; }
+	inline void set_ConditionBoolean_1(String_t* value)
 	{
-		___ConditionBoolean_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___ConditionBoolean_0), (void*)value);
+		___ConditionBoolean_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___ConditionBoolean_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_Hidden_1() { return static_cast<int32_t>(offsetof(MMConditionAttribute_tA83601343AE95A59F9820EC86A4C7B73ED893E16, ___Hidden_1)); }
-	inline bool get_Hidden_1() const { return ___Hidden_1; }
-	inline bool* get_address_of_Hidden_1() { return &___Hidden_1; }
-	inline void set_Hidden_1(bool value)
+	inline static int32_t get_offset_of_Hidden_2() { return static_cast<int32_t>(offsetof(MMConditionAttribute_tA83601343AE95A59F9820EC86A4C7B73ED893E16, ___Hidden_2)); }
+	inline bool get_Hidden_2() const { return ___Hidden_2; }
+	inline bool* get_address_of_Hidden_2() { return &___Hidden_2; }
+	inline void set_Hidden_2(bool value)
 	{
-		___Hidden_1 = value;
+		___Hidden_2 = value;
 	}
 };
 
@@ -615,37 +624,37 @@ struct MMEnumConditionAttribute_t703F18E8647B941A0F7D253C06848456428C6183  : pub
 {
 public:
 	// System.String MoreMountains.Tools.MMEnumConditionAttribute::ConditionEnum
-	String_t* ___ConditionEnum_0;
+	String_t* ___ConditionEnum_1;
 	// System.Boolean MoreMountains.Tools.MMEnumConditionAttribute::Hidden
-	bool ___Hidden_1;
+	bool ___Hidden_2;
 	// System.Collections.BitArray MoreMountains.Tools.MMEnumConditionAttribute::bitArray
-	BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * ___bitArray_2;
+	BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * ___bitArray_3;
 
 public:
-	inline static int32_t get_offset_of_ConditionEnum_0() { return static_cast<int32_t>(offsetof(MMEnumConditionAttribute_t703F18E8647B941A0F7D253C06848456428C6183, ___ConditionEnum_0)); }
-	inline String_t* get_ConditionEnum_0() const { return ___ConditionEnum_0; }
-	inline String_t** get_address_of_ConditionEnum_0() { return &___ConditionEnum_0; }
-	inline void set_ConditionEnum_0(String_t* value)
+	inline static int32_t get_offset_of_ConditionEnum_1() { return static_cast<int32_t>(offsetof(MMEnumConditionAttribute_t703F18E8647B941A0F7D253C06848456428C6183, ___ConditionEnum_1)); }
+	inline String_t* get_ConditionEnum_1() const { return ___ConditionEnum_1; }
+	inline String_t** get_address_of_ConditionEnum_1() { return &___ConditionEnum_1; }
+	inline void set_ConditionEnum_1(String_t* value)
 	{
-		___ConditionEnum_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___ConditionEnum_0), (void*)value);
+		___ConditionEnum_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___ConditionEnum_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_Hidden_1() { return static_cast<int32_t>(offsetof(MMEnumConditionAttribute_t703F18E8647B941A0F7D253C06848456428C6183, ___Hidden_1)); }
-	inline bool get_Hidden_1() const { return ___Hidden_1; }
-	inline bool* get_address_of_Hidden_1() { return &___Hidden_1; }
-	inline void set_Hidden_1(bool value)
+	inline static int32_t get_offset_of_Hidden_2() { return static_cast<int32_t>(offsetof(MMEnumConditionAttribute_t703F18E8647B941A0F7D253C06848456428C6183, ___Hidden_2)); }
+	inline bool get_Hidden_2() const { return ___Hidden_2; }
+	inline bool* get_address_of_Hidden_2() { return &___Hidden_2; }
+	inline void set_Hidden_2(bool value)
 	{
-		___Hidden_1 = value;
+		___Hidden_2 = value;
 	}
 
-	inline static int32_t get_offset_of_bitArray_2() { return static_cast<int32_t>(offsetof(MMEnumConditionAttribute_t703F18E8647B941A0F7D253C06848456428C6183, ___bitArray_2)); }
-	inline BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * get_bitArray_2() const { return ___bitArray_2; }
-	inline BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 ** get_address_of_bitArray_2() { return &___bitArray_2; }
-	inline void set_bitArray_2(BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * value)
+	inline static int32_t get_offset_of_bitArray_3() { return static_cast<int32_t>(offsetof(MMEnumConditionAttribute_t703F18E8647B941A0F7D253C06848456428C6183, ___bitArray_3)); }
+	inline BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * get_bitArray_3() const { return ___bitArray_3; }
+	inline BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 ** get_address_of_bitArray_3() { return &___bitArray_3; }
+	inline void set_bitArray_3(BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * value)
 	{
-		___bitArray_2 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___bitArray_2), (void*)value);
+		___bitArray_3 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___bitArray_3), (void*)value);
 	}
 };
 
@@ -655,26 +664,26 @@ struct MMFConditionAttribute_tB3AF51D089B905FD9ED0F2DF142AFDEAB9A197D0  : public
 {
 public:
 	// System.String MoreMountains.Feedbacks.MMFConditionAttribute::ConditionBoolean
-	String_t* ___ConditionBoolean_0;
+	String_t* ___ConditionBoolean_1;
 	// System.Boolean MoreMountains.Feedbacks.MMFConditionAttribute::Hidden
-	bool ___Hidden_1;
+	bool ___Hidden_2;
 
 public:
-	inline static int32_t get_offset_of_ConditionBoolean_0() { return static_cast<int32_t>(offsetof(MMFConditionAttribute_tB3AF51D089B905FD9ED0F2DF142AFDEAB9A197D0, ___ConditionBoolean_0)); }
-	inline String_t* get_ConditionBoolean_0() const { return ___ConditionBoolean_0; }
-	inline String_t** get_address_of_ConditionBoolean_0() { return &___ConditionBoolean_0; }
-	inline void set_ConditionBoolean_0(String_t* value)
+	inline static int32_t get_offset_of_ConditionBoolean_1() { return static_cast<int32_t>(offsetof(MMFConditionAttribute_tB3AF51D089B905FD9ED0F2DF142AFDEAB9A197D0, ___ConditionBoolean_1)); }
+	inline String_t* get_ConditionBoolean_1() const { return ___ConditionBoolean_1; }
+	inline String_t** get_address_of_ConditionBoolean_1() { return &___ConditionBoolean_1; }
+	inline void set_ConditionBoolean_1(String_t* value)
 	{
-		___ConditionBoolean_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___ConditionBoolean_0), (void*)value);
+		___ConditionBoolean_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___ConditionBoolean_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_Hidden_1() { return static_cast<int32_t>(offsetof(MMFConditionAttribute_tB3AF51D089B905FD9ED0F2DF142AFDEAB9A197D0, ___Hidden_1)); }
-	inline bool get_Hidden_1() const { return ___Hidden_1; }
-	inline bool* get_address_of_Hidden_1() { return &___Hidden_1; }
-	inline void set_Hidden_1(bool value)
+	inline static int32_t get_offset_of_Hidden_2() { return static_cast<int32_t>(offsetof(MMFConditionAttribute_tB3AF51D089B905FD9ED0F2DF142AFDEAB9A197D0, ___Hidden_2)); }
+	inline bool get_Hidden_2() const { return ___Hidden_2; }
+	inline bool* get_address_of_Hidden_2() { return &___Hidden_2; }
+	inline void set_Hidden_2(bool value)
 	{
-		___Hidden_1 = value;
+		___Hidden_2 = value;
 	}
 };
 
@@ -684,37 +693,37 @@ struct MMFEnumConditionAttribute_t73AB3B5B09E5DAB5D66899984A2363E107998B2D  : pu
 {
 public:
 	// System.String MoreMountains.Feedbacks.MMFEnumConditionAttribute::ConditionEnum
-	String_t* ___ConditionEnum_0;
+	String_t* ___ConditionEnum_1;
 	// System.Boolean MoreMountains.Feedbacks.MMFEnumConditionAttribute::Hidden
-	bool ___Hidden_1;
+	bool ___Hidden_2;
 	// System.Collections.BitArray MoreMountains.Feedbacks.MMFEnumConditionAttribute::bitArray
-	BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * ___bitArray_2;
+	BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * ___bitArray_3;
 
 public:
-	inline static int32_t get_offset_of_ConditionEnum_0() { return static_cast<int32_t>(offsetof(MMFEnumConditionAttribute_t73AB3B5B09E5DAB5D66899984A2363E107998B2D, ___ConditionEnum_0)); }
-	inline String_t* get_ConditionEnum_0() const { return ___ConditionEnum_0; }
-	inline String_t** get_address_of_ConditionEnum_0() { return &___ConditionEnum_0; }
-	inline void set_ConditionEnum_0(String_t* value)
+	inline static int32_t get_offset_of_ConditionEnum_1() { return static_cast<int32_t>(offsetof(MMFEnumConditionAttribute_t73AB3B5B09E5DAB5D66899984A2363E107998B2D, ___ConditionEnum_1)); }
+	inline String_t* get_ConditionEnum_1() const { return ___ConditionEnum_1; }
+	inline String_t** get_address_of_ConditionEnum_1() { return &___ConditionEnum_1; }
+	inline void set_ConditionEnum_1(String_t* value)
 	{
-		___ConditionEnum_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___ConditionEnum_0), (void*)value);
+		___ConditionEnum_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___ConditionEnum_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_Hidden_1() { return static_cast<int32_t>(offsetof(MMFEnumConditionAttribute_t73AB3B5B09E5DAB5D66899984A2363E107998B2D, ___Hidden_1)); }
-	inline bool get_Hidden_1() const { return ___Hidden_1; }
-	inline bool* get_address_of_Hidden_1() { return &___Hidden_1; }
-	inline void set_Hidden_1(bool value)
+	inline static int32_t get_offset_of_Hidden_2() { return static_cast<int32_t>(offsetof(MMFEnumConditionAttribute_t73AB3B5B09E5DAB5D66899984A2363E107998B2D, ___Hidden_2)); }
+	inline bool get_Hidden_2() const { return ___Hidden_2; }
+	inline bool* get_address_of_Hidden_2() { return &___Hidden_2; }
+	inline void set_Hidden_2(bool value)
 	{
-		___Hidden_1 = value;
+		___Hidden_2 = value;
 	}
 
-	inline static int32_t get_offset_of_bitArray_2() { return static_cast<int32_t>(offsetof(MMFEnumConditionAttribute_t73AB3B5B09E5DAB5D66899984A2363E107998B2D, ___bitArray_2)); }
-	inline BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * get_bitArray_2() const { return ___bitArray_2; }
-	inline BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 ** get_address_of_bitArray_2() { return &___bitArray_2; }
-	inline void set_bitArray_2(BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * value)
+	inline static int32_t get_offset_of_bitArray_3() { return static_cast<int32_t>(offsetof(MMFEnumConditionAttribute_t73AB3B5B09E5DAB5D66899984A2363E107998B2D, ___bitArray_3)); }
+	inline BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * get_bitArray_3() const { return ___bitArray_3; }
+	inline BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 ** get_address_of_bitArray_3() { return &___bitArray_3; }
+	inline void set_bitArray_3(BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * value)
 	{
-		___bitArray_2 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___bitArray_2), (void*)value);
+		___bitArray_3 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___bitArray_3), (void*)value);
 	}
 };
 
@@ -724,16 +733,16 @@ struct MMFInspectorButtonAttribute_tF12DBEFE9665D5613DEE45420C64D6EF99C57616  : 
 {
 public:
 	// System.String MoreMountains.Feedbacks.MMFInspectorButtonAttribute::MethodName
-	String_t* ___MethodName_0;
+	String_t* ___MethodName_1;
 
 public:
-	inline static int32_t get_offset_of_MethodName_0() { return static_cast<int32_t>(offsetof(MMFInspectorButtonAttribute_tF12DBEFE9665D5613DEE45420C64D6EF99C57616, ___MethodName_0)); }
-	inline String_t* get_MethodName_0() const { return ___MethodName_0; }
-	inline String_t** get_address_of_MethodName_0() { return &___MethodName_0; }
-	inline void set_MethodName_0(String_t* value)
+	inline static int32_t get_offset_of_MethodName_1() { return static_cast<int32_t>(offsetof(MMFInspectorButtonAttribute_tF12DBEFE9665D5613DEE45420C64D6EF99C57616, ___MethodName_1)); }
+	inline String_t* get_MethodName_1() const { return ___MethodName_1; }
+	inline String_t** get_address_of_MethodName_1() { return &___MethodName_1; }
+	inline void set_MethodName_1(String_t* value)
 	{
-		___MethodName_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___MethodName_0), (void*)value);
+		___MethodName_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___MethodName_1), (void*)value);
 	}
 };
 
@@ -743,56 +752,56 @@ struct MMFInspectorGroupAttribute_tBE78F897AC8CF1D58DF42304DD9398D86E809D30  : p
 {
 public:
 	// System.String MoreMountains.Feedbacks.MMFInspectorGroupAttribute::GroupName
-	String_t* ___GroupName_0;
+	String_t* ___GroupName_1;
 	// System.Boolean MoreMountains.Feedbacks.MMFInspectorGroupAttribute::GroupAllFieldsUntilNextGroupAttribute
-	bool ___GroupAllFieldsUntilNextGroupAttribute_1;
+	bool ___GroupAllFieldsUntilNextGroupAttribute_2;
 	// System.Int32 MoreMountains.Feedbacks.MMFInspectorGroupAttribute::GroupColorIndex
-	int32_t ___GroupColorIndex_2;
+	int32_t ___GroupColorIndex_3;
 	// System.Boolean MoreMountains.Feedbacks.MMFInspectorGroupAttribute::RequiresSetup
-	bool ___RequiresSetup_3;
+	bool ___RequiresSetup_4;
 	// System.Boolean MoreMountains.Feedbacks.MMFInspectorGroupAttribute::ClosedByDefault
-	bool ___ClosedByDefault_4;
+	bool ___ClosedByDefault_5;
 
 public:
-	inline static int32_t get_offset_of_GroupName_0() { return static_cast<int32_t>(offsetof(MMFInspectorGroupAttribute_tBE78F897AC8CF1D58DF42304DD9398D86E809D30, ___GroupName_0)); }
-	inline String_t* get_GroupName_0() const { return ___GroupName_0; }
-	inline String_t** get_address_of_GroupName_0() { return &___GroupName_0; }
-	inline void set_GroupName_0(String_t* value)
+	inline static int32_t get_offset_of_GroupName_1() { return static_cast<int32_t>(offsetof(MMFInspectorGroupAttribute_tBE78F897AC8CF1D58DF42304DD9398D86E809D30, ___GroupName_1)); }
+	inline String_t* get_GroupName_1() const { return ___GroupName_1; }
+	inline String_t** get_address_of_GroupName_1() { return &___GroupName_1; }
+	inline void set_GroupName_1(String_t* value)
 	{
-		___GroupName_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___GroupName_0), (void*)value);
+		___GroupName_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GroupName_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_GroupAllFieldsUntilNextGroupAttribute_1() { return static_cast<int32_t>(offsetof(MMFInspectorGroupAttribute_tBE78F897AC8CF1D58DF42304DD9398D86E809D30, ___GroupAllFieldsUntilNextGroupAttribute_1)); }
-	inline bool get_GroupAllFieldsUntilNextGroupAttribute_1() const { return ___GroupAllFieldsUntilNextGroupAttribute_1; }
-	inline bool* get_address_of_GroupAllFieldsUntilNextGroupAttribute_1() { return &___GroupAllFieldsUntilNextGroupAttribute_1; }
-	inline void set_GroupAllFieldsUntilNextGroupAttribute_1(bool value)
+	inline static int32_t get_offset_of_GroupAllFieldsUntilNextGroupAttribute_2() { return static_cast<int32_t>(offsetof(MMFInspectorGroupAttribute_tBE78F897AC8CF1D58DF42304DD9398D86E809D30, ___GroupAllFieldsUntilNextGroupAttribute_2)); }
+	inline bool get_GroupAllFieldsUntilNextGroupAttribute_2() const { return ___GroupAllFieldsUntilNextGroupAttribute_2; }
+	inline bool* get_address_of_GroupAllFieldsUntilNextGroupAttribute_2() { return &___GroupAllFieldsUntilNextGroupAttribute_2; }
+	inline void set_GroupAllFieldsUntilNextGroupAttribute_2(bool value)
 	{
-		___GroupAllFieldsUntilNextGroupAttribute_1 = value;
+		___GroupAllFieldsUntilNextGroupAttribute_2 = value;
 	}
 
-	inline static int32_t get_offset_of_GroupColorIndex_2() { return static_cast<int32_t>(offsetof(MMFInspectorGroupAttribute_tBE78F897AC8CF1D58DF42304DD9398D86E809D30, ___GroupColorIndex_2)); }
-	inline int32_t get_GroupColorIndex_2() const { return ___GroupColorIndex_2; }
-	inline int32_t* get_address_of_GroupColorIndex_2() { return &___GroupColorIndex_2; }
-	inline void set_GroupColorIndex_2(int32_t value)
+	inline static int32_t get_offset_of_GroupColorIndex_3() { return static_cast<int32_t>(offsetof(MMFInspectorGroupAttribute_tBE78F897AC8CF1D58DF42304DD9398D86E809D30, ___GroupColorIndex_3)); }
+	inline int32_t get_GroupColorIndex_3() const { return ___GroupColorIndex_3; }
+	inline int32_t* get_address_of_GroupColorIndex_3() { return &___GroupColorIndex_3; }
+	inline void set_GroupColorIndex_3(int32_t value)
 	{
-		___GroupColorIndex_2 = value;
+		___GroupColorIndex_3 = value;
 	}
 
-	inline static int32_t get_offset_of_RequiresSetup_3() { return static_cast<int32_t>(offsetof(MMFInspectorGroupAttribute_tBE78F897AC8CF1D58DF42304DD9398D86E809D30, ___RequiresSetup_3)); }
-	inline bool get_RequiresSetup_3() const { return ___RequiresSetup_3; }
-	inline bool* get_address_of_RequiresSetup_3() { return &___RequiresSetup_3; }
-	inline void set_RequiresSetup_3(bool value)
+	inline static int32_t get_offset_of_RequiresSetup_4() { return static_cast<int32_t>(offsetof(MMFInspectorGroupAttribute_tBE78F897AC8CF1D58DF42304DD9398D86E809D30, ___RequiresSetup_4)); }
+	inline bool get_RequiresSetup_4() const { return ___RequiresSetup_4; }
+	inline bool* get_address_of_RequiresSetup_4() { return &___RequiresSetup_4; }
+	inline void set_RequiresSetup_4(bool value)
 	{
-		___RequiresSetup_3 = value;
+		___RequiresSetup_4 = value;
 	}
 
-	inline static int32_t get_offset_of_ClosedByDefault_4() { return static_cast<int32_t>(offsetof(MMFInspectorGroupAttribute_tBE78F897AC8CF1D58DF42304DD9398D86E809D30, ___ClosedByDefault_4)); }
-	inline bool get_ClosedByDefault_4() const { return ___ClosedByDefault_4; }
-	inline bool* get_address_of_ClosedByDefault_4() { return &___ClosedByDefault_4; }
-	inline void set_ClosedByDefault_4(bool value)
+	inline static int32_t get_offset_of_ClosedByDefault_5() { return static_cast<int32_t>(offsetof(MMFInspectorGroupAttribute_tBE78F897AC8CF1D58DF42304DD9398D86E809D30, ___ClosedByDefault_5)); }
+	inline bool get_ClosedByDefault_5() const { return ___ClosedByDefault_5; }
+	inline bool* get_address_of_ClosedByDefault_5() { return &___ClosedByDefault_5; }
+	inline void set_ClosedByDefault_5(bool value)
 	{
-		___ClosedByDefault_4 = value;
+		___ClosedByDefault_5 = value;
 	}
 };
 
@@ -811,16 +820,16 @@ struct MMVectorAttribute_tA5DBCF39823BEC9A2E2C24215522A4DC788ABBB3  : public Pro
 {
 public:
 	// System.String[] MoreMountains.Tools.MMVectorAttribute::Labels
-	StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* ___Labels_0;
+	StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* ___Labels_1;
 
 public:
-	inline static int32_t get_offset_of_Labels_0() { return static_cast<int32_t>(offsetof(MMVectorAttribute_tA5DBCF39823BEC9A2E2C24215522A4DC788ABBB3, ___Labels_0)); }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* get_Labels_0() const { return ___Labels_0; }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A** get_address_of_Labels_0() { return &___Labels_0; }
-	inline void set_Labels_0(StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* value)
+	inline static int32_t get_offset_of_Labels_1() { return static_cast<int32_t>(offsetof(MMVectorAttribute_tA5DBCF39823BEC9A2E2C24215522A4DC788ABBB3, ___Labels_1)); }
+	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* get_Labels_1() const { return ___Labels_1; }
+	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A** get_address_of_Labels_1() { return &___Labels_1; }
+	inline void set_Labels_1(StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* value)
 	{
-		___Labels_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___Labels_0), (void*)value);
+		___Labels_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___Labels_1), (void*)value);
 	}
 };
 
@@ -830,25 +839,25 @@ struct RangeAttribute_t14A6532D68168764C15E7CF1FDABCD99CB32D0C5  : public Proper
 {
 public:
 	// System.Single UnityEngine.RangeAttribute::min
-	float ___min_0;
+	float ___min_1;
 	// System.Single UnityEngine.RangeAttribute::max
-	float ___max_1;
+	float ___max_2;
 
 public:
-	inline static int32_t get_offset_of_min_0() { return static_cast<int32_t>(offsetof(RangeAttribute_t14A6532D68168764C15E7CF1FDABCD99CB32D0C5, ___min_0)); }
-	inline float get_min_0() const { return ___min_0; }
-	inline float* get_address_of_min_0() { return &___min_0; }
-	inline void set_min_0(float value)
+	inline static int32_t get_offset_of_min_1() { return static_cast<int32_t>(offsetof(RangeAttribute_t14A6532D68168764C15E7CF1FDABCD99CB32D0C5, ___min_1)); }
+	inline float get_min_1() const { return ___min_1; }
+	inline float* get_address_of_min_1() { return &___min_1; }
+	inline void set_min_1(float value)
 	{
-		___min_0 = value;
+		___min_1 = value;
 	}
 
-	inline static int32_t get_offset_of_max_1() { return static_cast<int32_t>(offsetof(RangeAttribute_t14A6532D68168764C15E7CF1FDABCD99CB32D0C5, ___max_1)); }
-	inline float get_max_1() const { return ___max_1; }
-	inline float* get_address_of_max_1() { return &___max_1; }
-	inline void set_max_1(float value)
+	inline static int32_t get_offset_of_max_2() { return static_cast<int32_t>(offsetof(RangeAttribute_t14A6532D68168764C15E7CF1FDABCD99CB32D0C5, ___max_2)); }
+	inline float get_max_2() const { return ___max_2; }
+	inline float* get_address_of_max_2() { return &___max_2; }
+	inline void set_max_2(float value)
 	{
-		___max_1 = value;
+		___max_2 = value;
 	}
 };
 
@@ -876,25 +885,25 @@ struct TextAreaAttribute_t22F900CF759A0162A0C51120E646C11E10586A9B  : public Pro
 {
 public:
 	// System.Int32 UnityEngine.TextAreaAttribute::minLines
-	int32_t ___minLines_0;
+	int32_t ___minLines_1;
 	// System.Int32 UnityEngine.TextAreaAttribute::maxLines
-	int32_t ___maxLines_1;
+	int32_t ___maxLines_2;
 
 public:
-	inline static int32_t get_offset_of_minLines_0() { return static_cast<int32_t>(offsetof(TextAreaAttribute_t22F900CF759A0162A0C51120E646C11E10586A9B, ___minLines_0)); }
-	inline int32_t get_minLines_0() const { return ___minLines_0; }
-	inline int32_t* get_address_of_minLines_0() { return &___minLines_0; }
-	inline void set_minLines_0(int32_t value)
+	inline static int32_t get_offset_of_minLines_1() { return static_cast<int32_t>(offsetof(TextAreaAttribute_t22F900CF759A0162A0C51120E646C11E10586A9B, ___minLines_1)); }
+	inline int32_t get_minLines_1() const { return ___minLines_1; }
+	inline int32_t* get_address_of_minLines_1() { return &___minLines_1; }
+	inline void set_minLines_1(int32_t value)
 	{
-		___minLines_0 = value;
+		___minLines_1 = value;
 	}
 
-	inline static int32_t get_offset_of_maxLines_1() { return static_cast<int32_t>(offsetof(TextAreaAttribute_t22F900CF759A0162A0C51120E646C11E10586A9B, ___maxLines_1)); }
-	inline int32_t get_maxLines_1() const { return ___maxLines_1; }
-	inline int32_t* get_address_of_maxLines_1() { return &___maxLines_1; }
-	inline void set_maxLines_1(int32_t value)
+	inline static int32_t get_offset_of_maxLines_2() { return static_cast<int32_t>(offsetof(TextAreaAttribute_t22F900CF759A0162A0C51120E646C11E10586A9B, ___maxLines_2)); }
+	inline int32_t get_maxLines_2() const { return ___maxLines_2; }
+	inline int32_t* get_address_of_maxLines_2() { return &___maxLines_2; }
+	inline void set_maxLines_2(int32_t value)
 	{
-		___maxLines_1 = value;
+		___maxLines_2 = value;
 	}
 };
 
@@ -904,16 +913,16 @@ struct TooltipAttribute_t503A1598A4E68E91673758F50447D0EDFB95149B  : public Prop
 {
 public:
 	// System.String UnityEngine.TooltipAttribute::tooltip
-	String_t* ___tooltip_0;
+	String_t* ___tooltip_1;
 
 public:
-	inline static int32_t get_offset_of_tooltip_0() { return static_cast<int32_t>(offsetof(TooltipAttribute_t503A1598A4E68E91673758F50447D0EDFB95149B, ___tooltip_0)); }
-	inline String_t* get_tooltip_0() const { return ___tooltip_0; }
-	inline String_t** get_address_of_tooltip_0() { return &___tooltip_0; }
-	inline void set_tooltip_0(String_t* value)
+	inline static int32_t get_offset_of_tooltip_1() { return static_cast<int32_t>(offsetof(TooltipAttribute_t503A1598A4E68E91673758F50447D0EDFB95149B, ___tooltip_1)); }
+	inline String_t* get_tooltip_1() const { return ___tooltip_1; }
+	inline String_t** get_address_of_tooltip_1() { return &___tooltip_1; }
+	inline void set_tooltip_1(String_t* value)
 	{
-		___tooltip_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___tooltip_0), (void*)value);
+		___tooltip_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___tooltip_1), (void*)value);
 	}
 };
 
@@ -959,25 +968,25 @@ struct GradientUsageAttribute_t6A5149CB6DDD8B948B3291F6F35D7F1A4A82787E  : publi
 {
 public:
 	// System.Boolean UnityEngine.GradientUsageAttribute::hdr
-	bool ___hdr_0;
+	bool ___hdr_1;
 	// UnityEngine.ColorSpace UnityEngine.GradientUsageAttribute::colorSpace
-	int32_t ___colorSpace_1;
+	int32_t ___colorSpace_2;
 
 public:
-	inline static int32_t get_offset_of_hdr_0() { return static_cast<int32_t>(offsetof(GradientUsageAttribute_t6A5149CB6DDD8B948B3291F6F35D7F1A4A82787E, ___hdr_0)); }
-	inline bool get_hdr_0() const { return ___hdr_0; }
-	inline bool* get_address_of_hdr_0() { return &___hdr_0; }
-	inline void set_hdr_0(bool value)
+	inline static int32_t get_offset_of_hdr_1() { return static_cast<int32_t>(offsetof(GradientUsageAttribute_t6A5149CB6DDD8B948B3291F6F35D7F1A4A82787E, ___hdr_1)); }
+	inline bool get_hdr_1() const { return ___hdr_1; }
+	inline bool* get_address_of_hdr_1() { return &___hdr_1; }
+	inline void set_hdr_1(bool value)
 	{
-		___hdr_0 = value;
+		___hdr_1 = value;
 	}
 
-	inline static int32_t get_offset_of_colorSpace_1() { return static_cast<int32_t>(offsetof(GradientUsageAttribute_t6A5149CB6DDD8B948B3291F6F35D7F1A4A82787E, ___colorSpace_1)); }
-	inline int32_t get_colorSpace_1() const { return ___colorSpace_1; }
-	inline int32_t* get_address_of_colorSpace_1() { return &___colorSpace_1; }
-	inline void set_colorSpace_1(int32_t value)
+	inline static int32_t get_offset_of_colorSpace_2() { return static_cast<int32_t>(offsetof(GradientUsageAttribute_t6A5149CB6DDD8B948B3291F6F35D7F1A4A82787E, ___colorSpace_2)); }
+	inline int32_t get_colorSpace_2() const { return ___colorSpace_2; }
+	inline int32_t* get_address_of_colorSpace_2() { return &___colorSpace_2; }
+	inline void set_colorSpace_2(int32_t value)
 	{
-		___colorSpace_1 = value;
+		___colorSpace_2 = value;
 	}
 };
 

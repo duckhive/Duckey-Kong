@@ -54,6 +54,9 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_Subsystems();
 	RegisterModule_Subsystems();
 
+	void RegisterModule_Terrain();
+	RegisterModule_Terrain();
+
 	void RegisterModule_TextRendering();
 	RegisterModule_TextRendering();
 
@@ -123,7 +126,7 @@ namespace UI { class CanvasGroup; } template <> void RegisterUnityClass<UI::Canv
 namespace Unity { class Cloth; } 
 class Collider2D; template <> void RegisterUnityClass<Collider2D>(const char*);
 class BoxCollider2D; template <> void RegisterUnityClass<BoxCollider2D>(const char*);
-class CapsuleCollider2D; 
+class CapsuleCollider2D; template <> void RegisterUnityClass<CapsuleCollider2D>(const char*);
 class CircleCollider2D; template <> void RegisterUnityClass<CircleCollider2D>(const char*);
 class CompositeCollider2D; template <> void RegisterUnityClass<CompositeCollider2D>(const char*);
 class EdgeCollider2D; 
@@ -177,7 +180,7 @@ class ReflectionProbe; template <> void RegisterUnityClass<ReflectionProbe>(cons
 class Skybox; template <> void RegisterUnityClass<Skybox>(const char*);
 class SortingGroup; 
 class StreamingController; 
-class Terrain; 
+class Terrain; template <> void RegisterUnityClass<Terrain>(const char*);
 class VideoPlayer; template <> void RegisterUnityClass<VideoPlayer>(const char*);
 class VisualEffect; 
 class WindZone; 
@@ -246,7 +249,7 @@ class AnimationClip; template <> void RegisterUnityClass<AnimationClip>(const ch
 class NavMeshData; 
 class OcclusionCullingData; 
 class PhysicMaterial; template <> void RegisterUnityClass<PhysicMaterial>(const char*);
-class PhysicsMaterial2D; 
+class PhysicsMaterial2D; template <> void RegisterUnityClass<PhysicsMaterial2D>(const char*);
 class PreloadData; template <> void RegisterUnityClass<PreloadData>(const char*);
 class RayTracingShader; 
 class RuntimeAnimatorController; template <> void RegisterUnityClass<RuntimeAnimatorController>(const char*);
@@ -260,7 +263,7 @@ class SpeedTreeWindAsset;
 class Sprite; template <> void RegisterUnityClass<Sprite>(const char*);
 class SpriteAtlas; template <> void RegisterUnityClass<SpriteAtlas>(const char*);
 class SubstanceArchive; 
-class TerrainData; 
+class TerrainData; template <> void RegisterUnityClass<TerrainData>(const char*);
 class TerrainLayer; 
 class TextAsset; template <> void RegisterUnityClass<TextAsset>(const char*);
 class MonoScript; template <> void RegisterUnityClass<MonoScript>(const char*);
@@ -312,7 +315,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 109 non stripped classes
+	//Total: 113 non stripped classes
 	//0. Animation
 	RegisterUnityClass<Animation>("Animation");
 	//1. AnimationClip
@@ -501,35 +504,43 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<SphereCollider>("Physics");
 	//93. BoxCollider2D
 	RegisterUnityClass<BoxCollider2D>("Physics2D");
-	//94. CircleCollider2D
+	//94. CapsuleCollider2D
+	RegisterUnityClass<CapsuleCollider2D>("Physics2D");
+	//95. CircleCollider2D
 	RegisterUnityClass<CircleCollider2D>("Physics2D");
-	//95. Collider2D
+	//96. Collider2D
 	RegisterUnityClass<Collider2D>("Physics2D");
-	//96. CompositeCollider2D
+	//97. CompositeCollider2D
 	RegisterUnityClass<CompositeCollider2D>("Physics2D");
-	//97. Physics2DSettings
+	//98. Physics2DSettings
 	RegisterUnityClass<Physics2DSettings>("Physics2D");
-	//98. PolygonCollider2D
+	//99. PhysicsMaterial2D
+	RegisterUnityClass<PhysicsMaterial2D>("Physics2D");
+	//100. PolygonCollider2D
 	RegisterUnityClass<PolygonCollider2D>("Physics2D");
-	//99. Rigidbody2D
+	//101. Rigidbody2D
 	RegisterUnityClass<Rigidbody2D>("Physics2D");
-	//100. TextRendering::Font
+	//102. Terrain
+	RegisterUnityClass<Terrain>("Terrain");
+	//103. TerrainData
+	RegisterUnityClass<TerrainData>("Terrain");
+	//104. TextRendering::Font
 	RegisterUnityClass<TextRendering::Font>("TextRendering");
-	//101. TextRenderingPrivate::TextMesh
+	//105. TextRenderingPrivate::TextMesh
 	RegisterUnityClass<TextRenderingPrivate::TextMesh>("TextRendering");
-	//102. Tilemap
+	//106. Tilemap
 	RegisterUnityClass<Tilemap>("Tilemap");
-	//103. TilemapRenderer
+	//107. TilemapRenderer
 	RegisterUnityClass<TilemapRenderer>("Tilemap");
-	//104. UI::Canvas
+	//108. UI::Canvas
 	RegisterUnityClass<UI::Canvas>("UI");
-	//105. UI::CanvasGroup
+	//109. UI::CanvasGroup
 	RegisterUnityClass<UI::CanvasGroup>("UI");
-	//106. UI::CanvasRenderer
+	//110. UI::CanvasRenderer
 	RegisterUnityClass<UI::CanvasRenderer>("UI");
-	//107. UnityConnectSettings
+	//111. UnityConnectSettings
 	RegisterUnityClass<UnityConnectSettings>("UnityConnect");
-	//108. VideoPlayer
+	//112. VideoPlayer
 	RegisterUnityClass<VideoPlayer>("Video");
 
 }

@@ -13758,6 +13758,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UInt32_ToString_m7361490C5FE5DBC3BE
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UInt32_ToString_mFE8BEBC3E66C2EC6D5CB25B31BE498D48E93CAB5 (uint32_t* __this, String_t* ___format0, const RuntimeMethod* method);
 // System.String System.UInt32::ToString(System.String,System.IFormatProvider)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UInt32_ToString_mAF0A46E9EC70EA43A02EBE522FF287E20DEE691B (uint32_t* __this, String_t* ___format0, RuntimeObject* ___provider1, const RuntimeMethod* method);
+// System.Boolean System.Number::TryParseUInt32(System.String,System.Globalization.NumberStyles,System.Globalization.NumberFormatInfo,System.UInt32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Number_TryParseUInt32_m4B6A5B602101633D2F618C7409E3AA98E5C1F898 (String_t* ___s0, int32_t ___style1, NumberFormatInfo_t58780B43B6A840C38FD10C50CDFE2128884CAD1D * ___info2, uint32_t* ___result3, const RuntimeMethod* method);
 // System.TypeCode System.UInt32::GetTypeCode()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UInt32_GetTypeCode_m59460D36E2379D6D4FD5E6CA2C6CD60B6523559A (uint32_t* __this, const RuntimeMethod* method);
 // System.Boolean System.Convert::ToBoolean(System.UInt32)
@@ -36201,6 +36203,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t UInt32_Parse_mFC8BF9D6931B24BE8BFCF3
 		uint32_t L_5;
 		L_5 = Number_ParseUInt32_m8093F7A3937E8EDDE9B6B00A3662CC9A01505FFE(L_1, L_2, L_4, /*hidden argument*/NULL);
 		return L_5;
+	}
+}
+// System.Boolean System.UInt32::TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.UInt32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UInt32_TryParse_m5A92B541CF9CC6532CB23BDE6DF7460E5EAC8435 (String_t* ___s0, int32_t ___style1, RuntimeObject* ___provider2, uint32_t* ___result3, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___style1;
+		NumberFormatInfo_ValidateParseStyleInteger_m2F6A102AFBCE26335E7C07F94750C873F10D55A7(L_0, /*hidden argument*/NULL);
+		String_t* L_1 = ___s0;
+		int32_t L_2 = ___style1;
+		RuntimeObject* L_3 = ___provider2;
+		NumberFormatInfo_t58780B43B6A840C38FD10C50CDFE2128884CAD1D * L_4;
+		L_4 = NumberFormatInfo_GetInstance_mE5108A48B8BFDB2158C05951FACC08AFB09FDDBB(L_3, /*hidden argument*/NULL);
+		uint32_t* L_5 = ___result3;
+		bool L_6;
+		L_6 = Number_TryParseUInt32_m4B6A5B602101633D2F618C7409E3AA98E5C1F898(L_1, L_2, L_4, (uint32_t*)L_5, /*hidden argument*/NULL);
+		return L_6;
 	}
 }
 // System.TypeCode System.UInt32::GetTypeCode()

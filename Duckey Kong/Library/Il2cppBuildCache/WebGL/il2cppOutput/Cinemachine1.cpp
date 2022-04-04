@@ -3490,8 +3490,17 @@ public:
 struct PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
 {
 public:
+	// System.Int32 UnityEngine.PropertyAttribute::<order>k__BackingField
+	int32_t ___U3CorderU3Ek__BackingField_0;
 
 public:
+	inline static int32_t get_offset_of_U3CorderU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052, ___U3CorderU3Ek__BackingField_0)); }
+	inline int32_t get_U3CorderU3Ek__BackingField_0() const { return ___U3CorderU3Ek__BackingField_0; }
+	inline int32_t* get_address_of_U3CorderU3Ek__BackingField_0() { return &___U3CorderU3Ek__BackingField_0; }
+	inline void set_U3CorderU3Ek__BackingField_0(int32_t value)
+	{
+		___U3CorderU3Ek__BackingField_0 = value;
+	}
 };
 
 
@@ -4508,15 +4517,15 @@ struct CinemachineEmbeddedAssetPropertyAttribute_t798AD24C32F62C255E2480A8537E2C
 {
 public:
 	// System.Boolean Cinemachine.CinemachineEmbeddedAssetPropertyAttribute::WarnIfNull
-	bool ___WarnIfNull_0;
+	bool ___WarnIfNull_1;
 
 public:
-	inline static int32_t get_offset_of_WarnIfNull_0() { return static_cast<int32_t>(offsetof(CinemachineEmbeddedAssetPropertyAttribute_t798AD24C32F62C255E2480A8537E2CDE70B3999C, ___WarnIfNull_0)); }
-	inline bool get_WarnIfNull_0() const { return ___WarnIfNull_0; }
-	inline bool* get_address_of_WarnIfNull_0() { return &___WarnIfNull_0; }
-	inline void set_WarnIfNull_0(bool value)
+	inline static int32_t get_offset_of_WarnIfNull_1() { return static_cast<int32_t>(offsetof(CinemachineEmbeddedAssetPropertyAttribute_t798AD24C32F62C255E2480A8537E2CDE70B3999C, ___WarnIfNull_1)); }
+	inline bool get_WarnIfNull_1() const { return ___WarnIfNull_1; }
+	inline bool* get_address_of_WarnIfNull_1() { return &___WarnIfNull_1; }
+	inline void set_WarnIfNull_1(bool value)
 	{
-		___WarnIfNull_0 = value;
+		___WarnIfNull_1 = value;
 	}
 };
 
@@ -16519,7 +16528,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CinemachineEmbeddedAssetPropertyAttribut
 		PropertyAttribute__ctor_mA13181D93341AEAE429F0615989CB4647F2EB8A7(__this, /*hidden argument*/NULL);
 		// WarnIfNull = warnIfNull;
 		bool L_0 = ___warnIfNull0;
-		__this->set_WarnIfNull_0(L_0);
+		__this->set_WarnIfNull_1(L_0);
 		// }
 		return;
 	}

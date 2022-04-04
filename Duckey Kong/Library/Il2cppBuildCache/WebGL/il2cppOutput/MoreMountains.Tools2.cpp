@@ -4108,8 +4108,17 @@ public:
 struct PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
 {
 public:
+	// System.Int32 UnityEngine.PropertyAttribute::<order>k__BackingField
+	int32_t ___U3CorderU3Ek__BackingField_0;
 
 public:
+	inline static int32_t get_offset_of_U3CorderU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052, ___U3CorderU3Ek__BackingField_0)); }
+	inline int32_t get_U3CorderU3Ek__BackingField_0() const { return ___U3CorderU3Ek__BackingField_0; }
+	inline int32_t* get_address_of_U3CorderU3Ek__BackingField_0() { return &___U3CorderU3Ek__BackingField_0; }
+	inline void set_U3CorderU3Ek__BackingField_0(int32_t value)
+	{
+		___U3CorderU3Ek__BackingField_0 = value;
+	}
 };
 
 
@@ -7092,16 +7101,16 @@ struct MMInspectorButtonAttribute_t200D1A0C049B127AF69BA4EC2B534FDD321CD898  : p
 {
 public:
 	// System.String MoreMountains.Tools.MMInspectorButtonAttribute::MethodName
-	String_t* ___MethodName_0;
+	String_t* ___MethodName_1;
 
 public:
-	inline static int32_t get_offset_of_MethodName_0() { return static_cast<int32_t>(offsetof(MMInspectorButtonAttribute_t200D1A0C049B127AF69BA4EC2B534FDD321CD898, ___MethodName_0)); }
-	inline String_t* get_MethodName_0() const { return ___MethodName_0; }
-	inline String_t** get_address_of_MethodName_0() { return &___MethodName_0; }
-	inline void set_MethodName_0(String_t* value)
+	inline static int32_t get_offset_of_MethodName_1() { return static_cast<int32_t>(offsetof(MMInspectorButtonAttribute_t200D1A0C049B127AF69BA4EC2B534FDD321CD898, ___MethodName_1)); }
+	inline String_t* get_MethodName_1() const { return ___MethodName_1; }
+	inline String_t** get_address_of_MethodName_1() { return &___MethodName_1; }
+	inline void set_MethodName_1(String_t* value)
 	{
-		___MethodName_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___MethodName_0), (void*)value);
+		___MethodName_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___MethodName_1), (void*)value);
 	}
 };
 
@@ -7111,36 +7120,36 @@ struct MMInspectorGroupAttribute_tBD72D83B933F36043FB44918653A50DE5F3E815E  : pu
 {
 public:
 	// System.String MoreMountains.Tools.MMInspectorGroupAttribute::GroupName
-	String_t* ___GroupName_0;
+	String_t* ___GroupName_1;
 	// System.Boolean MoreMountains.Tools.MMInspectorGroupAttribute::GroupAllFieldsUntilNextGroupAttribute
-	bool ___GroupAllFieldsUntilNextGroupAttribute_1;
+	bool ___GroupAllFieldsUntilNextGroupAttribute_2;
 	// System.Int32 MoreMountains.Tools.MMInspectorGroupAttribute::GroupColorIndex
-	int32_t ___GroupColorIndex_2;
+	int32_t ___GroupColorIndex_3;
 
 public:
-	inline static int32_t get_offset_of_GroupName_0() { return static_cast<int32_t>(offsetof(MMInspectorGroupAttribute_tBD72D83B933F36043FB44918653A50DE5F3E815E, ___GroupName_0)); }
-	inline String_t* get_GroupName_0() const { return ___GroupName_0; }
-	inline String_t** get_address_of_GroupName_0() { return &___GroupName_0; }
-	inline void set_GroupName_0(String_t* value)
+	inline static int32_t get_offset_of_GroupName_1() { return static_cast<int32_t>(offsetof(MMInspectorGroupAttribute_tBD72D83B933F36043FB44918653A50DE5F3E815E, ___GroupName_1)); }
+	inline String_t* get_GroupName_1() const { return ___GroupName_1; }
+	inline String_t** get_address_of_GroupName_1() { return &___GroupName_1; }
+	inline void set_GroupName_1(String_t* value)
 	{
-		___GroupName_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___GroupName_0), (void*)value);
+		___GroupName_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___GroupName_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_GroupAllFieldsUntilNextGroupAttribute_1() { return static_cast<int32_t>(offsetof(MMInspectorGroupAttribute_tBD72D83B933F36043FB44918653A50DE5F3E815E, ___GroupAllFieldsUntilNextGroupAttribute_1)); }
-	inline bool get_GroupAllFieldsUntilNextGroupAttribute_1() const { return ___GroupAllFieldsUntilNextGroupAttribute_1; }
-	inline bool* get_address_of_GroupAllFieldsUntilNextGroupAttribute_1() { return &___GroupAllFieldsUntilNextGroupAttribute_1; }
-	inline void set_GroupAllFieldsUntilNextGroupAttribute_1(bool value)
+	inline static int32_t get_offset_of_GroupAllFieldsUntilNextGroupAttribute_2() { return static_cast<int32_t>(offsetof(MMInspectorGroupAttribute_tBD72D83B933F36043FB44918653A50DE5F3E815E, ___GroupAllFieldsUntilNextGroupAttribute_2)); }
+	inline bool get_GroupAllFieldsUntilNextGroupAttribute_2() const { return ___GroupAllFieldsUntilNextGroupAttribute_2; }
+	inline bool* get_address_of_GroupAllFieldsUntilNextGroupAttribute_2() { return &___GroupAllFieldsUntilNextGroupAttribute_2; }
+	inline void set_GroupAllFieldsUntilNextGroupAttribute_2(bool value)
 	{
-		___GroupAllFieldsUntilNextGroupAttribute_1 = value;
+		___GroupAllFieldsUntilNextGroupAttribute_2 = value;
 	}
 
-	inline static int32_t get_offset_of_GroupColorIndex_2() { return static_cast<int32_t>(offsetof(MMInspectorGroupAttribute_tBD72D83B933F36043FB44918653A50DE5F3E815E, ___GroupColorIndex_2)); }
-	inline int32_t get_GroupColorIndex_2() const { return ___GroupColorIndex_2; }
-	inline int32_t* get_address_of_GroupColorIndex_2() { return &___GroupColorIndex_2; }
-	inline void set_GroupColorIndex_2(int32_t value)
+	inline static int32_t get_offset_of_GroupColorIndex_3() { return static_cast<int32_t>(offsetof(MMInspectorGroupAttribute_tBD72D83B933F36043FB44918653A50DE5F3E815E, ___GroupColorIndex_3)); }
+	inline int32_t get_GroupColorIndex_3() const { return ___GroupColorIndex_3; }
+	inline int32_t* get_address_of_GroupColorIndex_3() { return &___GroupColorIndex_3; }
+	inline void set_GroupColorIndex_3(int32_t value)
 	{
-		___GroupColorIndex_2 = value;
+		___GroupColorIndex_3 = value;
 	}
 };
 
@@ -26850,7 +26859,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MMInspectorButtonAttribute__ctor_m65BFAF
 		PropertyAttribute__ctor_mA13181D93341AEAE429F0615989CB4647F2EB8A7(__this, /*hidden argument*/NULL);
 		// this.MethodName = MethodName;
 		String_t* L_0 = ___MethodName0;
-		__this->set_MethodName_0(L_0);
+		__this->set_MethodName_1(L_0);
 		// }
 		return;
 	}
@@ -26885,13 +26894,13 @@ IL_0015:
 	{
 		// this.GroupName = groupName;
 		String_t* L_1 = ___groupName0;
-		__this->set_GroupName_0(L_1);
+		__this->set_GroupName_1(L_1);
 		// this.GroupAllFieldsUntilNextGroupAttribute = groupAllFieldsUntilNextGroupAttribute;
 		bool L_2 = ___groupAllFieldsUntilNextGroupAttribute1;
-		__this->set_GroupAllFieldsUntilNextGroupAttribute_1(L_2);
+		__this->set_GroupAllFieldsUntilNextGroupAttribute_2(L_2);
 		// this.GroupColorIndex = groupColorIndex;
 		int32_t L_3 = ___groupColorIndex2;
-		__this->set_GroupColorIndex_2(L_3);
+		__this->set_GroupColorIndex_3(L_3);
 		// }
 		return;
 	}

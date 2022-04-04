@@ -4842,8 +4842,17 @@ public:
 struct PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
 {
 public:
+	// System.Int32 UnityEngine.PropertyAttribute::<order>k__BackingField
+	int32_t ___U3CorderU3Ek__BackingField_0;
 
 public:
+	inline static int32_t get_offset_of_U3CorderU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052, ___U3CorderU3Ek__BackingField_0)); }
+	inline int32_t get_U3CorderU3Ek__BackingField_0() const { return ___U3CorderU3Ek__BackingField_0; }
+	inline int32_t* get_address_of_U3CorderU3Ek__BackingField_0() { return &___U3CorderU3Ek__BackingField_0; }
+	inline void set_U3CorderU3Ek__BackingField_0(int32_t value)
+	{
+		___U3CorderU3Ek__BackingField_0 = value;
+	}
 };
 
 
@@ -7969,16 +7978,16 @@ struct MMDropdownAttribute_tC577DF82668376BBFA2C55D7E08E15260FDD974F  : public P
 {
 public:
 	// System.Object[] MoreMountains.Tools.MMDropdownAttribute::DropdownValues
-	ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* ___DropdownValues_0;
+	ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* ___DropdownValues_1;
 
 public:
-	inline static int32_t get_offset_of_DropdownValues_0() { return static_cast<int32_t>(offsetof(MMDropdownAttribute_tC577DF82668376BBFA2C55D7E08E15260FDD974F, ___DropdownValues_0)); }
-	inline ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* get_DropdownValues_0() const { return ___DropdownValues_0; }
-	inline ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE** get_address_of_DropdownValues_0() { return &___DropdownValues_0; }
-	inline void set_DropdownValues_0(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* value)
+	inline static int32_t get_offset_of_DropdownValues_1() { return static_cast<int32_t>(offsetof(MMDropdownAttribute_tC577DF82668376BBFA2C55D7E08E15260FDD974F, ___DropdownValues_1)); }
+	inline ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* get_DropdownValues_1() const { return ___DropdownValues_1; }
+	inline ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE** get_address_of_DropdownValues_1() { return &___DropdownValues_1; }
+	inline void set_DropdownValues_1(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* value)
 	{
-		___DropdownValues_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___DropdownValues_0), (void*)value);
+		___DropdownValues_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___DropdownValues_1), (void*)value);
 	}
 };
 
@@ -7988,37 +7997,37 @@ struct MMEnumConditionAttribute_t703F18E8647B941A0F7D253C06848456428C6183  : pub
 {
 public:
 	// System.String MoreMountains.Tools.MMEnumConditionAttribute::ConditionEnum
-	String_t* ___ConditionEnum_0;
+	String_t* ___ConditionEnum_1;
 	// System.Boolean MoreMountains.Tools.MMEnumConditionAttribute::Hidden
-	bool ___Hidden_1;
+	bool ___Hidden_2;
 	// System.Collections.BitArray MoreMountains.Tools.MMEnumConditionAttribute::bitArray
-	BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * ___bitArray_2;
+	BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * ___bitArray_3;
 
 public:
-	inline static int32_t get_offset_of_ConditionEnum_0() { return static_cast<int32_t>(offsetof(MMEnumConditionAttribute_t703F18E8647B941A0F7D253C06848456428C6183, ___ConditionEnum_0)); }
-	inline String_t* get_ConditionEnum_0() const { return ___ConditionEnum_0; }
-	inline String_t** get_address_of_ConditionEnum_0() { return &___ConditionEnum_0; }
-	inline void set_ConditionEnum_0(String_t* value)
+	inline static int32_t get_offset_of_ConditionEnum_1() { return static_cast<int32_t>(offsetof(MMEnumConditionAttribute_t703F18E8647B941A0F7D253C06848456428C6183, ___ConditionEnum_1)); }
+	inline String_t* get_ConditionEnum_1() const { return ___ConditionEnum_1; }
+	inline String_t** get_address_of_ConditionEnum_1() { return &___ConditionEnum_1; }
+	inline void set_ConditionEnum_1(String_t* value)
 	{
-		___ConditionEnum_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___ConditionEnum_0), (void*)value);
+		___ConditionEnum_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___ConditionEnum_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_Hidden_1() { return static_cast<int32_t>(offsetof(MMEnumConditionAttribute_t703F18E8647B941A0F7D253C06848456428C6183, ___Hidden_1)); }
-	inline bool get_Hidden_1() const { return ___Hidden_1; }
-	inline bool* get_address_of_Hidden_1() { return &___Hidden_1; }
-	inline void set_Hidden_1(bool value)
+	inline static int32_t get_offset_of_Hidden_2() { return static_cast<int32_t>(offsetof(MMEnumConditionAttribute_t703F18E8647B941A0F7D253C06848456428C6183, ___Hidden_2)); }
+	inline bool get_Hidden_2() const { return ___Hidden_2; }
+	inline bool* get_address_of_Hidden_2() { return &___Hidden_2; }
+	inline void set_Hidden_2(bool value)
 	{
-		___Hidden_1 = value;
+		___Hidden_2 = value;
 	}
 
-	inline static int32_t get_offset_of_bitArray_2() { return static_cast<int32_t>(offsetof(MMEnumConditionAttribute_t703F18E8647B941A0F7D253C06848456428C6183, ___bitArray_2)); }
-	inline BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * get_bitArray_2() const { return ___bitArray_2; }
-	inline BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 ** get_address_of_bitArray_2() { return &___bitArray_2; }
-	inline void set_bitArray_2(BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * value)
+	inline static int32_t get_offset_of_bitArray_3() { return static_cast<int32_t>(offsetof(MMEnumConditionAttribute_t703F18E8647B941A0F7D253C06848456428C6183, ___bitArray_3)); }
+	inline BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * get_bitArray_3() const { return ___bitArray_3; }
+	inline BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 ** get_address_of_bitArray_3() { return &___bitArray_3; }
+	inline void set_bitArray_3(BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * value)
 	{
-		___bitArray_2 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___bitArray_2), (void*)value);
+		___bitArray_3 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___bitArray_3), (void*)value);
 	}
 };
 
@@ -30275,7 +30284,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MMDropdownAttribute__ctor_m81E66ABDE7929
 		PropertyAttribute__ctor_mA13181D93341AEAE429F0615989CB4647F2EB8A7(__this, /*hidden argument*/NULL);
 		// DropdownValues = dropdownValues;
 		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_0 = ___dropdownValues0;
-		__this->set_DropdownValues_0(L_0);
+		__this->set_DropdownValues_1(L_0);
 		// }
 		return;
 	}
@@ -30293,7 +30302,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MMEnumConditionAttribute_ContainsBitFlag
 {
 	{
 		// return bitArray.Get(enumValue);
-		BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * L_0 = __this->get_bitArray_2();
+		BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * L_0 = __this->get_bitArray_3();
 		int32_t L_1 = ___enumValue0;
 		bool L_2;
 		L_2 = BitArray_Get_m8F334881C262C112865FE98A64C11C5090CFCA86(L_0, L_1, /*hidden argument*/NULL);
@@ -30313,18 +30322,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MMEnumConditionAttribute__ctor_mA81D882C
 	int32_t V_0 = 0;
 	{
 		// public string ConditionEnum = "";
-		__this->set_ConditionEnum_0(_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		__this->set_ConditionEnum_1(_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
 		// BitArray bitArray = new BitArray(32);
 		BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * L_0 = (BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 *)il2cpp_codegen_object_new(BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0_il2cpp_TypeInfo_var);
 		BitArray__ctor_m486DC497A17AF18E5EA30AA5BF65784B541F4B13(L_0, ((int32_t)32), /*hidden argument*/NULL);
-		__this->set_bitArray_2(L_0);
+		__this->set_bitArray_3(L_0);
 		// public MMEnumConditionAttribute(string conditionBoolean, params int[] enumValues)
 		PropertyAttribute__ctor_mA13181D93341AEAE429F0615989CB4647F2EB8A7(__this, /*hidden argument*/NULL);
 		// this.ConditionEnum = conditionBoolean;
 		String_t* L_1 = ___conditionBoolean0;
-		__this->set_ConditionEnum_0(L_1);
+		__this->set_ConditionEnum_1(L_1);
 		// this.Hidden = true;
-		__this->set_Hidden_1((bool)1);
+		__this->set_Hidden_2((bool)1);
 		// for (int i = 0; i < enumValues.Length; i++)
 		V_0 = 0;
 		goto IL_0043;
@@ -30333,7 +30342,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MMEnumConditionAttribute__ctor_mA81D882C
 IL_0030:
 	{
 		// bitArray.Set(enumValues[i], true);
-		BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * L_2 = __this->get_bitArray_2();
+		BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * L_2 = __this->get_bitArray_3();
 		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_3 = ___enumValues1;
 		int32_t L_4 = V_0;
 		int32_t L_5 = L_4;

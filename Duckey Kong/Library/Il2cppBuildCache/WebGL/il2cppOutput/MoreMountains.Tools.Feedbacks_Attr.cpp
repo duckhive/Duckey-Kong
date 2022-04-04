@@ -336,8 +336,17 @@ public:
 struct PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
 {
 public:
+	// System.Int32 UnityEngine.PropertyAttribute::<order>k__BackingField
+	int32_t ___U3CorderU3Ek__BackingField_0;
 
 public:
+	inline static int32_t get_offset_of_U3CorderU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052, ___U3CorderU3Ek__BackingField_0)); }
+	inline int32_t get_U3CorderU3Ek__BackingField_0() const { return ___U3CorderU3Ek__BackingField_0; }
+	inline int32_t* get_address_of_U3CorderU3Ek__BackingField_0() { return &___U3CorderU3Ek__BackingField_0; }
+	inline void set_U3CorderU3Ek__BackingField_0(int32_t value)
+	{
+		___U3CorderU3Ek__BackingField_0 = value;
+	}
 };
 
 
@@ -417,16 +426,16 @@ struct HeaderAttribute_t9B431E6BA0524D46406D9C413D6A71CB5F2DD1AB  : public Prope
 {
 public:
 	// System.String UnityEngine.HeaderAttribute::header
-	String_t* ___header_0;
+	String_t* ___header_1;
 
 public:
-	inline static int32_t get_offset_of_header_0() { return static_cast<int32_t>(offsetof(HeaderAttribute_t9B431E6BA0524D46406D9C413D6A71CB5F2DD1AB, ___header_0)); }
-	inline String_t* get_header_0() const { return ___header_0; }
-	inline String_t** get_address_of_header_0() { return &___header_0; }
-	inline void set_header_0(String_t* value)
+	inline static int32_t get_offset_of_header_1() { return static_cast<int32_t>(offsetof(HeaderAttribute_t9B431E6BA0524D46406D9C413D6A71CB5F2DD1AB, ___header_1)); }
+	inline String_t* get_header_1() const { return ___header_1; }
+	inline String_t** get_address_of_header_1() { return &___header_1; }
+	inline void set_header_1(String_t* value)
 	{
-		___header_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___header_0), (void*)value);
+		___header_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___header_1), (void*)value);
 	}
 };
 
@@ -445,26 +454,26 @@ struct MMConditionAttribute_tA83601343AE95A59F9820EC86A4C7B73ED893E16  : public 
 {
 public:
 	// System.String MoreMountains.Tools.MMConditionAttribute::ConditionBoolean
-	String_t* ___ConditionBoolean_0;
+	String_t* ___ConditionBoolean_1;
 	// System.Boolean MoreMountains.Tools.MMConditionAttribute::Hidden
-	bool ___Hidden_1;
+	bool ___Hidden_2;
 
 public:
-	inline static int32_t get_offset_of_ConditionBoolean_0() { return static_cast<int32_t>(offsetof(MMConditionAttribute_tA83601343AE95A59F9820EC86A4C7B73ED893E16, ___ConditionBoolean_0)); }
-	inline String_t* get_ConditionBoolean_0() const { return ___ConditionBoolean_0; }
-	inline String_t** get_address_of_ConditionBoolean_0() { return &___ConditionBoolean_0; }
-	inline void set_ConditionBoolean_0(String_t* value)
+	inline static int32_t get_offset_of_ConditionBoolean_1() { return static_cast<int32_t>(offsetof(MMConditionAttribute_tA83601343AE95A59F9820EC86A4C7B73ED893E16, ___ConditionBoolean_1)); }
+	inline String_t* get_ConditionBoolean_1() const { return ___ConditionBoolean_1; }
+	inline String_t** get_address_of_ConditionBoolean_1() { return &___ConditionBoolean_1; }
+	inline void set_ConditionBoolean_1(String_t* value)
 	{
-		___ConditionBoolean_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___ConditionBoolean_0), (void*)value);
+		___ConditionBoolean_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___ConditionBoolean_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_Hidden_1() { return static_cast<int32_t>(offsetof(MMConditionAttribute_tA83601343AE95A59F9820EC86A4C7B73ED893E16, ___Hidden_1)); }
-	inline bool get_Hidden_1() const { return ___Hidden_1; }
-	inline bool* get_address_of_Hidden_1() { return &___Hidden_1; }
-	inline void set_Hidden_1(bool value)
+	inline static int32_t get_offset_of_Hidden_2() { return static_cast<int32_t>(offsetof(MMConditionAttribute_tA83601343AE95A59F9820EC86A4C7B73ED893E16, ___Hidden_2)); }
+	inline bool get_Hidden_2() const { return ___Hidden_2; }
+	inline bool* get_address_of_Hidden_2() { return &___Hidden_2; }
+	inline void set_Hidden_2(bool value)
 	{
-		___Hidden_1 = value;
+		___Hidden_2 = value;
 	}
 };
 

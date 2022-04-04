@@ -761,8 +761,17 @@ public:
 struct PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
 {
 public:
+	// System.Int32 UnityEngine.PropertyAttribute::<order>k__BackingField
+	int32_t ___U3CorderU3Ek__BackingField_0;
 
 public:
+	inline static int32_t get_offset_of_U3CorderU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052, ___U3CorderU3Ek__BackingField_0)); }
+	inline int32_t get_U3CorderU3Ek__BackingField_0() const { return ___U3CorderU3Ek__BackingField_0; }
+	inline int32_t* get_address_of_U3CorderU3Ek__BackingField_0() { return &___U3CorderU3Ek__BackingField_0; }
+	inline void set_U3CorderU3Ek__BackingField_0(int32_t value)
+	{
+		___U3CorderU3Ek__BackingField_0 = value;
+	}
 };
 
 
@@ -937,65 +946,65 @@ struct ColorUsageAttribute_tB57E6B0640DFA4A8838D1584BCAA03D9D4FDA662  : public P
 {
 public:
 	// System.Boolean UnityEngine.ColorUsageAttribute::showAlpha
-	bool ___showAlpha_0;
+	bool ___showAlpha_1;
 	// System.Boolean UnityEngine.ColorUsageAttribute::hdr
-	bool ___hdr_1;
+	bool ___hdr_2;
 	// System.Single UnityEngine.ColorUsageAttribute::minBrightness
-	float ___minBrightness_2;
+	float ___minBrightness_3;
 	// System.Single UnityEngine.ColorUsageAttribute::maxBrightness
-	float ___maxBrightness_3;
+	float ___maxBrightness_4;
 	// System.Single UnityEngine.ColorUsageAttribute::minExposureValue
-	float ___minExposureValue_4;
+	float ___minExposureValue_5;
 	// System.Single UnityEngine.ColorUsageAttribute::maxExposureValue
-	float ___maxExposureValue_5;
+	float ___maxExposureValue_6;
 
 public:
-	inline static int32_t get_offset_of_showAlpha_0() { return static_cast<int32_t>(offsetof(ColorUsageAttribute_tB57E6B0640DFA4A8838D1584BCAA03D9D4FDA662, ___showAlpha_0)); }
-	inline bool get_showAlpha_0() const { return ___showAlpha_0; }
-	inline bool* get_address_of_showAlpha_0() { return &___showAlpha_0; }
-	inline void set_showAlpha_0(bool value)
+	inline static int32_t get_offset_of_showAlpha_1() { return static_cast<int32_t>(offsetof(ColorUsageAttribute_tB57E6B0640DFA4A8838D1584BCAA03D9D4FDA662, ___showAlpha_1)); }
+	inline bool get_showAlpha_1() const { return ___showAlpha_1; }
+	inline bool* get_address_of_showAlpha_1() { return &___showAlpha_1; }
+	inline void set_showAlpha_1(bool value)
 	{
-		___showAlpha_0 = value;
+		___showAlpha_1 = value;
 	}
 
-	inline static int32_t get_offset_of_hdr_1() { return static_cast<int32_t>(offsetof(ColorUsageAttribute_tB57E6B0640DFA4A8838D1584BCAA03D9D4FDA662, ___hdr_1)); }
-	inline bool get_hdr_1() const { return ___hdr_1; }
-	inline bool* get_address_of_hdr_1() { return &___hdr_1; }
-	inline void set_hdr_1(bool value)
+	inline static int32_t get_offset_of_hdr_2() { return static_cast<int32_t>(offsetof(ColorUsageAttribute_tB57E6B0640DFA4A8838D1584BCAA03D9D4FDA662, ___hdr_2)); }
+	inline bool get_hdr_2() const { return ___hdr_2; }
+	inline bool* get_address_of_hdr_2() { return &___hdr_2; }
+	inline void set_hdr_2(bool value)
 	{
-		___hdr_1 = value;
+		___hdr_2 = value;
 	}
 
-	inline static int32_t get_offset_of_minBrightness_2() { return static_cast<int32_t>(offsetof(ColorUsageAttribute_tB57E6B0640DFA4A8838D1584BCAA03D9D4FDA662, ___minBrightness_2)); }
-	inline float get_minBrightness_2() const { return ___minBrightness_2; }
-	inline float* get_address_of_minBrightness_2() { return &___minBrightness_2; }
-	inline void set_minBrightness_2(float value)
+	inline static int32_t get_offset_of_minBrightness_3() { return static_cast<int32_t>(offsetof(ColorUsageAttribute_tB57E6B0640DFA4A8838D1584BCAA03D9D4FDA662, ___minBrightness_3)); }
+	inline float get_minBrightness_3() const { return ___minBrightness_3; }
+	inline float* get_address_of_minBrightness_3() { return &___minBrightness_3; }
+	inline void set_minBrightness_3(float value)
 	{
-		___minBrightness_2 = value;
+		___minBrightness_3 = value;
 	}
 
-	inline static int32_t get_offset_of_maxBrightness_3() { return static_cast<int32_t>(offsetof(ColorUsageAttribute_tB57E6B0640DFA4A8838D1584BCAA03D9D4FDA662, ___maxBrightness_3)); }
-	inline float get_maxBrightness_3() const { return ___maxBrightness_3; }
-	inline float* get_address_of_maxBrightness_3() { return &___maxBrightness_3; }
-	inline void set_maxBrightness_3(float value)
+	inline static int32_t get_offset_of_maxBrightness_4() { return static_cast<int32_t>(offsetof(ColorUsageAttribute_tB57E6B0640DFA4A8838D1584BCAA03D9D4FDA662, ___maxBrightness_4)); }
+	inline float get_maxBrightness_4() const { return ___maxBrightness_4; }
+	inline float* get_address_of_maxBrightness_4() { return &___maxBrightness_4; }
+	inline void set_maxBrightness_4(float value)
 	{
-		___maxBrightness_3 = value;
+		___maxBrightness_4 = value;
 	}
 
-	inline static int32_t get_offset_of_minExposureValue_4() { return static_cast<int32_t>(offsetof(ColorUsageAttribute_tB57E6B0640DFA4A8838D1584BCAA03D9D4FDA662, ___minExposureValue_4)); }
-	inline float get_minExposureValue_4() const { return ___minExposureValue_4; }
-	inline float* get_address_of_minExposureValue_4() { return &___minExposureValue_4; }
-	inline void set_minExposureValue_4(float value)
+	inline static int32_t get_offset_of_minExposureValue_5() { return static_cast<int32_t>(offsetof(ColorUsageAttribute_tB57E6B0640DFA4A8838D1584BCAA03D9D4FDA662, ___minExposureValue_5)); }
+	inline float get_minExposureValue_5() const { return ___minExposureValue_5; }
+	inline float* get_address_of_minExposureValue_5() { return &___minExposureValue_5; }
+	inline void set_minExposureValue_5(float value)
 	{
-		___minExposureValue_4 = value;
+		___minExposureValue_5 = value;
 	}
 
-	inline static int32_t get_offset_of_maxExposureValue_5() { return static_cast<int32_t>(offsetof(ColorUsageAttribute_tB57E6B0640DFA4A8838D1584BCAA03D9D4FDA662, ___maxExposureValue_5)); }
-	inline float get_maxExposureValue_5() const { return ___maxExposureValue_5; }
-	inline float* get_address_of_maxExposureValue_5() { return &___maxExposureValue_5; }
-	inline void set_maxExposureValue_5(float value)
+	inline static int32_t get_offset_of_maxExposureValue_6() { return static_cast<int32_t>(offsetof(ColorUsageAttribute_tB57E6B0640DFA4A8838D1584BCAA03D9D4FDA662, ___maxExposureValue_6)); }
+	inline float get_maxExposureValue_6() const { return ___maxExposureValue_6; }
+	inline float* get_address_of_maxExposureValue_6() { return &___maxExposureValue_6; }
+	inline void set_maxExposureValue_6(float value)
 	{
-		___maxExposureValue_5 = value;
+		___maxExposureValue_6 = value;
 	}
 };
 
@@ -1023,16 +1032,16 @@ struct InspectorNameAttribute_t8A1ACF4EDFAC9A951E5CCB8A52ECA29B903E2417  : publi
 {
 public:
 	// System.String UnityEngine.InspectorNameAttribute::displayName
-	String_t* ___displayName_0;
+	String_t* ___displayName_1;
 
 public:
-	inline static int32_t get_offset_of_displayName_0() { return static_cast<int32_t>(offsetof(InspectorNameAttribute_t8A1ACF4EDFAC9A951E5CCB8A52ECA29B903E2417, ___displayName_0)); }
-	inline String_t* get_displayName_0() const { return ___displayName_0; }
-	inline String_t** get_address_of_displayName_0() { return &___displayName_0; }
-	inline void set_displayName_0(String_t* value)
+	inline static int32_t get_offset_of_displayName_1() { return static_cast<int32_t>(offsetof(InspectorNameAttribute_t8A1ACF4EDFAC9A951E5CCB8A52ECA29B903E2417, ___displayName_1)); }
+	inline String_t* get_displayName_1() const { return ___displayName_1; }
+	inline String_t** get_address_of_displayName_1() { return &___displayName_1; }
+	inline void set_displayName_1(String_t* value)
 	{
-		___displayName_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___displayName_0), (void*)value);
+		___displayName_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___displayName_1), (void*)value);
 	}
 };
 
@@ -1067,25 +1076,25 @@ struct RangeAttribute_t14A6532D68168764C15E7CF1FDABCD99CB32D0C5  : public Proper
 {
 public:
 	// System.Single UnityEngine.RangeAttribute::min
-	float ___min_0;
+	float ___min_1;
 	// System.Single UnityEngine.RangeAttribute::max
-	float ___max_1;
+	float ___max_2;
 
 public:
-	inline static int32_t get_offset_of_min_0() { return static_cast<int32_t>(offsetof(RangeAttribute_t14A6532D68168764C15E7CF1FDABCD99CB32D0C5, ___min_0)); }
-	inline float get_min_0() const { return ___min_0; }
-	inline float* get_address_of_min_0() { return &___min_0; }
-	inline void set_min_0(float value)
+	inline static int32_t get_offset_of_min_1() { return static_cast<int32_t>(offsetof(RangeAttribute_t14A6532D68168764C15E7CF1FDABCD99CB32D0C5, ___min_1)); }
+	inline float get_min_1() const { return ___min_1; }
+	inline float* get_address_of_min_1() { return &___min_1; }
+	inline void set_min_1(float value)
 	{
-		___min_0 = value;
+		___min_1 = value;
 	}
 
-	inline static int32_t get_offset_of_max_1() { return static_cast<int32_t>(offsetof(RangeAttribute_t14A6532D68168764C15E7CF1FDABCD99CB32D0C5, ___max_1)); }
-	inline float get_max_1() const { return ___max_1; }
-	inline float* get_address_of_max_1() { return &___max_1; }
-	inline void set_max_1(float value)
+	inline static int32_t get_offset_of_max_2() { return static_cast<int32_t>(offsetof(RangeAttribute_t14A6532D68168764C15E7CF1FDABCD99CB32D0C5, ___max_2)); }
+	inline float get_max_2() const { return ___max_2; }
+	inline float* get_address_of_max_2() { return &___max_2; }
+	inline void set_max_2(float value)
 	{
-		___max_1 = value;
+		___max_2 = value;
 	}
 };
 
@@ -1131,16 +1140,16 @@ struct TooltipAttribute_t503A1598A4E68E91673758F50447D0EDFB95149B  : public Prop
 {
 public:
 	// System.String UnityEngine.TooltipAttribute::tooltip
-	String_t* ___tooltip_0;
+	String_t* ___tooltip_1;
 
 public:
-	inline static int32_t get_offset_of_tooltip_0() { return static_cast<int32_t>(offsetof(TooltipAttribute_t503A1598A4E68E91673758F50447D0EDFB95149B, ___tooltip_0)); }
-	inline String_t* get_tooltip_0() const { return ___tooltip_0; }
-	inline String_t** get_address_of_tooltip_0() { return &___tooltip_0; }
-	inline void set_tooltip_0(String_t* value)
+	inline static int32_t get_offset_of_tooltip_1() { return static_cast<int32_t>(offsetof(TooltipAttribute_t503A1598A4E68E91673758F50447D0EDFB95149B, ___tooltip_1)); }
+	inline String_t* get_tooltip_1() const { return ___tooltip_1; }
+	inline String_t** get_address_of_tooltip_1() { return &___tooltip_1; }
+	inline void set_tooltip_1(String_t* value)
 	{
-		___tooltip_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___tooltip_0), (void*)value);
+		___tooltip_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___tooltip_1), (void*)value);
 	}
 };
 

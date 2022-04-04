@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Head
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: duck_Head_ctrl
+    m_Weight: 1
+  - m_Path: duck_Hip_ctrl
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_COM_ctrl
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_l_Foot_ctrl
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_l_Foot_ctrl/duck_l_Heel_hlp
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_l_Foot_ctrl/duck_l_Heel_hlp/duck_l_ToeLift_hlp
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_l_Foot_ctrl/duck_l_Heel_hlp/duck_l_ToeLift_hlp/duck_l_HeelPeel_hlp
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_l_Foot_ctrl/duck_l_Heel_hlp/duck_l_ToeLift_hlp/duck_l_HeelPeel_hlp/duck_l_ball_IKGoal
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_l_Foot_ctrl/duck_l_Heel_hlp/duck_l_ToeLift_hlp/duck_l_HeelPeel_hlp/duck_l_heel_IKGoal
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_l_Foot_ctrl/duck_l_Heel_hlp/duck_l_ToeLift_hlp/duck_l_ToeTap_hlp
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_l_Foot_ctrl/duck_l_Heel_hlp/duck_l_ToeLift_hlp/duck_l_ToeTap_hlp/duck_l_Toe_IKGoal
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_l_Femur_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_l_Femur_bone/duck_l_Tibia_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_l_Femur_bone/duck_l_Tibia_bone/duck_l_Metatarsus_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_l_Femur_bone/duck_l_Tibia_bone/duck_l_Metatarsus_bone/duck_l_Ankle_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_l_Femur_bone/duck_l_Tibia_bone/duck_l_Metatarsus_bone/duck_l_Ankle_bone/duck_l_Toe_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_l_Femur_bone/duck_l_Tibia_bone/duck_l_Metatarsus_bone/duck_l_Ankle_bone/duck_l_Toe_bone/duck_l_Toe-nub_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_l_Femur_ctrl
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_r_Femur_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_r_Femur_bone/duck_r_Tibia_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_r_Femur_bone/duck_r_Tibia_bone/duck_r_Metatarsus_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_r_Femur_bone/duck_r_Tibia_bone/duck_r_Metatarsus_bone/duck_r_Ankle_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_r_Femur_bone/duck_r_Tibia_bone/duck_r_Metatarsus_bone/duck_r_Ankle_bone/duck_r_Toe_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_r_Femur_bone/duck_r_Tibia_bone/duck_r_Metatarsus_bone/duck_r_Ankle_bone/duck_r_Toe_bone/duck_r_Toe-nub_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_r_femur_ctrl
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_Spine1_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_Spine1_bone/duck_Spine2_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_Spine1_bone/duck_Spine2_bone/duck_Neck1_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_Spine1_bone/duck_Spine2_bone/duck_Neck1_bone/duck_Neck2_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_Spine1_bone/duck_Spine2_bone/duck_Neck1_bone/duck_Neck2_bone/duck_Neck3_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_Spine1_bone/duck_Spine2_bone/duck_Neck1_bone/duck_Neck2_bone/duck_Neck3_bone/duck_Head_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_Spine1_bone/duck_Spine2_bone/duck_Neck1_bone/duck_Neck2_bone/duck_Neck3_bone/duck_Head_bone/duck_Beak_ctrl
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_Spine1_bone/duck_Spine2_bone/duck_Neck1_bone/duck_Neck2_bone/duck_Neck3_bone/duck_Head_bone/duck_Mandible_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_Spine1_bone/duck_Spine2_bone/duck_Neck1_bone/duck_Neck2_bone/duck_Neck3_bone/duck_Head_bone/duck_Mandible_bone/duck_Beak_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_Spine1_bone/duck_Spine2_bone/duck_Neck1_bone/duck_Neck2_bone/duck_Neck3_bone/duck_Head_bone/duck_Mandible_bone/duck_Beak_bone/duck_Beak-nub_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_Spine1_bone/duck_Spine2_bone/duck_Neck1_bone/duck_Neck2_bone/duck_Neck3_bone/duck_Head_bone/duck_Mandible_ctrl
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_Spine1_bone/duck_Spine2_bone/duck_Neck1_bone/duck_Neck2_bone/duck_Neck3_bone/duck_Head_bone/duck_Nostril_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_Spine1_bone/duck_Spine2_bone/duck_Neck1_bone/duck_Neck2_bone/duck_Neck3_bone/duck_Head_bone/duck_Nostril_bone/duck_Nostril-nub_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_Spine1_bone/duck_Spine2_bone/duck_Neck1_bone/duck_Neck2_bone/duck_Neck3_bone/duck_Head_bone/duck_Nostril_ctrl
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_Tail_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_Pelvis_bone/duck_Tail_bone/duck_Tail-nub_bone
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_r_Foot_ctrl
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_r_Foot_ctrl/duck_r_Heel_hlp
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_r_Foot_ctrl/duck_r_Heel_hlp/duck_r_ToeLift_hlp
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_r_Foot_ctrl/duck_r_Heel_hlp/duck_r_ToeLift_hlp/duck_r_HeelPeel_hlp
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_r_Foot_ctrl/duck_r_Heel_hlp/duck_r_ToeLift_hlp/duck_r_HeelPeel_hlp/duck_r_ball_IKGoal
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_r_Foot_ctrl/duck_r_Heel_hlp/duck_r_ToeLift_hlp/duck_r_HeelPeel_hlp/duck_r_heel_IKGoal
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_r_Foot_ctrl/duck_r_Heel_hlp/duck_r_ToeLift_hlp/duck_r_ToeTap_hlp
+    m_Weight: 1
+  - m_Path: duck_Main_ctrl/duck_r_Foot_ctrl/duck_r_Heel_hlp/duck_r_ToeLift_hlp/duck_r_ToeTap_hlp/duck_r_Toe_IKGoal
+    m_Weight: 1
+  - m_Path: duck_mesh
+    m_Weight: 1
+  - m_Path: duck_NeckBase_ctrl
+    m_Weight: 1
+  - m_Path: duck_Spine_ctrl
+    m_Weight: 1
+  - m_Path: duck_SpineBase_ctrl
+    m_Weight: 1
+  - m_Path: duck_Tail_ctrl
+    m_Weight: 1

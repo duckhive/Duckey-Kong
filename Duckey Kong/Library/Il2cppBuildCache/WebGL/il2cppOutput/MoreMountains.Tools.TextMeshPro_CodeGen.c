@@ -32,11 +32,11 @@ static Il2CppMethodPointer s_methodPointers[5] =
 };
 static const int32_t s_InvokerIndices[5] = 
 {
-	3297,
-	2721,
-	2649,
-	2757,
-	3297,
+	3409,
+	2800,
+	2728,
+	2836,
+	3409,
 };
 extern const CustomAttributesCacheGenerator g_MoreMountains_Tools_TextMeshPro_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_MoreMountains_Tools_TextMeshPro_CodeGenModule;

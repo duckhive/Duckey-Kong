@@ -368,8 +368,17 @@ public:
 struct PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
 {
 public:
+	// System.Int32 UnityEngine.PropertyAttribute::<order>k__BackingField
+	int32_t ___U3CorderU3Ek__BackingField_0;
 
 public:
+	inline static int32_t get_offset_of_U3CorderU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052, ___U3CorderU3Ek__BackingField_0)); }
+	inline int32_t get_U3CorderU3Ek__BackingField_0() const { return ___U3CorderU3Ek__BackingField_0; }
+	inline int32_t* get_address_of_U3CorderU3Ek__BackingField_0() { return &___U3CorderU3Ek__BackingField_0; }
+	inline void set_U3CorderU3Ek__BackingField_0(int32_t value)
+	{
+		___U3CorderU3Ek__BackingField_0 = value;
+	}
 };
 
 
@@ -490,16 +499,16 @@ struct HeaderAttribute_t9B431E6BA0524D46406D9C413D6A71CB5F2DD1AB  : public Prope
 {
 public:
 	// System.String UnityEngine.HeaderAttribute::header
-	String_t* ___header_0;
+	String_t* ___header_1;
 
 public:
-	inline static int32_t get_offset_of_header_0() { return static_cast<int32_t>(offsetof(HeaderAttribute_t9B431E6BA0524D46406D9C413D6A71CB5F2DD1AB, ___header_0)); }
-	inline String_t* get_header_0() const { return ___header_0; }
-	inline String_t** get_address_of_header_0() { return &___header_0; }
-	inline void set_header_0(String_t* value)
+	inline static int32_t get_offset_of_header_1() { return static_cast<int32_t>(offsetof(HeaderAttribute_t9B431E6BA0524D46406D9C413D6A71CB5F2DD1AB, ___header_1)); }
+	inline String_t* get_header_1() const { return ___header_1; }
+	inline String_t** get_address_of_header_1() { return &___header_1; }
+	inline void set_header_1(String_t* value)
 	{
-		___header_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___header_0), (void*)value);
+		___header_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___header_1), (void*)value);
 	}
 };
 
@@ -518,37 +527,37 @@ struct MMEnumConditionAttribute_t703F18E8647B941A0F7D253C06848456428C6183  : pub
 {
 public:
 	// System.String MoreMountains.Tools.MMEnumConditionAttribute::ConditionEnum
-	String_t* ___ConditionEnum_0;
+	String_t* ___ConditionEnum_1;
 	// System.Boolean MoreMountains.Tools.MMEnumConditionAttribute::Hidden
-	bool ___Hidden_1;
+	bool ___Hidden_2;
 	// System.Collections.BitArray MoreMountains.Tools.MMEnumConditionAttribute::bitArray
-	BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * ___bitArray_2;
+	BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * ___bitArray_3;
 
 public:
-	inline static int32_t get_offset_of_ConditionEnum_0() { return static_cast<int32_t>(offsetof(MMEnumConditionAttribute_t703F18E8647B941A0F7D253C06848456428C6183, ___ConditionEnum_0)); }
-	inline String_t* get_ConditionEnum_0() const { return ___ConditionEnum_0; }
-	inline String_t** get_address_of_ConditionEnum_0() { return &___ConditionEnum_0; }
-	inline void set_ConditionEnum_0(String_t* value)
+	inline static int32_t get_offset_of_ConditionEnum_1() { return static_cast<int32_t>(offsetof(MMEnumConditionAttribute_t703F18E8647B941A0F7D253C06848456428C6183, ___ConditionEnum_1)); }
+	inline String_t* get_ConditionEnum_1() const { return ___ConditionEnum_1; }
+	inline String_t** get_address_of_ConditionEnum_1() { return &___ConditionEnum_1; }
+	inline void set_ConditionEnum_1(String_t* value)
 	{
-		___ConditionEnum_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___ConditionEnum_0), (void*)value);
+		___ConditionEnum_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___ConditionEnum_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_Hidden_1() { return static_cast<int32_t>(offsetof(MMEnumConditionAttribute_t703F18E8647B941A0F7D253C06848456428C6183, ___Hidden_1)); }
-	inline bool get_Hidden_1() const { return ___Hidden_1; }
-	inline bool* get_address_of_Hidden_1() { return &___Hidden_1; }
-	inline void set_Hidden_1(bool value)
+	inline static int32_t get_offset_of_Hidden_2() { return static_cast<int32_t>(offsetof(MMEnumConditionAttribute_t703F18E8647B941A0F7D253C06848456428C6183, ___Hidden_2)); }
+	inline bool get_Hidden_2() const { return ___Hidden_2; }
+	inline bool* get_address_of_Hidden_2() { return &___Hidden_2; }
+	inline void set_Hidden_2(bool value)
 	{
-		___Hidden_1 = value;
+		___Hidden_2 = value;
 	}
 
-	inline static int32_t get_offset_of_bitArray_2() { return static_cast<int32_t>(offsetof(MMEnumConditionAttribute_t703F18E8647B941A0F7D253C06848456428C6183, ___bitArray_2)); }
-	inline BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * get_bitArray_2() const { return ___bitArray_2; }
-	inline BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 ** get_address_of_bitArray_2() { return &___bitArray_2; }
-	inline void set_bitArray_2(BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * value)
+	inline static int32_t get_offset_of_bitArray_3() { return static_cast<int32_t>(offsetof(MMEnumConditionAttribute_t703F18E8647B941A0F7D253C06848456428C6183, ___bitArray_3)); }
+	inline BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * get_bitArray_3() const { return ___bitArray_3; }
+	inline BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 ** get_address_of_bitArray_3() { return &___bitArray_3; }
+	inline void set_bitArray_3(BitArray_t5AA7A3FADA9F63D23407525B6CDC96FBB70275A0 * value)
 	{
-		___bitArray_2 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___bitArray_2), (void*)value);
+		___bitArray_3 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___bitArray_3), (void*)value);
 	}
 };
 
@@ -558,16 +567,16 @@ struct MMInspectorButtonAttribute_t200D1A0C049B127AF69BA4EC2B534FDD321CD898  : p
 {
 public:
 	// System.String MoreMountains.Tools.MMInspectorButtonAttribute::MethodName
-	String_t* ___MethodName_0;
+	String_t* ___MethodName_1;
 
 public:
-	inline static int32_t get_offset_of_MethodName_0() { return static_cast<int32_t>(offsetof(MMInspectorButtonAttribute_t200D1A0C049B127AF69BA4EC2B534FDD321CD898, ___MethodName_0)); }
-	inline String_t* get_MethodName_0() const { return ___MethodName_0; }
-	inline String_t** get_address_of_MethodName_0() { return &___MethodName_0; }
-	inline void set_MethodName_0(String_t* value)
+	inline static int32_t get_offset_of_MethodName_1() { return static_cast<int32_t>(offsetof(MMInspectorButtonAttribute_t200D1A0C049B127AF69BA4EC2B534FDD321CD898, ___MethodName_1)); }
+	inline String_t* get_MethodName_1() const { return ___MethodName_1; }
+	inline String_t** get_address_of_MethodName_1() { return &___MethodName_1; }
+	inline void set_MethodName_1(String_t* value)
 	{
-		___MethodName_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___MethodName_0), (void*)value);
+		___MethodName_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___MethodName_1), (void*)value);
 	}
 };
 
@@ -604,16 +613,16 @@ struct TooltipAttribute_t503A1598A4E68E91673758F50447D0EDFB95149B  : public Prop
 {
 public:
 	// System.String UnityEngine.TooltipAttribute::tooltip
-	String_t* ___tooltip_0;
+	String_t* ___tooltip_1;
 
 public:
-	inline static int32_t get_offset_of_tooltip_0() { return static_cast<int32_t>(offsetof(TooltipAttribute_t503A1598A4E68E91673758F50447D0EDFB95149B, ___tooltip_0)); }
-	inline String_t* get_tooltip_0() const { return ___tooltip_0; }
-	inline String_t** get_address_of_tooltip_0() { return &___tooltip_0; }
-	inline void set_tooltip_0(String_t* value)
+	inline static int32_t get_offset_of_tooltip_1() { return static_cast<int32_t>(offsetof(TooltipAttribute_t503A1598A4E68E91673758F50447D0EDFB95149B, ___tooltip_1)); }
+	inline String_t* get_tooltip_1() const { return ___tooltip_1; }
+	inline String_t** get_address_of_tooltip_1() { return &___tooltip_1; }
+	inline void set_tooltip_1(String_t* value)
 	{
-		___tooltip_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___tooltip_0), (void*)value);
+		___tooltip_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___tooltip_1), (void*)value);
 	}
 };
 

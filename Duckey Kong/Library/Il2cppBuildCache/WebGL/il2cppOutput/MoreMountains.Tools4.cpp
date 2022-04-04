@@ -4019,8 +4019,17 @@ public:
 struct PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
 {
 public:
+	// System.Int32 UnityEngine.PropertyAttribute::<order>k__BackingField
+	int32_t ___U3CorderU3Ek__BackingField_0;
 
 public:
+	inline static int32_t get_offset_of_U3CorderU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052, ___U3CorderU3Ek__BackingField_0)); }
+	inline int32_t get_U3CorderU3Ek__BackingField_0() const { return ___U3CorderU3Ek__BackingField_0; }
+	inline int32_t* get_address_of_U3CorderU3Ek__BackingField_0() { return &___U3CorderU3Ek__BackingField_0; }
+	inline void set_U3CorderU3Ek__BackingField_0(int32_t value)
+	{
+		___U3CorderU3Ek__BackingField_0 = value;
+	}
 };
 
 
@@ -6079,16 +6088,16 @@ struct MMVectorAttribute_tA5DBCF39823BEC9A2E2C24215522A4DC788ABBB3  : public Pro
 {
 public:
 	// System.String[] MoreMountains.Tools.MMVectorAttribute::Labels
-	StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* ___Labels_0;
+	StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* ___Labels_1;
 
 public:
-	inline static int32_t get_offset_of_Labels_0() { return static_cast<int32_t>(offsetof(MMVectorAttribute_tA5DBCF39823BEC9A2E2C24215522A4DC788ABBB3, ___Labels_0)); }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* get_Labels_0() const { return ___Labels_0; }
-	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A** get_address_of_Labels_0() { return &___Labels_0; }
-	inline void set_Labels_0(StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* value)
+	inline static int32_t get_offset_of_Labels_1() { return static_cast<int32_t>(offsetof(MMVectorAttribute_tA5DBCF39823BEC9A2E2C24215522A4DC788ABBB3, ___Labels_1)); }
+	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* get_Labels_1() const { return ___Labels_1; }
+	inline StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A** get_address_of_Labels_1() { return &___Labels_1; }
+	inline void set_Labels_1(StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* value)
 	{
-		___Labels_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___Labels_0), (void*)value);
+		___Labels_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___Labels_1), (void*)value);
 	}
 };
 
@@ -36209,7 +36218,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MMVectorAttribute__ctor_mC708CBE51447649
 		PropertyAttribute__ctor_mA13181D93341AEAE429F0615989CB4647F2EB8A7(__this, /*hidden argument*/NULL);
 		// Labels = labels;
 		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_0 = ___labels0;
-		__this->set_Labels_0(L_0);
+		__this->set_Labels_1(L_0);
 		// }
 		return;
 	}

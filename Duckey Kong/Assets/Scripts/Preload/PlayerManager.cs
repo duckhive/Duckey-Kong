@@ -130,8 +130,12 @@ public class PlayerManager : MonoBehaviour
 
     private void Quack()
     {
-        if(Input.GetButtonDown("Quack"))
+        if (Input.GetButtonDown("Quack"))
+        {
             FeedbacksManager.Instance.quackFeedbacks.PlayFeedbacks();
+            anim.ResetTrigger("Quack");
+            anim.SetTrigger("Quack");
+        }
     }
 
     public void EnablePlayer()

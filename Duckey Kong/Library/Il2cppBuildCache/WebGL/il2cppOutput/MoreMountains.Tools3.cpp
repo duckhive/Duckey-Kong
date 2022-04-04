@@ -3953,8 +3953,17 @@ public:
 struct PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
 {
 public:
+	// System.Int32 UnityEngine.PropertyAttribute::<order>k__BackingField
+	int32_t ___U3CorderU3Ek__BackingField_0;
 
 public:
+	inline static int32_t get_offset_of_U3CorderU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052, ___U3CorderU3Ek__BackingField_0)); }
+	inline int32_t get_U3CorderU3Ek__BackingField_0() const { return ___U3CorderU3Ek__BackingField_0; }
+	inline int32_t* get_address_of_U3CorderU3Ek__BackingField_0() { return &___U3CorderU3Ek__BackingField_0; }
+	inline void set_U3CorderU3Ek__BackingField_0(int32_t value)
+	{
+		___U3CorderU3Ek__BackingField_0 = value;
+	}
 };
 
 
@@ -6608,78 +6617,78 @@ struct MMReorderableAttributeAttribute_t5FC4894522E3E8DEA359F790E719FEB043394BAD
 {
 public:
 	// System.Boolean MoreMountains.Tools.MMReorderableAttributeAttribute::add
-	bool ___add_0;
+	bool ___add_1;
 	// System.Boolean MoreMountains.Tools.MMReorderableAttributeAttribute::remove
-	bool ___remove_1;
+	bool ___remove_2;
 	// System.Boolean MoreMountains.Tools.MMReorderableAttributeAttribute::draggable
-	bool ___draggable_2;
+	bool ___draggable_3;
 	// System.Boolean MoreMountains.Tools.MMReorderableAttributeAttribute::singleLine
-	bool ___singleLine_3;
+	bool ___singleLine_4;
 	// System.String MoreMountains.Tools.MMReorderableAttributeAttribute::elementNameProperty
-	String_t* ___elementNameProperty_4;
+	String_t* ___elementNameProperty_5;
 	// System.String MoreMountains.Tools.MMReorderableAttributeAttribute::elementNameOverride
-	String_t* ___elementNameOverride_5;
+	String_t* ___elementNameOverride_6;
 	// System.String MoreMountains.Tools.MMReorderableAttributeAttribute::elementIconPath
-	String_t* ___elementIconPath_6;
+	String_t* ___elementIconPath_7;
 
 public:
-	inline static int32_t get_offset_of_add_0() { return static_cast<int32_t>(offsetof(MMReorderableAttributeAttribute_t5FC4894522E3E8DEA359F790E719FEB043394BAD, ___add_0)); }
-	inline bool get_add_0() const { return ___add_0; }
-	inline bool* get_address_of_add_0() { return &___add_0; }
-	inline void set_add_0(bool value)
+	inline static int32_t get_offset_of_add_1() { return static_cast<int32_t>(offsetof(MMReorderableAttributeAttribute_t5FC4894522E3E8DEA359F790E719FEB043394BAD, ___add_1)); }
+	inline bool get_add_1() const { return ___add_1; }
+	inline bool* get_address_of_add_1() { return &___add_1; }
+	inline void set_add_1(bool value)
 	{
-		___add_0 = value;
+		___add_1 = value;
 	}
 
-	inline static int32_t get_offset_of_remove_1() { return static_cast<int32_t>(offsetof(MMReorderableAttributeAttribute_t5FC4894522E3E8DEA359F790E719FEB043394BAD, ___remove_1)); }
-	inline bool get_remove_1() const { return ___remove_1; }
-	inline bool* get_address_of_remove_1() { return &___remove_1; }
-	inline void set_remove_1(bool value)
+	inline static int32_t get_offset_of_remove_2() { return static_cast<int32_t>(offsetof(MMReorderableAttributeAttribute_t5FC4894522E3E8DEA359F790E719FEB043394BAD, ___remove_2)); }
+	inline bool get_remove_2() const { return ___remove_2; }
+	inline bool* get_address_of_remove_2() { return &___remove_2; }
+	inline void set_remove_2(bool value)
 	{
-		___remove_1 = value;
+		___remove_2 = value;
 	}
 
-	inline static int32_t get_offset_of_draggable_2() { return static_cast<int32_t>(offsetof(MMReorderableAttributeAttribute_t5FC4894522E3E8DEA359F790E719FEB043394BAD, ___draggable_2)); }
-	inline bool get_draggable_2() const { return ___draggable_2; }
-	inline bool* get_address_of_draggable_2() { return &___draggable_2; }
-	inline void set_draggable_2(bool value)
+	inline static int32_t get_offset_of_draggable_3() { return static_cast<int32_t>(offsetof(MMReorderableAttributeAttribute_t5FC4894522E3E8DEA359F790E719FEB043394BAD, ___draggable_3)); }
+	inline bool get_draggable_3() const { return ___draggable_3; }
+	inline bool* get_address_of_draggable_3() { return &___draggable_3; }
+	inline void set_draggable_3(bool value)
 	{
-		___draggable_2 = value;
+		___draggable_3 = value;
 	}
 
-	inline static int32_t get_offset_of_singleLine_3() { return static_cast<int32_t>(offsetof(MMReorderableAttributeAttribute_t5FC4894522E3E8DEA359F790E719FEB043394BAD, ___singleLine_3)); }
-	inline bool get_singleLine_3() const { return ___singleLine_3; }
-	inline bool* get_address_of_singleLine_3() { return &___singleLine_3; }
-	inline void set_singleLine_3(bool value)
+	inline static int32_t get_offset_of_singleLine_4() { return static_cast<int32_t>(offsetof(MMReorderableAttributeAttribute_t5FC4894522E3E8DEA359F790E719FEB043394BAD, ___singleLine_4)); }
+	inline bool get_singleLine_4() const { return ___singleLine_4; }
+	inline bool* get_address_of_singleLine_4() { return &___singleLine_4; }
+	inline void set_singleLine_4(bool value)
 	{
-		___singleLine_3 = value;
+		___singleLine_4 = value;
 	}
 
-	inline static int32_t get_offset_of_elementNameProperty_4() { return static_cast<int32_t>(offsetof(MMReorderableAttributeAttribute_t5FC4894522E3E8DEA359F790E719FEB043394BAD, ___elementNameProperty_4)); }
-	inline String_t* get_elementNameProperty_4() const { return ___elementNameProperty_4; }
-	inline String_t** get_address_of_elementNameProperty_4() { return &___elementNameProperty_4; }
-	inline void set_elementNameProperty_4(String_t* value)
+	inline static int32_t get_offset_of_elementNameProperty_5() { return static_cast<int32_t>(offsetof(MMReorderableAttributeAttribute_t5FC4894522E3E8DEA359F790E719FEB043394BAD, ___elementNameProperty_5)); }
+	inline String_t* get_elementNameProperty_5() const { return ___elementNameProperty_5; }
+	inline String_t** get_address_of_elementNameProperty_5() { return &___elementNameProperty_5; }
+	inline void set_elementNameProperty_5(String_t* value)
 	{
-		___elementNameProperty_4 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___elementNameProperty_4), (void*)value);
+		___elementNameProperty_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___elementNameProperty_5), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_elementNameOverride_5() { return static_cast<int32_t>(offsetof(MMReorderableAttributeAttribute_t5FC4894522E3E8DEA359F790E719FEB043394BAD, ___elementNameOverride_5)); }
-	inline String_t* get_elementNameOverride_5() const { return ___elementNameOverride_5; }
-	inline String_t** get_address_of_elementNameOverride_5() { return &___elementNameOverride_5; }
-	inline void set_elementNameOverride_5(String_t* value)
+	inline static int32_t get_offset_of_elementNameOverride_6() { return static_cast<int32_t>(offsetof(MMReorderableAttributeAttribute_t5FC4894522E3E8DEA359F790E719FEB043394BAD, ___elementNameOverride_6)); }
+	inline String_t* get_elementNameOverride_6() const { return ___elementNameOverride_6; }
+	inline String_t** get_address_of_elementNameOverride_6() { return &___elementNameOverride_6; }
+	inline void set_elementNameOverride_6(String_t* value)
 	{
-		___elementNameOverride_5 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___elementNameOverride_5), (void*)value);
+		___elementNameOverride_6 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___elementNameOverride_6), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_elementIconPath_6() { return static_cast<int32_t>(offsetof(MMReorderableAttributeAttribute_t5FC4894522E3E8DEA359F790E719FEB043394BAD, ___elementIconPath_6)); }
-	inline String_t* get_elementIconPath_6() const { return ___elementIconPath_6; }
-	inline String_t** get_address_of_elementIconPath_6() { return &___elementIconPath_6; }
-	inline void set_elementIconPath_6(String_t* value)
+	inline static int32_t get_offset_of_elementIconPath_7() { return static_cast<int32_t>(offsetof(MMReorderableAttributeAttribute_t5FC4894522E3E8DEA359F790E719FEB043394BAD, ___elementIconPath_7)); }
+	inline String_t* get_elementIconPath_7() const { return ___elementIconPath_7; }
+	inline String_t** get_address_of_elementIconPath_7() { return &___elementIconPath_7; }
+	inline void set_elementIconPath_7(String_t* value)
 	{
-		___elementIconPath_6 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___elementIconPath_6), (void*)value);
+		___elementIconPath_7 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___elementIconPath_7), (void*)value);
 	}
 };
 
@@ -33445,22 +33454,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MMReorderableAttributeAttribute__ctor_m4
 		PropertyAttribute__ctor_mA13181D93341AEAE429F0615989CB4647F2EB8A7(__this, /*hidden argument*/NULL);
 		// this.add = add;
 		bool L_0 = ___add0;
-		__this->set_add_0(L_0);
+		__this->set_add_1(L_0);
 		// this.remove = remove;
 		bool L_1 = ___remove1;
-		__this->set_remove_1(L_1);
+		__this->set_remove_2(L_1);
 		// this.draggable = draggable;
 		bool L_2 = ___draggable2;
-		__this->set_draggable_2(L_2);
+		__this->set_draggable_3(L_2);
 		// this.elementNameProperty = elementNameProperty;
 		String_t* L_3 = ___elementNameProperty3;
-		__this->set_elementNameProperty_4(L_3);
+		__this->set_elementNameProperty_5(L_3);
 		// this.elementNameOverride = elementNameOverride;
 		String_t* L_4 = ___elementNameOverride4;
-		__this->set_elementNameOverride_5(L_4);
+		__this->set_elementNameOverride_6(L_4);
 		// this.elementIconPath = elementIconPath;
 		String_t* L_5 = ___elementIconPath5;
-		__this->set_elementIconPath_6(L_5);
+		__this->set_elementIconPath_7(L_5);
 		// }
 		return;
 	}
